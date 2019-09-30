@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="pdps">
+  <useCaseModelRootMoniker Id="8ee037c8-6582-412c-a78f-061e3c37fce4" />
+  <nestedChildShapes>
+    <actorShape Id="2bdcdd32-dcba-4303-848e-7ee461f0ac3f" absoluteBounds="2.75, 1.875, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="326ecbf6-454d-4ea2-9818-020dd97a6e13" LastKnownName="user" />
+      <relativeChildShapes />
+    </actorShape>
+  </nestedChildShapes>
+</useCaseDiagram>
