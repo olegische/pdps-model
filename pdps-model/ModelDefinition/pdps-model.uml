@@ -160,6 +160,47 @@
               LastKnownLocation="pdps-model.uml" />
           </dependency>
         </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="b6980b20-831f-4878-8b7b-f34bb0cde9f5"
+            isDerived="false"
+            sourceEndRoleName="создать проект"
+            targetEndRoleName="DataBase"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="02d046ac-2879-4efe-b159-60c7bd2e166f"
+              LastKnownName="DataBase"
+              LastKnownLocation="pdps-model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d5e85f79-cf8a-4b78-b551-9640e3704ed2"
+                  name="создать проект"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="097463f7-5923-48eb-851e-30940b3a575c"
+                  name="DataBase"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -174,14 +215,98 @@
         Id="c2645073-3a3b-429c-845a-c35bbe154183"
         name="заполнить данные по проекту"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="df2fb775-1cb5-42fa-8be6-beff50ebe14c"
+            isDerived="false"
+            sourceEndRoleName="заполнить данные по проекту"
+            targetEndRoleName="DataBase"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="02d046ac-2879-4efe-b159-60c7bd2e166f"
+              LastKnownName="DataBase"
+              LastKnownLocation="pdps-model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="01eb8075-9d76-4837-9dc5-8ee97f38f674"
+                  name="заполнить данные по проекту"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c63b7759-ed45-42e2-9d08-2b6040a60cc1"
+                  name="DataBase"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="a87c6774-a166-4782-a5e5-b4f4e64d2a4c"
         name="подготовить типовую документацию по проекту"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="be6ea626-6293-4553-9b1d-ae23d1c9029b"
+            isDerived="false"
+            sourceEndRoleName="подготовить типовую документацию по проекту"
+            targetEndRoleName="Storage"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="be247a06-dc55-44b8-892e-0cedc42b408c"
+              LastKnownName="Storage"
+              LastKnownLocation="pdps-model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1ebc2c6e-cfc8-46af-9172-4bd68c6be4f6"
+                  name="подготовить типовую документацию по проекту"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7b971e41-fbef-4557-9094-396084a029c9"
+                  name="Storage"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <actor
@@ -283,12 +408,110 @@
         Id="1f2bb272-8188-424e-b164-4b8747f0fcc1"
         name="создать конфигурацию проекта"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="05ca7fd8-029c-4980-b873-4eeb37a4f705"
+            isDerived="false"
+            sourceEndRoleName="создать конфигурацию проекта"
+            targetEndRoleName="DataBase"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="02d046ac-2879-4efe-b159-60c7bd2e166f"
+              LastKnownName="DataBase"
+              LastKnownLocation="pdps-model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1b36bf64-aa18-4181-b250-6d8b161ea342"
+                  name="создать конфигурацию проекта"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="becd620e-af25-470a-82cd-fe3ff378d519"
+                  name="DataBase"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="dcbbab3b-1870-4c76-837b-1114ccc66655"
         name="Управление учетной записью пользователя"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="d00cc358-0628-4618-9927-1d29d83915ce"
+            isDerived="false"
+            sourceEndRoleName="Управление учетной записью пользователя"
+            targetEndRoleName="DataBase"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="02d046ac-2879-4efe-b159-60c7bd2e166f"
+              LastKnownName="DataBase"
+              LastKnownLocation="pdps-model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="517ad4ef-aec4-4b2f-b03b-a970f0794136"
+                  name="Управление учетной записью пользователя"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e97e509f-a5bb-4703-b06a-bdde1ef78ea7"
+                  name="DataBase"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="02d046ac-2879-4efe-b159-60c7bd2e166f"
+        name="DataBase"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="be247a06-dc55-44b8-892e-0cedc42b408c"
+        name="Storage"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>

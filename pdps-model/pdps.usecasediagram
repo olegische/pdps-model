@@ -79,16 +79,70 @@
             <elementDefinition Id="0b4a4f5e-d95b-4f1c-a587-63ea7d2b2f4b" />
           </dependency>
         </suppliersInternal>
+        <targetEnds>
+          <association Id="2732f8ab-c7d6-4933-9568-aee287576c76" isDerived="false" sourceEndRoleName="создать проект" targetEndRoleName="DataBase" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="faaff7bf-6364-45e9-910c-c6ca150edfc8" LastKnownName="DataBase" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="adafa73f-39e4-4b4c-bc93-7d707d88740a" name="создать проект" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d5e85f79-cf8a-4b78-b551-9640e3704ed2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8a9cad51-14f0-46ff-8693-b78c0576d234" name="DataBase" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="097463f7-5923-48eb-851e-30940b3a575c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b6980b20-831f-4878-8b7b-f34bb0cde9f5" />
+          </association>
+        </targetEnds>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" name="заполнить данные по проекту" isAbstract="false" isLeaf="false">
         <elementDefinition Id="c2645073-3a3b-429c-845a-c35bbe154183" />
+        <targetEnds>
+          <association Id="bf47a712-04fe-453a-8162-94826931fa8b" isDerived="false" sourceEndRoleName="заполнить данные по проекту" targetEndRoleName="DataBase" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="faaff7bf-6364-45e9-910c-c6ca150edfc8" LastKnownName="DataBase" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c54400dc-879b-4cec-b8e3-94b0d48ea2e6" name="заполнить данные по проекту" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="01eb8075-9d76-4837-9dc5-8ee97f38f674" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8809f4c6-e711-433e-aa5b-72aa739424ae" name="DataBase" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c63b7759-ed45-42e2-9d08-2b6040a60cc1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="df2fb775-1cb5-42fa-8be6-beff50ebe14c" />
+          </association>
+        </targetEnds>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="42a8736c-1aba-45ea-a6e6-7680950a2e74" name="подготовить типовую документацию по проекту" isAbstract="false" isLeaf="false">
         <elementDefinition Id="a87c6774-a166-4782-a5e5-b4f4e64d2a4c" />
+        <targetEnds>
+          <association Id="e752da55-385c-4d71-a4d0-9162083359af" isDerived="false" sourceEndRoleName="подготовить типовую документацию по проекту" targetEndRoleName="Storage" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="ea8b70a1-e4bd-4f97-904b-3178ab4d3bee" LastKnownName="Storage" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3a720cc8-1d0f-4ec7-8c1b-c5f26853d8ec" name="подготовить типовую документацию по проекту" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1ebc2c6e-cfc8-46af-9172-4bd68c6be4f6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2791ed84-c257-46ce-98bb-2ae673879015" name="Storage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7b971e41-fbef-4557-9094-396084a029c9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="be6ea626-6293-4553-9b1d-ae23d1c9029b" />
+          </association>
+        </targetEnds>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -133,12 +187,58 @@
     <useCaseModelRootHasTypes>
       <useCase Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" name="создать конфигурацию проекта" isAbstract="false" isLeaf="false">
         <elementDefinition Id="1f2bb272-8188-424e-b164-4b8747f0fcc1" />
+        <targetEnds>
+          <association Id="5568a3a0-2f97-45f6-9f3c-a1b6ac2eeaf5" isDerived="false" sourceEndRoleName="создать конфигурацию проекта" targetEndRoleName="DataBase" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="faaff7bf-6364-45e9-910c-c6ca150edfc8" LastKnownName="DataBase" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ae9f31c6-78f6-4f0a-8747-292e34756695" name="создать конфигурацию проекта" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1b36bf64-aa18-4181-b250-6d8b161ea342" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c490089d-a417-4730-a61e-10fb1c4934e2" name="DataBase" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="becd620e-af25-470a-82cd-fe3ff378d519" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="05ca7fd8-029c-4980-b873-4eeb37a4f705" />
+          </association>
+        </targetEnds>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="e5c3a124-76c5-4f09-8254-a4dc8f3015b6" name="Управление учетной записью пользователя" isAbstract="false" isLeaf="false">
         <elementDefinition Id="dcbbab3b-1870-4c76-837b-1114ccc66655" />
+        <targetEnds>
+          <association Id="1fd5b6ed-624d-46d0-90b9-afadb2c83ea5" isDerived="false" sourceEndRoleName="Управление учетной записью пользователя" targetEndRoleName="DataBase" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="faaff7bf-6364-45e9-910c-c6ca150edfc8" LastKnownName="DataBase" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="349b8839-ff90-441d-bc34-88969fc1bf51" name="Управление учетной записью пользователя" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="517ad4ef-aec4-4b2f-b03b-a970f0794136" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f20e0344-d52a-402f-b05d-dc84207a917c" name="DataBase" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e97e509f-a5bb-4703-b06a-bdde1ef78ea7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d00cc358-0628-4618-9927-1d29d83915ce" />
+          </association>
+        </targetEnds>
       </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="faaff7bf-6364-45e9-910c-c6ca150edfc8" name="DataBase" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="02d046ac-2879-4efe-b159-60c7bd2e166f" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ea8b70a1-e4bd-4f97-904b-3178ab4d3bee" name="Storage" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="be247a06-dc55-44b8-892e-0cedc42b408c" />
+      </actor>
     </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="bb9208ff-9b09-43f7-925d-baf3be541f21" name="pdps-model">
