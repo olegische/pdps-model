@@ -1,146 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8ee037c8-6582-412c-a78f-061e3c37fce4" name="pdps" linkedPackageId="bb9208ff-9b09-43f7-925d-baf3be541f21" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="f1098b9d-d353-4f89-9caa-893b1a6cc494">
-      <profileInstance Id="d9f2d8fd-8139-46e4-8f46-53d0b51549ed" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="dca19dda-34d3-4913-91fe-63f9d066a0b5">
-      <profileInstance Id="f4553865-2084-49a9-95da-1c77e2d04bd1" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="326ecbf6-454d-4ea2-9818-020dd97a6e13" name="User" isAbstract="false" isLeaf="false">
         <elementDefinition Id="eb361810-e9a6-42d0-82dc-e5ce70d480f5" />
         <targetEnds>
-          <association Id="462374af-ff8a-4ce5-bf05-58cd6a127ae2" isDerived="false" sourceEndRoleName="User" targetEndRoleName="создать проект" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" LastKnownName="создать проект" />
+          <association Id="7b1a0341-6e5a-437b-86c2-9c3f85d8be6d" isDerived="false" sourceEndRoleName="User" targetEndRoleName="авторизация" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f01068c1-5c99-4811-b2e3-06f73f9ff76d" LastKnownName="authorization" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="4f5069f3-7926-40f5-a9a8-3d464e8142d4" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="9859d46b-3dc5-448b-84ba-f33f1413ceff" />
+                <memberEnd Id="1a3f0afc-ef1a-4889-af7c-26b8bcb63706" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fa55d731-1b9c-4104-8348-4374d8c69cb8" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="3b3f9289-c602-40fb-88f4-e0fff0f36e82" name="создать проект" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="1411d3c8-4d62-49eb-bc18-183bf7c3251f" />
+                <memberEnd Id="9cdc566b-045f-410a-96dd-0caf22ac9e04" name="авторизация" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7b3d02c3-ed9a-4e50-bd1f-bfb319b308d6" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="f9ebc8f0-6c93-48cd-bee4-f326c75f043d" />
-          </association>
-          <association Id="01324272-23c3-4414-a4ca-829cc512d9e0" isDerived="false" sourceEndRoleName="User" targetEndRoleName="заполнить данные по проекту" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" LastKnownName="заполнить данные по проекту" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="924d2524-7ea5-4e55-84c2-0bbea1f30259" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="1274582f-d46a-47a8-b9dd-954c1dd49a03" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="02ae671d-a405-4989-aa8e-f862d80cfd11" name="заполнить данные по проекту" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="fcf12a92-f559-404b-84c5-bdf4b46e885b" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="2113d79a-1775-4ad9-a426-6b46d11c4c64" />
-          </association>
-          <association Id="e91064d1-b104-4792-9828-b350671c61f6" isDerived="false" sourceEndRoleName="User" targetEndRoleName="подготовить типовую документацию по проекту" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="42a8736c-1aba-45ea-a6e6-7680950a2e74" LastKnownName="подготовить типовую документацию по проекту" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="ed693a59-7822-4ddc-9a62-7a8d850aa974" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="1316467c-272b-45d4-a7a5-6697281d29af" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="35168dce-a159-4bff-9792-b71a075268f0" name="подготовить типовую документацию по проекту" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="49ec66f0-8327-4bac-a087-a480f6bcbbfd" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="c185a5d3-8056-4fd4-a221-6ccfb21611ee" />
+            <elementDefinition Id="e8f163c4-45ba-4e8e-a807-f91e0ebed429" />
           </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" name="создать проект" isAbstract="false" isLeaf="false">
+      <useCase Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" name="create project" isAbstract="false" isLeaf="false">
         <elementDefinition Id="94e71e0e-abb6-4e87-9d52-9b2ecd42aa09" />
-        <suppliersInternal>
-          <dependency Id="0436263a-9bbb-4e69-b8bb-1a735d350f04">
-            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="создать конфигурацию проекта" />
-            <elementDefinition Id="0b4a4f5e-d95b-4f1c-a587-63ea7d2b2f4b" />
-          </dependency>
-        </suppliersInternal>
-        <targetEnds>
-          <association Id="2732f8ab-c7d6-4933-9568-aee287576c76" isDerived="false" sourceEndRoleName="создать проект" targetEndRoleName="DataBase" isLeaf="false" isAbstract="false">
-            <actorMoniker Id="faaff7bf-6364-45e9-910c-c6ca150edfc8" LastKnownName="DataBase" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="adafa73f-39e4-4b4c-bc93-7d707d88740a" name="создать проект" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="d5e85f79-cf8a-4b78-b551-9640e3704ed2" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="8a9cad51-14f0-46ff-8693-b78c0576d234" name="DataBase" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="097463f7-5923-48eb-851e-30940b3a575c" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="b6980b20-831f-4878-8b7b-f34bb0cde9f5" />
-          </association>
-        </targetEnds>
+        <extendedCases>
+          <extend Id="dd4a2626-cd78-44da-af92-550bb9be3730">
+            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="create project configuration" />
+            <elementDefinition Id="c91b6b72-2ee4-4aa8-9d35-93f6036441af" />
+          </extend>
+        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" name="заполнить данные по проекту" isAbstract="false" isLeaf="false">
+      <useCase Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" name="complete project data" isAbstract="false" isLeaf="false">
         <elementDefinition Id="c2645073-3a3b-429c-845a-c35bbe154183" />
-        <targetEnds>
-          <association Id="bf47a712-04fe-453a-8162-94826931fa8b" isDerived="false" sourceEndRoleName="заполнить данные по проекту" targetEndRoleName="DataBase" isLeaf="false" isAbstract="false">
-            <actorMoniker Id="faaff7bf-6364-45e9-910c-c6ca150edfc8" LastKnownName="DataBase" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="c54400dc-879b-4cec-b8e3-94b0d48ea2e6" name="заполнить данные по проекту" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="01eb8075-9d76-4837-9dc5-8ee97f38f674" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="8809f4c6-e711-433e-aa5b-72aa739424ae" name="DataBase" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="c63b7759-ed45-42e2-9d08-2b6040a60cc1" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="df2fb775-1cb5-42fa-8be6-beff50ebe14c" />
-          </association>
-        </targetEnds>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="42a8736c-1aba-45ea-a6e6-7680950a2e74" name="подготовить типовую документацию по проекту" isAbstract="false" isLeaf="false">
+      <useCase Id="42a8736c-1aba-45ea-a6e6-7680950a2e74" name="upload project documentation forms" isAbstract="false" isLeaf="false">
         <elementDefinition Id="a87c6774-a166-4782-a5e5-b4f4e64d2a4c" />
         <targetEnds>
-          <association Id="e752da55-385c-4d71-a4d0-9162083359af" isDerived="false" sourceEndRoleName="подготовить типовую документацию по проекту" targetEndRoleName="Storage" isLeaf="false" isAbstract="false">
+          <association Id="1c19b6a0-fc58-49ed-90d2-87e78dcc1681" isDerived="false" sourceEndRoleName="upload project documentation forms" targetEndRoleName="Storage" isLeaf="false" isAbstract="false">
             <actorMoniker Id="ea8b70a1-e4bd-4f97-904b-3178ab4d3bee" LastKnownName="Storage" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="3a720cc8-1d0f-4ec7-8c1b-c5f26853d8ec" name="подготовить типовую документацию по проекту" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="1ebc2c6e-cfc8-46af-9172-4bd68c6be4f6" />
+                <memberEnd Id="aae26421-d9f2-492a-b281-46ed0e66953c" name="upload project documentation forms" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="07b7cf16-cf66-4fdc-b250-c59e1c152bd4" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="2791ed84-c257-46ce-98bb-2ae673879015" name="Storage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="7b971e41-fbef-4557-9094-396084a029c9" />
+                <memberEnd Id="86af72af-ef57-4875-87c2-40b41bf28d55" name="Storage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f026ddff-c658-4152-9ff1-c5e801ba2a9b" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="be6ea626-6293-4553-9b1d-ae23d1c9029b" />
+            <elementDefinition Id="fc57bfb1-db5a-4038-bb8a-030117d0f054" />
           </association>
         </targetEnds>
       </useCase>
@@ -148,100 +66,324 @@
     <useCaseModelRootHasTypes>
       <actor Id="864fe76f-c872-4daf-8e3a-ab2781deea3e" name="Administrator" isAbstract="false" isLeaf="false">
         <elementDefinition Id="bd053c55-c4b6-4d5b-be66-2682e4f7ee9c" />
+        <generalsInternal>
+          <generalization Id="20f63ffd-4cf4-4992-9542-93a626aac81a" isSubstitutable="false">
+            <actorMoniker Id="326ecbf6-454d-4ea2-9818-020dd97a6e13" LastKnownName="User" />
+            <elementDefinition Id="b290405c-3e0b-4d78-8af2-f67b09573d44" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
-          <association Id="10cbae23-f6eb-46a0-a688-2e3af7a1b3ce" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="создать конфигурацию проекта" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="создать конфигурацию проекта" />
+          <association Id="2e5c87e9-11c4-4746-962c-162cd108c226" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="создать конфигурацию проекта" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="create project configuration" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="5d0e656e-a192-4839-b7a0-7adf634b744e" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="5aa2a42b-f13c-4e18-8c38-70d83d5fffae" />
+                <memberEnd Id="d808de08-bcdb-4589-83f1-9960f29813de" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4001d0cf-1170-40e2-9623-4f501a1f0790" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="d4ad35f9-407a-4ae2-87a8-880dd5801982" name="создать конфигурацию проекта" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="d9697443-0a7d-4953-9a76-92144a1914a8" />
+                <memberEnd Id="ac766a17-dba3-486b-b08a-17ae848970a0" name="создать конфигурацию проекта" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cd01b765-235f-4c6b-b6f5-0fc4cde95d97" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="4da844c7-379c-48ac-b730-0acf7fb5d3ba" />
+            <elementDefinition Id="3e031041-205b-498f-a8d3-a7ec515b9b68" />
           </association>
-          <association Id="7750f1bc-0f4e-44a0-8902-f48189f0e12b" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Управление учетной записью пользователя" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="e5c3a124-76c5-4f09-8254-a4dc8f3015b6" LastKnownName="Управление учетной записью пользователя" />
+          <association Id="fe1c078c-fedb-4d06-acfd-ac53dc49d6fb" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="создать пользователя" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" LastKnownName="create user" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="2825d835-034b-4d52-ac54-b8f39613be06" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="cf18e677-54c6-4e50-bf0d-c662a143383a" />
+                <memberEnd Id="89a08c91-c215-45c2-a8fe-5b48a6a0f778" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9654a91b-280a-4302-b226-b29dfc53e098" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="20c43f3d-d553-4d94-9cef-8ef07f878693" name="Управление учетной записью пользователя" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="d9abc89d-ce17-42c4-b360-3c80a3fbe8dd" />
+                <memberEnd Id="7a82e1c3-95b9-4648-9e69-3b3d47a20ea6" name="создать пользователя" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="db0637e6-4a00-40b3-9c34-7ac75fc0fb55" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="1c2aca69-5ad3-4dd4-a453-8db7f0854271" />
+            <elementDefinition Id="9af61f08-03ec-40d8-aed9-59bd4eba3526" />
           </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" name="создать конфигурацию проекта" isAbstract="false" isLeaf="false">
+      <useCase Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" name="create project configuration" isAbstract="false" isLeaf="false">
         <elementDefinition Id="1f2bb272-8188-424e-b164-4b8747f0fcc1" />
-        <targetEnds>
-          <association Id="5568a3a0-2f97-45f6-9f3c-a1b6ac2eeaf5" isDerived="false" sourceEndRoleName="создать конфигурацию проекта" targetEndRoleName="DataBase" isLeaf="false" isAbstract="false">
-            <actorMoniker Id="faaff7bf-6364-45e9-910c-c6ca150edfc8" LastKnownName="DataBase" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="ae9f31c6-78f6-4f0a-8747-292e34756695" name="создать конфигурацию проекта" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="1b36bf64-aa18-4181-b250-6d8b161ea342" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="c490089d-a417-4730-a61e-10fb1c4934e2" name="DataBase" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="becd620e-af25-470a-82cd-fe3ff378d519" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="05ca7fd8-029c-4980-b873-4eeb37a4f705" />
-          </association>
-        </targetEnds>
+        <suppliersInternal>
+          <dependency Id="1ef0d805-0634-41ad-968d-0b3229bf24b6">
+            <useCaseMoniker Id="42a8736c-1aba-45ea-a6e6-7680950a2e74" LastKnownName="upload project documentation forms" />
+            <elementDefinition Id="8adfe455-57d6-42a0-88c3-e71fa8311978" />
+          </dependency>
+        </suppliersInternal>
       </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="e5c3a124-76c5-4f09-8254-a4dc8f3015b6" name="Управление учетной записью пользователя" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="dcbbab3b-1870-4c76-837b-1114ccc66655" />
-        <targetEnds>
-          <association Id="1fd5b6ed-624d-46d0-90b9-afadb2c83ea5" isDerived="false" sourceEndRoleName="Управление учетной записью пользователя" targetEndRoleName="DataBase" isLeaf="false" isAbstract="false">
-            <actorMoniker Id="faaff7bf-6364-45e9-910c-c6ca150edfc8" LastKnownName="DataBase" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="349b8839-ff90-441d-bc34-88969fc1bf51" name="Управление учетной записью пользователя" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="517ad4ef-aec4-4b2f-b03b-a970f0794136" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="f20e0344-d52a-402f-b05d-dc84207a917c" name="DataBase" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="e97e509f-a5bb-4703-b06a-bdde1ef78ea7" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="d00cc358-0628-4618-9927-1d29d83915ce" />
-          </association>
-        </targetEnds>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <actor Id="faaff7bf-6364-45e9-910c-c6ca150edfc8" name="DataBase" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="02d046ac-2879-4efe-b159-60c7bd2e166f" />
-      </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <actor Id="ea8b70a1-e4bd-4f97-904b-3178ab4d3bee" name="Storage" isAbstract="false" isLeaf="false">
         <elementDefinition Id="be247a06-dc55-44b8-892e-0cedc42b408c" />
       </actor>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c1e1dac5-85f3-49be-aa2a-68d2a869dd9f" name="Project manager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bc987fc6-0188-44cd-8637-f2986460fa73" />
+        <generalsInternal>
+          <generalization Id="b1bb02b9-ebac-4e10-b628-bee0e8239471" isSubstitutable="false">
+            <actorMoniker Id="326ecbf6-454d-4ea2-9818-020dd97a6e13" LastKnownName="User" />
+            <elementDefinition Id="05d96acb-5fd2-45d7-a43f-454be7254d29" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="b86901db-a807-431b-af19-368eaa7d82b5" isDerived="false" sourceEndRoleName="Project manager" targetEndRoleName="upload project documentation forms" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="42a8736c-1aba-45ea-a6e6-7680950a2e74" LastKnownName="upload project documentation forms" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="df49ed64-65c9-4725-b75d-c52150bc05d7" name="Project manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4f487d19-a745-4747-8241-cc6653ea321e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a739431e-19a3-4e2e-8543-113f0e6086ae" name="upload project documentation forms" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="27a194ca-e792-4159-aadc-43b99b6dec72" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f1925f3b-623e-4c5e-b9d3-26c1251c7c64" />
+          </association>
+          <association Id="8adc3db2-134f-472d-a1dc-6b3d629bf71c" isDerived="false" sourceEndRoleName="Project manager" targetEndRoleName="create project" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" LastKnownName="create project" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1cdf0846-0e4b-42a9-a3a0-f8c02078ad02" name="Project manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="addb5b01-eca1-4cf8-9e59-5a12cbe81c2d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cf5d9c3d-cc17-4511-884c-56b182199b3b" name="create project" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ab6fe0a6-bdd8-43b2-8d77-6b587733dac0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f17405e7-dcd6-4767-b6b1-69301dbc11a9" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="31936810-9a64-4bd0-93f0-1d1495820bff" name="update user" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="510cc548-984d-4516-9720-3036b5e39e9c" />
+        <extendedCases>
+          <extend Id="e5182b80-deea-4c73-998d-6fffeb0b0b16">
+            <useCaseMoniker Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" LastKnownName="create user" />
+            <elementDefinition Id="e036b033-d248-49b7-ac31-9f3aed9d2ecb" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8a9cd2ba-9a42-4164-b6ea-12c64bb06709" name="delete user" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d6a2c3ec-b27e-4dad-a802-ae34833a8aad" />
+        <extendedCases>
+          <extend Id="250e7785-ba9e-42c8-b457-eed09af2a97b">
+            <useCaseMoniker Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" LastKnownName="create user" />
+            <elementDefinition Id="03adae43-5be2-4696-ba19-428b0d57e8b8" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="73eb4d0c-831c-4f50-be3b-b01102f9939d" name="update configuration" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f27025e2-ec34-4f17-8363-1dfcdbad6eb6" />
+        <extendedCases>
+          <extend Id="50c25f12-5a3d-41eb-bcc8-47cd6b3c4f08">
+            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="create project configuration" />
+            <elementDefinition Id="1292523e-17fe-4f7e-8285-993312221c7e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9f871879-eee4-4d9f-a1fa-a3cb8b03cb49" name="delete configuration" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0816fc35-1533-4faa-aa81-9b0153685b70" />
+        <extendedCases>
+          <extend Id="8f0fd674-9313-4998-a2e1-0215942b3f55">
+            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="create project configuration" />
+            <elementDefinition Id="828c6035-99b3-4945-8a31-a9e9829e65d0" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include Id="50ea2226-5dbe-4e16-8533-dc3c41d6dde6">
+            <useCaseMoniker Id="e9ae94a5-2a1c-40f6-8741-6b97f1d3ab63" LastKnownName="delete project documentation forms" />
+            <elementDefinition Id="f615c45c-9456-4d16-830c-7b1158632d63" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" name="create user" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1eb8e5ed-51be-443d-9a04-3a58aa3c8201" />
+        <suppliersInternal>
+          <dependency Id="7cabaa2b-94a4-44f3-bce5-d3c859dfa322">
+            <useCaseMoniker Id="3d47c167-fc32-4a7d-b607-9cb7a842675a" LastKnownName="assign privileges" />
+            <elementDefinition Id="2844b74a-d5b4-44ab-b3cc-3707e112d2cc" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e76dde22-b29d-4efc-9ebc-b06c3e3f0fb1" name="generate project documentation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="56f651e2-6fea-4cf7-833b-27c4cf4bbafa" />
+        <targetEnds>
+          <association Id="460300c4-0b35-464a-96a7-3c3c161d361c" isDerived="false" sourceEndRoleName="сгенерировать типовую документацию по проекту" targetEndRoleName="Storage" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="ea8b70a1-e4bd-4f97-904b-3178ab4d3bee" LastKnownName="Storage" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="54046f36-2e30-4dc9-8e4e-aaa3d9ce9904" name="сгенерировать типовую документацию по проекту" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="207e7887-92f0-444d-a9e0-5adfdd9d346d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="48efe42c-35ae-42ca-b36c-4cbedb7909b0" name="Storage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="13b718f8-0f3d-4bdc-bf92-b9dcb8780adc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="14a5e123-0cfb-4a66-b3a8-b335fa82ba7f" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cacd9d2c-ea94-4847-b2e7-43260ef3d732" name="update project" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7407cef6-3019-4df6-9654-15f7c38d9d0e" />
+        <extendedCases>
+          <extend Id="75a6b66e-ff91-4516-87a1-37cf8ac9dc8a">
+            <useCaseMoniker Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" LastKnownName="create project" />
+            <elementDefinition Id="27bd8ebd-3b20-4116-ac24-b1e712a16992" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b98e6bf5-58f4-43e5-8b08-dd842f4836fb" name="delete project" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="37fcb143-b522-4a8f-ba57-463b129872c3" />
+        <extendedCases>
+          <extend Id="f905c110-8f24-4e0f-a000-036745361681">
+            <useCaseMoniker Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" LastKnownName="create project" />
+            <elementDefinition Id="83e0fc21-da0c-46cf-8ebe-a3e852456571" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f01068c1-5c99-4811-b2e3-06f73f9ff76d" name="authorization" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="40c56baf-4021-41da-be0d-53b04c22fc5d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="cb86d5f9-ed95-4df7-936a-099b51870531" name="Project user" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fa25a0a4-0426-46e8-9522-89fb04ee41ee" />
+        <generalsInternal>
+          <generalization Id="f4dbda3a-5d8a-45ac-ae59-89321b959a21" isSubstitutable="false">
+            <actorMoniker Id="326ecbf6-454d-4ea2-9818-020dd97a6e13" LastKnownName="User" />
+            <elementDefinition Id="dd1ea5af-91dd-4445-a832-57d211ea7e71" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="4f285d27-feec-4892-b484-eec2892987b9" isDerived="false" sourceEndRoleName="Project user" targetEndRoleName="заполнить данные по проекту" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" LastKnownName="complete project data" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa520c58-3cd3-4fc8-ab9d-a5ee33a40853" name="Project user" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bb3f1b24-d21c-475f-97bb-775cbcf11222" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="94e36626-0522-4035-b3e2-4d6799f14ad8" name="заполнить данные по проекту" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9811ce5d-21b0-4f9b-81d6-7ccaac8ba05e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a04df1e8-4d9d-422f-abad-7d14e5413069" />
+          </association>
+          <association Id="717f719d-26f3-43f3-b919-1499758a23fd" isDerived="false" sourceEndRoleName="Project user" targetEndRoleName="сгенерировать типовую документацию по проекту" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e76dde22-b29d-4efc-9ebc-b06c3e3f0fb1" LastKnownName="generate project documentation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa102b7f-d204-4264-b2f7-87ef1325d909" name="Project user" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ae9a26bf-6c93-48ad-8338-8b1a04543bfd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5c994b79-09b8-4368-8313-b8504b22605c" name="сгенерировать типовую документацию по проекту" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dc12b5f5-54e6-4119-92cc-4f5fc2fc09be" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4f14677c-f549-41d5-9480-45498ccc63f5" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e4f05d2a-3a08-41dd-857d-7b9b61896255" name="read configuration" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b13d3bd8-c0db-46bd-8c81-eba279aabd15" />
+        <extendedCases>
+          <extend Id="1c439e63-3c88-4833-b23f-22a16ab8a2b6">
+            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="create project configuration" />
+            <elementDefinition Id="3bc552aa-855e-4730-9e74-646dcc706829" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3d47c167-fc32-4a7d-b607-9cb7a842675a" name="assign privileges" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8552f0dd-4faf-4852-ac77-464f7c4bf0ee" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fdb7c953-9d7f-47ac-8569-7aa62b749f20" name="read user" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b1ee48d8-ea86-4fdf-9689-d97284389c1d" />
+        <extendedCases>
+          <extend Id="3bffd06d-e35f-467c-b634-4dbf8244ad80">
+            <useCaseMoniker Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" LastKnownName="create user" />
+            <elementDefinition Id="c8d168b7-6eb0-4431-823e-33c7c6d2166f" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a05de5ee-b606-47f6-bb78-5a37d01a2f97" name="read project" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="efd92882-e57d-4103-ae04-a1e214774ac1" />
+        <extendedCases>
+          <extend Id="d5d4d245-dc98-432e-9bbd-0d54607b04d0">
+            <useCaseMoniker Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" LastKnownName="create project" />
+            <elementDefinition Id="b85903b3-0a54-4092-a7d7-aaebac41148a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e9ae94a5-2a1c-40f6-8741-6b97f1d3ab63" name="delete project documentation forms" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dabfaad9-2adc-407a-8dd5-a6d3f98664c7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="bb9208ff-9b09-43f7-925d-baf3be541f21" name="pdps-model">
     <elementDefinition Id="2b3c349b-fd1c-4ce7-b4c2-6bff4a72f9e1" />
+    <profileInstances>
+      <packageHasProfileInstances Id="f1098b9d-d353-4f89-9caa-893b1a6cc494">
+        <profileInstance Id="d9f2d8fd-8139-46e4-8f46-53d0b51549ed" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="dca19dda-34d3-4913-91fe-63f9d066a0b5">
+        <profileInstance Id="f4553865-2084-49a9-95da-1c77e2d04bd1" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>
