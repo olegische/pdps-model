@@ -7,15 +7,15 @@
       <relativeChildShapes />
     </actorShape>
     <useCaseShape Id="7a619b39-2881-4bec-b669-5ca143d9388d" absoluteBounds="3.75, 8.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" LastKnownName="create project" />
+      <useCaseMoniker Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" LastKnownName="project create" />
       <relativeChildShapes />
     </useCaseShape>
     <useCaseShape Id="40849d0b-14db-4cc6-a55d-dff4eab6699c" absoluteBounds="4, 1.25, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" LastKnownName="complete project data" />
+      <useCaseMoniker Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" LastKnownName="project data complete" />
       <relativeChildShapes />
     </useCaseShape>
     <useCaseShape Id="3542e3be-7437-43ea-81e8-40acb5dc7540" absoluteBounds="3.25, 9.375, 1, 0.875" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="42a8736c-1aba-45ea-a6e6-7680950a2e74" LastKnownName="upload project documentation forms" />
+      <useCaseMoniker Id="42a8736c-1aba-45ea-a6e6-7680950a2e74" LastKnownName="documentation forms upload" />
       <relativeChildShapes />
     </useCaseShape>
     <actorShape Id="1d57f869-1c44-42e3-b669-0d880d8c1f51" absoluteBounds="1.125, 3.25, 0.5, 0.5" isReference="false" heightOffset="0">
@@ -31,7 +31,7 @@
       </nodes>
     </useCaseGeneralizationConnector>
     <useCaseShape Id="b738f004-23bf-43bc-b0af-d3e9eee5f6fc" absoluteBounds="3, 3.75, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="create project configuration" />
+      <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="configuration create" />
       <relativeChildShapes />
     </useCaseShape>
     <useCaseAssociationConnector edgePoints="[(1.625 : 3.57352941176471); (3.03451340075647 : 3.98809217669308)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
@@ -99,15 +99,15 @@
       </nodes>
     </useCaseAssociationConnector>
     <useCaseShape Id="17e40271-7dce-42eb-a457-cf3024161d9a" absoluteBounds="5.5, 6.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="31936810-9a64-4bd0-93f0-1d1495820bff" LastKnownName="update user" />
+      <useCaseMoniker Id="31936810-9a64-4bd0-93f0-1d1495820bff" LastKnownName="user update" />
       <relativeChildShapes />
     </useCaseShape>
     <useCaseShape Id="c7242a1e-8a40-4f7d-9e7b-96f660efd0cb" absoluteBounds="5.5, 6.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="8a9cd2ba-9a42-4164-b6ea-12c64bb06709" LastKnownName="delete user" />
+      <useCaseMoniker Id="8a9cd2ba-9a42-4164-b6ea-12c64bb06709" LastKnownName="user delete" />
       <relativeChildShapes />
     </useCaseShape>
     <useCaseShape Id="76bd98e5-6d71-480e-b906-236c63814a65" absoluteBounds="5, 4, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="73eb4d0c-831c-4f50-be3b-b01102f9939d" LastKnownName="update configuration" />
+      <useCaseMoniker Id="73eb4d0c-831c-4f50-be3b-b01102f9939d" LastKnownName="configuration update" />
       <relativeChildShapes />
     </useCaseShape>
     <extendConnector edgePoints="[(5.00386106164317 : 4.2189913163527); (3.99827287912244 : 4.15614205494515)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«расширить»">
@@ -119,7 +119,7 @@
       </nodes>
     </extendConnector>
     <useCaseShape Id="b2ea654f-f676-4b12-aa1e-c8bd00c279f2" absoluteBounds="4.75, 4.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="9f871879-eee4-4d9f-a1fa-a3cb8b03cb49" LastKnownName="delete configuration" />
+      <useCaseMoniker Id="9f871879-eee4-4d9f-a1fa-a3cb8b03cb49" LastKnownName="configuration delete" />
       <relativeChildShapes />
     </useCaseShape>
     <extendConnector edgePoints="[(4.87037169881735 : 4.71230215663601); (3.93412157106223 : 4.31105210188381)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«расширить»">
@@ -131,7 +131,7 @@
       </nodes>
     </extendConnector>
     <useCaseShape Id="17836f36-20f8-4202-a7a2-461000e9cb37" absoluteBounds="4, 5.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" LastKnownName="create user" />
+      <useCaseMoniker Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" LastKnownName="user create" />
       <relativeChildShapes />
     </useCaseShape>
     <useCaseAssociationConnector edgePoints="[(1.625 : 3.68); (4.21480209525233 : 5.54465750858168)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
@@ -159,7 +159,7 @@
       </nodes>
     </extendConnector>
     <useCaseShape Id="68a70208-f204-4715-a7e0-eebabbac1283" absoluteBounds="4.25, 2.375, 1, 1" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="e76dde22-b29d-4efc-9ebc-b06c3e3f0fb1" LastKnownName="generate project documentation" />
+      <useCaseMoniker Id="e76dde22-b29d-4efc-9ebc-b06c3e3f0fb1" LastKnownName="project documentation generate" />
       <relativeChildShapes />
     </useCaseShape>
     <useCaseAssociationConnector edgePoints="[(5.25 : 2.875); (7.75 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
@@ -171,7 +171,7 @@
       </nodes>
     </useCaseAssociationConnector>
     <useCaseShape Id="a6a7457d-d81a-4706-b4b7-2a812169e086" absoluteBounds="5.625, 8.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="cacd9d2c-ea94-4847-b2e7-43260ef3d732" LastKnownName="update project" />
+      <useCaseMoniker Id="cacd9d2c-ea94-4847-b2e7-43260ef3d732" LastKnownName="project update" />
       <relativeChildShapes />
     </useCaseShape>
     <extendConnector edgePoints="[(5.62938604965868 : 8.46695906997725); (4.74561395034132 : 8.40804093002276)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«расширить»">
@@ -183,7 +183,7 @@
       </nodes>
     </extendConnector>
     <useCaseShape Id="0c5d75c6-2f0a-42a3-b70c-e89c271f295e" absoluteBounds="5.5, 8.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="b98e6bf5-58f4-43e5-8b08-dd842f4836fb" LastKnownName="delete project" />
+      <useCaseMoniker Id="b98e6bf5-58f4-43e5-8b08-dd842f4836fb" LastKnownName="project delete" />
       <relativeChildShapes />
     </useCaseShape>
     <extendConnector edgePoints="[(5.62037169881735 : 8.96230215663601); (4.62962830118265 : 8.53769784336399)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«расширить»">
@@ -235,7 +235,7 @@
       </nodes>
     </useCaseAssociationConnector>
     <useCaseShape Id="ffe86211-99b8-4eb8-a99a-3a143b6dfab9" absoluteBounds="5, 3.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="e4f05d2a-3a08-41dd-857d-7b9b61896255" LastKnownName="read configuration" />
+      <useCaseMoniker Id="e4f05d2a-3a08-41dd-857d-7b9b61896255" LastKnownName="configuration read" />
       <relativeChildShapes />
     </useCaseShape>
     <extendConnector edgePoints="[(5.05278640450004 : 3.73680339887499); (3.97434164902526 : 4.00641458774369)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«расширить»">
@@ -246,11 +246,11 @@
         <useCaseShapeMoniker Id="b738f004-23bf-43bc-b0af-d3e9eee5f6fc" />
       </nodes>
     </extendConnector>
-    <useCaseShape Id="30e89f61-ebfd-4833-a6ef-b75daa6d7664" absoluteBounds="4, 6.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="3d47c167-fc32-4a7d-b607-9cb7a842675a" LastKnownName="assign privileges" />
+    <useCaseShape Id="30e89f61-ebfd-4833-a6ef-b75daa6d7664" absoluteBounds="4.125, 6.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="3d47c167-fc32-4a7d-b607-9cb7a842675a" LastKnownName="user assign privileges" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseDependencyConnector edgePoints="[(4.5 : 6); (4.5 : 6.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+    <useCaseDependencyConnector edgePoints="[(4.52773500981126 : 5.99961508830135); (4.59726499018874 : 6.62538491169865)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
       <dependencyMoniker Id="7cabaa2b-94a4-44f3-bce5-d3c859dfa322" />
       <relativeChildShapes />
       <nodes>
@@ -259,7 +259,7 @@
       </nodes>
     </useCaseDependencyConnector>
     <useCaseShape Id="a3151daf-d52b-4aef-8e62-a4aa5061d441" absoluteBounds="5.625, 5.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="fdb7c953-9d7f-47ac-8569-7aa62b749f20" LastKnownName="read user" />
+      <useCaseMoniker Id="fdb7c953-9d7f-47ac-8569-7aa62b749f20" LastKnownName="user read" />
       <relativeChildShapes />
     </useCaseShape>
     <extendConnector edgePoints="[(5.625 : 5.75); (5 : 5.75)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«расширить»">
@@ -271,7 +271,7 @@
       </nodes>
     </extendConnector>
     <useCaseShape Id="b632ca05-a8d4-4994-9853-ec6d7232b48c" absoluteBounds="5.5, 7.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="a05de5ee-b606-47f6-bb78-5a37d01a2f97" LastKnownName="read project" />
+      <useCaseMoniker Id="a05de5ee-b606-47f6-bb78-5a37d01a2f97" LastKnownName="project read" />
       <relativeChildShapes />
     </useCaseShape>
     <extendConnector edgePoints="[(5.56587842893777 : 7.99903473458921); (4.68412157106223 : 8.25096526541079)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«расширить»">
@@ -283,7 +283,7 @@
       </nodes>
     </extendConnector>
     <useCaseShape Id="2b0728b1-ba28-4e07-9d00-d9610f26dfb5" absoluteBounds="7.25, 5.25, 1, 0.875" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="e9ae94a5-2a1c-40f6-8741-6b97f1d3ab63" LastKnownName="delete project documentation forms" />
+      <useCaseMoniker Id="e9ae94a5-2a1c-40f6-8741-6b97f1d3ab63" LastKnownName="documentation forms delete" />
       <relativeChildShapes />
     </useCaseShape>
     <includeConnector edgePoints="[(5.66922180815032 : 5.01124708764885); (7.28128736399512 : 5.53516839329841)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«включить»">
@@ -294,5 +294,9 @@
         <useCaseShapeMoniker Id="2b0728b1-ba28-4e07-9d00-d9610f26dfb5" />
       </nodes>
     </includeConnector>
+    <commentShape Id="b023552b-ec53-4485-b903-d8a93ed4feff" absoluteBounds="9, 0.75, 1.25, 0.875" customColor="251, 247, 200">
+      <commentMoniker Id="2017fdc3-cb5b-48d1-993d-479d74df39a1" />
+      <relativeChildShapes />
+    </commentShape>
   </nestedChildShapes>
 </useCaseDiagram>

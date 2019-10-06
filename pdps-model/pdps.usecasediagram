@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8ee037c8-6582-412c-a78f-061e3c37fce4" name="pdps" linkedPackageId="bb9208ff-9b09-43f7-925d-baf3be541f21" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="2017fdc3-cb5b-48d1-993d-479d74df39a1">
+      <elementDefinition Id="c1cb07ae-d5fc-49e2-ad0d-6a31d63ffc5e" />
+      <body>Все прецеденты подразумевают взаимодействие с внешней базой данных.</body>
+    </comment>
+  </ownedCommentsInternal>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="326ecbf6-454d-4ea2-9818-020dd97a6e13" name="User" isAbstract="false" isLeaf="false">
@@ -25,23 +31,23 @@
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" name="create project" isAbstract="false" isLeaf="false">
+      <useCase Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" name="project create" isAbstract="false" isLeaf="false">
         <elementDefinition Id="94e71e0e-abb6-4e87-9d52-9b2ecd42aa09" />
         <extendedCases>
           <extend Id="dd4a2626-cd78-44da-af92-550bb9be3730">
-            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="create project configuration" />
+            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="configuration create" />
             <elementDefinition Id="c91b6b72-2ee4-4aa8-9d35-93f6036441af" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" name="complete project data" isAbstract="false" isLeaf="false">
+      <useCase Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" name="project data complete" isAbstract="false" isLeaf="false">
         <elementDefinition Id="c2645073-3a3b-429c-845a-c35bbe154183" />
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="42a8736c-1aba-45ea-a6e6-7680950a2e74" name="upload project documentation forms" isAbstract="false" isLeaf="false">
+      <useCase Id="42a8736c-1aba-45ea-a6e6-7680950a2e74" name="documentation forms upload" isAbstract="false" isLeaf="false">
         <elementDefinition Id="a87c6774-a166-4782-a5e5-b4f4e64d2a4c" />
         <targetEnds>
           <association Id="1c19b6a0-fc58-49ed-90d2-87e78dcc1681" isDerived="false" sourceEndRoleName="upload project documentation forms" targetEndRoleName="Storage" isLeaf="false" isAbstract="false">
@@ -74,7 +80,7 @@
         </generalsInternal>
         <targetEnds>
           <association Id="2e5c87e9-11c4-4746-962c-162cd108c226" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="создать конфигурацию проекта" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="create project configuration" />
+            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="configuration create" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="d808de08-bcdb-4589-83f1-9960f29813de" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -90,7 +96,7 @@
             <elementDefinition Id="3e031041-205b-498f-a8d3-a7ec515b9b68" />
           </association>
           <association Id="fe1c078c-fedb-4d06-acfd-ac53dc49d6fb" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="создать пользователя" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" LastKnownName="create user" />
+            <useCaseMoniker Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" LastKnownName="user create" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="89a08c91-c215-45c2-a8fe-5b48a6a0f778" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -109,11 +115,11 @@
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" name="create project configuration" isAbstract="false" isLeaf="false">
+      <useCase Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" name="configuration create" isAbstract="false" isLeaf="false">
         <elementDefinition Id="1f2bb272-8188-424e-b164-4b8747f0fcc1" />
         <suppliersInternal>
           <dependency Id="1ef0d805-0634-41ad-968d-0b3229bf24b6">
-            <useCaseMoniker Id="42a8736c-1aba-45ea-a6e6-7680950a2e74" LastKnownName="upload project documentation forms" />
+            <useCaseMoniker Id="42a8736c-1aba-45ea-a6e6-7680950a2e74" LastKnownName="documentation forms upload" />
             <elementDefinition Id="8adfe455-57d6-42a0-88c3-e71fa8311978" />
           </dependency>
         </suppliersInternal>
@@ -135,7 +141,7 @@
         </generalsInternal>
         <targetEnds>
           <association Id="b86901db-a807-431b-af19-368eaa7d82b5" isDerived="false" sourceEndRoleName="Project manager" targetEndRoleName="upload project documentation forms" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="42a8736c-1aba-45ea-a6e6-7680950a2e74" LastKnownName="upload project documentation forms" />
+            <useCaseMoniker Id="42a8736c-1aba-45ea-a6e6-7680950a2e74" LastKnownName="documentation forms upload" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="df49ed64-65c9-4725-b75d-c52150bc05d7" name="Project manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -151,7 +157,7 @@
             <elementDefinition Id="f1925f3b-623e-4c5e-b9d3-26c1251c7c64" />
           </association>
           <association Id="8adc3db2-134f-472d-a1dc-6b3d629bf71c" isDerived="false" sourceEndRoleName="Project manager" targetEndRoleName="create project" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" LastKnownName="create project" />
+            <useCaseMoniker Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" LastKnownName="project create" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="1cdf0846-0e4b-42a9-a3a0-f8c02078ad02" name="Project manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -170,68 +176,68 @@
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="31936810-9a64-4bd0-93f0-1d1495820bff" name="update user" isAbstract="false" isLeaf="false">
+      <useCase Id="31936810-9a64-4bd0-93f0-1d1495820bff" name="user update" isAbstract="false" isLeaf="false">
         <elementDefinition Id="510cc548-984d-4516-9720-3036b5e39e9c" />
         <extendedCases>
           <extend Id="e5182b80-deea-4c73-998d-6fffeb0b0b16">
-            <useCaseMoniker Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" LastKnownName="create user" />
+            <useCaseMoniker Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" LastKnownName="user create" />
             <elementDefinition Id="e036b033-d248-49b7-ac31-9f3aed9d2ecb" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="8a9cd2ba-9a42-4164-b6ea-12c64bb06709" name="delete user" isAbstract="false" isLeaf="false">
+      <useCase Id="8a9cd2ba-9a42-4164-b6ea-12c64bb06709" name="user delete" isAbstract="false" isLeaf="false">
         <elementDefinition Id="d6a2c3ec-b27e-4dad-a802-ae34833a8aad" />
         <extendedCases>
           <extend Id="250e7785-ba9e-42c8-b457-eed09af2a97b">
-            <useCaseMoniker Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" LastKnownName="create user" />
+            <useCaseMoniker Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" LastKnownName="user create" />
             <elementDefinition Id="03adae43-5be2-4696-ba19-428b0d57e8b8" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="73eb4d0c-831c-4f50-be3b-b01102f9939d" name="update configuration" isAbstract="false" isLeaf="false">
+      <useCase Id="73eb4d0c-831c-4f50-be3b-b01102f9939d" name="configuration update" isAbstract="false" isLeaf="false">
         <elementDefinition Id="f27025e2-ec34-4f17-8363-1dfcdbad6eb6" />
         <extendedCases>
           <extend Id="50c25f12-5a3d-41eb-bcc8-47cd6b3c4f08">
-            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="create project configuration" />
+            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="configuration create" />
             <elementDefinition Id="1292523e-17fe-4f7e-8285-993312221c7e" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="9f871879-eee4-4d9f-a1fa-a3cb8b03cb49" name="delete configuration" isAbstract="false" isLeaf="false">
+      <useCase Id="9f871879-eee4-4d9f-a1fa-a3cb8b03cb49" name="configuration delete" isAbstract="false" isLeaf="false">
         <elementDefinition Id="0816fc35-1533-4faa-aa81-9b0153685b70" />
         <extendedCases>
           <extend Id="8f0fd674-9313-4998-a2e1-0215942b3f55">
-            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="create project configuration" />
+            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="configuration create" />
             <elementDefinition Id="828c6035-99b3-4945-8a31-a9e9829e65d0" />
           </extend>
         </extendedCases>
         <additions>
           <include Id="50ea2226-5dbe-4e16-8533-dc3c41d6dde6">
-            <useCaseMoniker Id="e9ae94a5-2a1c-40f6-8741-6b97f1d3ab63" LastKnownName="delete project documentation forms" />
+            <useCaseMoniker Id="e9ae94a5-2a1c-40f6-8741-6b97f1d3ab63" LastKnownName="documentation forms delete" />
             <elementDefinition Id="f615c45c-9456-4d16-830c-7b1158632d63" />
           </include>
         </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" name="create user" isAbstract="false" isLeaf="false">
+      <useCase Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" name="user create" isAbstract="false" isLeaf="false">
         <elementDefinition Id="1eb8e5ed-51be-443d-9a04-3a58aa3c8201" />
         <suppliersInternal>
           <dependency Id="7cabaa2b-94a4-44f3-bce5-d3c859dfa322">
-            <useCaseMoniker Id="3d47c167-fc32-4a7d-b607-9cb7a842675a" LastKnownName="assign privileges" />
+            <useCaseMoniker Id="3d47c167-fc32-4a7d-b607-9cb7a842675a" LastKnownName="user assign privileges" />
             <elementDefinition Id="2844b74a-d5b4-44ab-b3cc-3707e112d2cc" />
           </dependency>
         </suppliersInternal>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="e76dde22-b29d-4efc-9ebc-b06c3e3f0fb1" name="generate project documentation" isAbstract="false" isLeaf="false">
+      <useCase Id="e76dde22-b29d-4efc-9ebc-b06c3e3f0fb1" name="project documentation generate" isAbstract="false" isLeaf="false">
         <elementDefinition Id="56f651e2-6fea-4cf7-833b-27c4cf4bbafa" />
         <targetEnds>
           <association Id="460300c4-0b35-464a-96a7-3c3c161d361c" isDerived="false" sourceEndRoleName="сгенерировать типовую документацию по проекту" targetEndRoleName="Storage" isLeaf="false" isAbstract="false">
@@ -254,22 +260,22 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="cacd9d2c-ea94-4847-b2e7-43260ef3d732" name="update project" isAbstract="false" isLeaf="false">
+      <useCase Id="cacd9d2c-ea94-4847-b2e7-43260ef3d732" name="project update" isAbstract="false" isLeaf="false">
         <elementDefinition Id="7407cef6-3019-4df6-9654-15f7c38d9d0e" />
         <extendedCases>
           <extend Id="75a6b66e-ff91-4516-87a1-37cf8ac9dc8a">
-            <useCaseMoniker Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" LastKnownName="create project" />
+            <useCaseMoniker Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" LastKnownName="project create" />
             <elementDefinition Id="27bd8ebd-3b20-4116-ac24-b1e712a16992" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="b98e6bf5-58f4-43e5-8b08-dd842f4836fb" name="delete project" isAbstract="false" isLeaf="false">
+      <useCase Id="b98e6bf5-58f4-43e5-8b08-dd842f4836fb" name="project delete" isAbstract="false" isLeaf="false">
         <elementDefinition Id="37fcb143-b522-4a8f-ba57-463b129872c3" />
         <extendedCases>
           <extend Id="f905c110-8f24-4e0f-a000-036745361681">
-            <useCaseMoniker Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" LastKnownName="create project" />
+            <useCaseMoniker Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" LastKnownName="project create" />
             <elementDefinition Id="83e0fc21-da0c-46cf-8ebe-a3e852456571" />
           </extend>
         </extendedCases>
@@ -291,7 +297,7 @@
         </generalsInternal>
         <targetEnds>
           <association Id="4f285d27-feec-4892-b484-eec2892987b9" isDerived="false" sourceEndRoleName="Project user" targetEndRoleName="заполнить данные по проекту" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" LastKnownName="complete project data" />
+            <useCaseMoniker Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" LastKnownName="project data complete" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="aa520c58-3cd3-4fc8-ab9d-a5ee33a40853" name="Project user" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -307,7 +313,7 @@
             <elementDefinition Id="a04df1e8-4d9d-422f-abad-7d14e5413069" />
           </association>
           <association Id="717f719d-26f3-43f3-b919-1499758a23fd" isDerived="false" sourceEndRoleName="Project user" targetEndRoleName="сгенерировать типовую документацию по проекту" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="e76dde22-b29d-4efc-9ebc-b06c3e3f0fb1" LastKnownName="generate project documentation" />
+            <useCaseMoniker Id="e76dde22-b29d-4efc-9ebc-b06c3e3f0fb1" LastKnownName="project documentation generate" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="aa102b7f-d204-4264-b2f7-87ef1325d909" name="Project user" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -326,45 +332,45 @@
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="e4f05d2a-3a08-41dd-857d-7b9b61896255" name="read configuration" isAbstract="false" isLeaf="false">
+      <useCase Id="e4f05d2a-3a08-41dd-857d-7b9b61896255" name="configuration read" isAbstract="false" isLeaf="false">
         <elementDefinition Id="b13d3bd8-c0db-46bd-8c81-eba279aabd15" />
         <extendedCases>
           <extend Id="1c439e63-3c88-4833-b23f-22a16ab8a2b6">
-            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="create project configuration" />
+            <useCaseMoniker Id="fbfc74e6-f894-4a90-9e0a-44f27befa819" LastKnownName="configuration create" />
             <elementDefinition Id="3bc552aa-855e-4730-9e74-646dcc706829" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="3d47c167-fc32-4a7d-b607-9cb7a842675a" name="assign privileges" isAbstract="false" isLeaf="false">
+      <useCase Id="3d47c167-fc32-4a7d-b607-9cb7a842675a" name="user assign privileges" isAbstract="false" isLeaf="false">
         <elementDefinition Id="8552f0dd-4faf-4852-ac77-464f7c4bf0ee" />
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="fdb7c953-9d7f-47ac-8569-7aa62b749f20" name="read user" isAbstract="false" isLeaf="false">
+      <useCase Id="fdb7c953-9d7f-47ac-8569-7aa62b749f20" name="user read" isAbstract="false" isLeaf="false">
         <elementDefinition Id="b1ee48d8-ea86-4fdf-9689-d97284389c1d" />
         <extendedCases>
           <extend Id="3bffd06d-e35f-467c-b634-4dbf8244ad80">
-            <useCaseMoniker Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" LastKnownName="create user" />
+            <useCaseMoniker Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" LastKnownName="user create" />
             <elementDefinition Id="c8d168b7-6eb0-4431-823e-33c7c6d2166f" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="a05de5ee-b606-47f6-bb78-5a37d01a2f97" name="read project" isAbstract="false" isLeaf="false">
+      <useCase Id="a05de5ee-b606-47f6-bb78-5a37d01a2f97" name="project read" isAbstract="false" isLeaf="false">
         <elementDefinition Id="efd92882-e57d-4103-ae04-a1e214774ac1" />
         <extendedCases>
           <extend Id="d5d4d245-dc98-432e-9bbd-0d54607b04d0">
-            <useCaseMoniker Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" LastKnownName="create project" />
+            <useCaseMoniker Id="f609cac3-315f-4bd7-93f5-833cd0b19caa" LastKnownName="project create" />
             <elementDefinition Id="b85903b3-0a54-4092-a7d7-aaebac41148a" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="e9ae94a5-2a1c-40f6-8741-6b97f1d3ab63" name="delete project documentation forms" isAbstract="false" isLeaf="false">
+      <useCase Id="e9ae94a5-2a1c-40f6-8741-6b97f1d3ab63" name="documentation forms delete" isAbstract="false" isLeaf="false">
         <elementDefinition Id="dabfaad9-2adc-407a-8dd5-a6d3f98664c7" />
       </useCase>
     </useCaseModelRootHasTypes>

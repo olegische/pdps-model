@@ -3,6 +3,12 @@
   dslVersion="1.0.0.0"
   Id="2b3c349b-fd1c-4ce7-b4c2-6bff4a72f9e1"
   name="pdps-model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="c1cb07ae-d5fc-49e2-ad0d-6a31d63ffc5e">
+      <body>Все прецеденты подразумевают взаимодействие с внешней базой данных.</body>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -70,7 +76,7 @@
     <packageHasNamedElement>
       <useCase
         Id="94e71e0e-abb6-4e87-9d52-9b2ecd42aa09"
-        name="create project"
+        name="project create"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -78,7 +84,7 @@
             Id="c91b6b72-2ee4-4aa8-9d35-93f6036441af">
             <useCaseMoniker
               Id="1f2bb272-8188-424e-b164-4b8747f0fcc1"
-              LastKnownName="create project configuration"
+              LastKnownName="configuration create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -94,14 +100,14 @@
     <packageHasNamedElement>
       <useCase
         Id="c2645073-3a3b-429c-845a-c35bbe154183"
-        name="complete project data"
+        name="project data complete"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="a87c6774-a166-4782-a5e5-b4f4e64d2a4c"
-        name="upload project documentation forms"
+        name="documentation forms upload"
         isAbstract="false"
         isLeaf="false">
         <targetEnds>
@@ -212,7 +218,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="1f2bb272-8188-424e-b164-4b8747f0fcc1"
-              LastKnownName="create project configuration"
+              LastKnownName="configuration create"
               LastKnownLocation="pdps-model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -251,7 +257,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="1eb8e5ed-51be-443d-9a04-3a58aa3c8201"
-              LastKnownName="create user"
+              LastKnownName="user create"
               LastKnownLocation="pdps-model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -287,7 +293,7 @@
     <packageHasNamedElement>
       <useCase
         Id="1f2bb272-8188-424e-b164-4b8747f0fcc1"
-        name="create project configuration"
+        name="configuration create"
         isAbstract="false"
         isLeaf="false">
         <suppliersInternal>
@@ -295,7 +301,7 @@
             Id="8adfe455-57d6-42a0-88c3-e71fa8311978">
             <useCaseMoniker
               Id="a87c6774-a166-4782-a5e5-b4f4e64d2a4c"
-              LastKnownName="upload project documentation forms"
+              LastKnownName="documentation forms upload"
               LastKnownLocation="pdps-model.uml" />
           </dependency>
         </suppliersInternal>
@@ -390,7 +396,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="a87c6774-a166-4782-a5e5-b4f4e64d2a4c"
-              LastKnownName="upload project documentation forms"
+              LastKnownName="documentation forms upload"
               LastKnownLocation="pdps-model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -429,7 +435,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="94e71e0e-abb6-4e87-9d52-9b2ecd42aa09"
-              LastKnownName="create project"
+              LastKnownName="project create"
               LastKnownLocation="pdps-model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -465,7 +471,7 @@
     <packageHasNamedElement>
       <useCase
         Id="510cc548-984d-4516-9720-3036b5e39e9c"
-        name="update user"
+        name="user update"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -473,7 +479,7 @@
             Id="e036b033-d248-49b7-ac31-9f3aed9d2ecb">
             <useCaseMoniker
               Id="1eb8e5ed-51be-443d-9a04-3a58aa3c8201"
-              LastKnownName="create user"
+              LastKnownName="user create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -482,7 +488,7 @@
     <packageHasNamedElement>
       <useCase
         Id="d6a2c3ec-b27e-4dad-a802-ae34833a8aad"
-        name="delete user"
+        name="user delete"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -490,7 +496,7 @@
             Id="03adae43-5be2-4696-ba19-428b0d57e8b8">
             <useCaseMoniker
               Id="1eb8e5ed-51be-443d-9a04-3a58aa3c8201"
-              LastKnownName="create user"
+              LastKnownName="user create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -499,7 +505,7 @@
     <packageHasNamedElement>
       <useCase
         Id="f27025e2-ec34-4f17-8363-1dfcdbad6eb6"
-        name="update configuration"
+        name="configuration update"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -507,7 +513,7 @@
             Id="1292523e-17fe-4f7e-8285-993312221c7e">
             <useCaseMoniker
               Id="1f2bb272-8188-424e-b164-4b8747f0fcc1"
-              LastKnownName="create project configuration"
+              LastKnownName="configuration create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -516,7 +522,7 @@
     <packageHasNamedElement>
       <useCase
         Id="0816fc35-1533-4faa-aa81-9b0153685b70"
-        name="delete configuration"
+        name="configuration delete"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -524,7 +530,7 @@
             Id="828c6035-99b3-4945-8a31-a9e9829e65d0">
             <useCaseMoniker
               Id="1f2bb272-8188-424e-b164-4b8747f0fcc1"
-              LastKnownName="create project configuration"
+              LastKnownName="configuration create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -533,7 +539,7 @@
             Id="f615c45c-9456-4d16-830c-7b1158632d63">
             <useCaseMoniker
               Id="dabfaad9-2adc-407a-8dd5-a6d3f98664c7"
-              LastKnownName="delete project documentation forms"
+              LastKnownName="documentation forms delete"
               LastKnownLocation="pdps-model.uml" />
           </include>
         </additions>
@@ -542,7 +548,7 @@
     <packageHasNamedElement>
       <useCase
         Id="1eb8e5ed-51be-443d-9a04-3a58aa3c8201"
-        name="create user"
+        name="user create"
         isAbstract="false"
         isLeaf="false">
         <suppliersInternal>
@@ -550,7 +556,7 @@
             Id="2844b74a-d5b4-44ab-b3cc-3707e112d2cc">
             <useCaseMoniker
               Id="8552f0dd-4faf-4852-ac77-464f7c4bf0ee"
-              LastKnownName="assign privileges"
+              LastKnownName="user assign privileges"
               LastKnownLocation="pdps-model.uml" />
           </dependency>
         </suppliersInternal>
@@ -559,7 +565,7 @@
     <packageHasNamedElement>
       <useCase
         Id="56f651e2-6fea-4cf7-833b-27c4cf4bbafa"
-        name="generate project documentation"
+        name="project documentation generate"
         isAbstract="false"
         isLeaf="false">
         <targetEnds>
@@ -603,6 +609,15 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <additions>
+          <include
+            Id="7f00fca5-234c-4c28-a341-b676885a3a43">
+            <useCaseMoniker
+              Id="31be32f8-8a7a-4afb-89ad-96dde09d49db"
+              LastKnownName="UseCase1"
+              LastKnownLocation="pdps-model.uml" />
+          </include>
+        </additions>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -615,7 +630,7 @@
     <packageHasNamedElement>
       <useCase
         Id="7407cef6-3019-4df6-9654-15f7c38d9d0e"
-        name="update project"
+        name="project update"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -623,7 +638,7 @@
             Id="27bd8ebd-3b20-4116-ac24-b1e712a16992">
             <useCaseMoniker
               Id="94e71e0e-abb6-4e87-9d52-9b2ecd42aa09"
-              LastKnownName="create project"
+              LastKnownName="project create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -632,7 +647,7 @@
     <packageHasNamedElement>
       <useCase
         Id="37fcb143-b522-4a8f-ba57-463b129872c3"
-        name="delete project"
+        name="project delete"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -640,7 +655,7 @@
             Id="83e0fc21-da0c-46cf-8ebe-a3e852456571">
             <useCaseMoniker
               Id="94e71e0e-abb6-4e87-9d52-9b2ecd42aa09"
-              LastKnownName="create project"
+              LastKnownName="project create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -679,7 +694,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="c2645073-3a3b-429c-845a-c35bbe154183"
-              LastKnownName="complete project data"
+              LastKnownName="project data complete"
               LastKnownLocation="pdps-model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -718,7 +733,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="56f651e2-6fea-4cf7-833b-27c4cf4bbafa"
-              LastKnownName="generate project documentation"
+              LastKnownName="project documentation generate"
               LastKnownLocation="pdps-model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -754,7 +769,7 @@
     <packageHasNamedElement>
       <useCase
         Id="b13d3bd8-c0db-46bd-8c81-eba279aabd15"
-        name="read configuration"
+        name="configuration read"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -762,7 +777,7 @@
             Id="3bc552aa-855e-4730-9e74-646dcc706829">
             <useCaseMoniker
               Id="1f2bb272-8188-424e-b164-4b8747f0fcc1"
-              LastKnownName="create project configuration"
+              LastKnownName="configuration create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -771,14 +786,14 @@
     <packageHasNamedElement>
       <useCase
         Id="8552f0dd-4faf-4852-ac77-464f7c4bf0ee"
-        name="assign privileges"
+        name="user assign privileges"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="b1ee48d8-ea86-4fdf-9689-d97284389c1d"
-        name="read user"
+        name="user read"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -786,7 +801,7 @@
             Id="c8d168b7-6eb0-4431-823e-33c7c6d2166f">
             <useCaseMoniker
               Id="1eb8e5ed-51be-443d-9a04-3a58aa3c8201"
-              LastKnownName="create user"
+              LastKnownName="user create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -795,7 +810,7 @@
     <packageHasNamedElement>
       <useCase
         Id="efd92882-e57d-4103-ae04-a1e214774ac1"
-        name="read project"
+        name="project read"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -803,7 +818,7 @@
             Id="b85903b3-0a54-4092-a7d7-aaebac41148a">
             <useCaseMoniker
               Id="94e71e0e-abb6-4e87-9d52-9b2ecd42aa09"
-              LastKnownName="create project"
+              LastKnownName="project create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -812,7 +827,14 @@
     <packageHasNamedElement>
       <useCase
         Id="dabfaad9-2adc-407a-8dd5-a6d3f98664c7"
-        name="delete project documentation forms"
+        name="documentation forms delete"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="31be32f8-8a7a-4afb-89ad-96dde09d49db"
+        name="UseCase1"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
