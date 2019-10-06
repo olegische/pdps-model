@@ -66,6 +66,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="fc57bfb1-db5a-4038-bb8a-030117d0f054" />
           </association>
+          <association Id="45af5f07-8983-47d6-92b6-34666553c2d6" isDerived="false" sourceEndRoleName="documentation forms upload" targetEndRoleName="Queue" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="03044822-f09f-4f81-a06f-ebf05abd7bb5" LastKnownName="Queue" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6cc74761-7737-44d2-a514-0228be7271a2" name="documentation forms upload" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a1700f79-4600-4c9c-adf6-eda599bd3299" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d5a23d4f-ec36-4739-b3fd-96b2e47c6864" name="Queue" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f234f782-24f4-416f-8d1e-2dbf8afb79eb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="16c08c08-bc99-4cdf-a120-57d4337cef1b" />
+          </association>
         </targetEnds>
       </useCase>
     </useCaseModelRootHasTypes>
@@ -123,6 +139,24 @@
             <elementDefinition Id="8adfe455-57d6-42a0-88c3-e71fa8311978" />
           </dependency>
         </suppliersInternal>
+        <targetEnds>
+          <association Id="6f1b2322-292a-40fd-8376-729190c8737b" isDerived="false" sourceEndRoleName="configuration create" targetEndRoleName="Queue" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="03044822-f09f-4f81-a06f-ebf05abd7bb5" LastKnownName="Queue" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b5d184df-2494-4f77-8f79-30c2177a5fb4" name="configuration create" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0249a1d3-880f-402c-bd44-c08359e9a59d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="52eb2b2e-608f-44cb-863b-453045aa3c5f" name="Queue" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5483d0d9-a34d-4677-bec0-0abc257f00c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bbd8f5c0-8043-47c5-86e6-cf9dd4816fd7" />
+          </association>
+        </targetEnds>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -228,12 +262,12 @@
     <useCaseModelRootHasTypes>
       <useCase Id="ca802d4a-81cb-4ab5-9c89-8a26e79912ec" name="user create" isAbstract="false" isLeaf="false">
         <elementDefinition Id="1eb8e5ed-51be-443d-9a04-3a58aa3c8201" />
-        <suppliersInternal>
-          <dependency Id="7cabaa2b-94a4-44f3-bce5-d3c859dfa322">
+        <additions>
+          <include Id="fa8227d2-951e-423e-aa3b-fec0ebdfbe47">
             <useCaseMoniker Id="3d47c167-fc32-4a7d-b607-9cb7a842675a" LastKnownName="user assign privileges" />
-            <elementDefinition Id="2844b74a-d5b4-44ab-b3cc-3707e112d2cc" />
-          </dependency>
-        </suppliersInternal>
+            <elementDefinition Id="64ba9f63-b166-45d7-b963-36c7a798acf2" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -373,6 +407,11 @@
       <useCase Id="e9ae94a5-2a1c-40f6-8741-6b97f1d3ab63" name="documentation forms delete" isAbstract="false" isLeaf="false">
         <elementDefinition Id="dabfaad9-2adc-407a-8dd5-a6d3f98664c7" />
       </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="03044822-f09f-4f81-a06f-ebf05abd7bb5" name="Queue" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c2a47d46-a724-42ae-a8b1-e6b2c2de7faf" />
+      </actor>
     </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="bb9208ff-9b09-43f7-925d-baf3be541f21" name="pdps-model">

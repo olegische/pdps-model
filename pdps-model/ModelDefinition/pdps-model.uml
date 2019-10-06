@@ -150,6 +150,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="16c08c08-bc99-4cdf-a120-57d4337cef1b"
+            isDerived="false"
+            sourceEndRoleName="documentation forms upload"
+            targetEndRoleName="Queue"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="c2a47d46-a724-42ae-a8b1-e6b2c2de7faf"
+              LastKnownName="Queue"
+              LastKnownLocation="pdps-model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1700f79-4600-4c9c-adf6-eda599bd3299"
+                  name="documentation forms upload"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f234f782-24f4-416f-8d1e-2dbf8afb79eb"
+                  name="Queue"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </useCase>
     </packageHasNamedElement>
@@ -305,6 +344,47 @@
               LastKnownLocation="pdps-model.uml" />
           </dependency>
         </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="bbd8f5c0-8043-47c5-86e6-cf9dd4816fd7"
+            isDerived="false"
+            sourceEndRoleName="configuration create"
+            targetEndRoleName="Queue"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="c2a47d46-a724-42ae-a8b1-e6b2c2de7faf"
+              LastKnownName="Queue"
+              LastKnownLocation="pdps-model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0249a1d3-880f-402c-bd44-c08359e9a59d"
+                  name="configuration create"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5483d0d9-a34d-4677-bec0-0abc257f00c5"
+                  name="Queue"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -551,15 +631,15 @@
         name="user create"
         isAbstract="false"
         isLeaf="false">
-        <suppliersInternal>
-          <dependency
-            Id="2844b74a-d5b4-44ab-b3cc-3707e112d2cc">
+        <additions>
+          <include
+            Id="64ba9f63-b166-45d7-b963-36c7a798acf2">
             <useCaseMoniker
               Id="8552f0dd-4faf-4852-ac77-464f7c4bf0ee"
               LastKnownName="user assign privileges"
               LastKnownLocation="pdps-model.uml" />
-          </dependency>
-        </suppliersInternal>
+          </include>
+        </additions>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -835,6 +915,13 @@
       <useCase
         Id="31be32f8-8a7a-4afb-89ad-96dde09d49db"
         name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c2a47d46-a724-42ae-a8b1-e6b2c2de7faf"
+        name="Queue"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
