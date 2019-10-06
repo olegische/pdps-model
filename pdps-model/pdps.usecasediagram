@@ -413,6 +413,50 @@
         <elementDefinition Id="c2a47d46-a724-42ae-a8b1-e6b2c2de7faf" />
       </actor>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4f2f7f75-75a7-47b6-9714-66701fe01e95" name="update resource/element" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7c03cce8-ee7e-4320-a015-2ec243314650" />
+        <extendedCases>
+          <extend Id="32bd67a7-9ed4-43ea-aac3-77ab6708a567">
+            <useCaseMoniker Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" LastKnownName="project data complete" />
+            <elementDefinition Id="f38801e2-caa5-4edf-800d-698e3e5082ee" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="16ac02e1-ead6-4a46-9191-6077a3f9d223" name="read resource/element" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7f37f6dc-f61f-4685-9c07-e49de61388cf" />
+        <extendedCases>
+          <extend Id="7f14147d-c569-4f37-abd7-3b22a323d91a">
+            <useCaseMoniker Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" LastKnownName="project data complete" />
+            <elementDefinition Id="bead1bc4-e9e4-4d0d-98e3-98a57a7ca901" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9e0a94c1-8392-4aa2-9001-ad00f683a8ab" name="create resource/element" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="36352ebb-00cd-4f0a-a58a-ee68428b1716" />
+        <extendedCases>
+          <extend Id="f2453476-1bf7-4c44-a4d3-f5d8f791c169">
+            <useCaseMoniker Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" LastKnownName="project data complete" />
+            <elementDefinition Id="a0ace99d-f0e7-4e5d-83e1-bd12c025bd55" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="be131375-583c-4770-af94-e0d414af737a" name="delete resource/element" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="78ca31fb-aba1-4263-9533-0db87dbfdfd0" />
+        <extendedCases>
+          <extend Id="d299f869-4c5a-4670-9929-c59bcf0cfb02">
+            <useCaseMoniker Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" LastKnownName="project data complete" />
+            <elementDefinition Id="f9bc9b39-7b50-499e-96bc-eccdacc8c585" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="bb9208ff-9b09-43f7-925d-baf3be541f21" name="pdps-model">
     <elementDefinition Id="2b3c349b-fd1c-4ce7-b4c2-6bff4a72f9e1" />

@@ -925,6 +925,74 @@
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7c03cce8-ee7e-4320-a015-2ec243314650"
+        name="update resource/element"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f38801e2-caa5-4edf-800d-698e3e5082ee">
+            <useCaseMoniker
+              Id="c2645073-3a3b-429c-845a-c35bbe154183"
+              LastKnownName="project data complete"
+              LastKnownLocation="pdps-model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7f37f6dc-f61f-4685-9c07-e49de61388cf"
+        name="read resource/element"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="bead1bc4-e9e4-4d0d-98e3-98a57a7ca901">
+            <useCaseMoniker
+              Id="c2645073-3a3b-429c-845a-c35bbe154183"
+              LastKnownName="project data complete"
+              LastKnownLocation="pdps-model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="36352ebb-00cd-4f0a-a58a-ee68428b1716"
+        name="create resource/element"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="a0ace99d-f0e7-4e5d-83e1-bd12c025bd55">
+            <useCaseMoniker
+              Id="c2645073-3a3b-429c-845a-c35bbe154183"
+              LastKnownName="project data complete"
+              LastKnownLocation="pdps-model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="78ca31fb-aba1-4263-9533-0db87dbfdfd0"
+        name="delete resource/element"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f9bc9b39-7b50-499e-96bc-eccdacc8c585">
+            <useCaseMoniker
+              Id="c2645073-3a3b-429c-845a-c35bbe154183"
+              LastKnownName="project data complete"
+              LastKnownLocation="pdps-model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
