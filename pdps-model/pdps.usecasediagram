@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8ee037c8-6582-412c-a78f-061e3c37fce4" name="pdps" linkedPackageId="bb9208ff-9b09-43f7-925d-baf3be541f21" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8ee037c8-6582-412c-a78f-061e3c37fce4" name="pdps" linkedPackageId="bb9208ff-9b09-43f7-925d-baf3be541f21" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <ownedCommentsInternal>
     <comment Id="2017fdc3-cb5b-48d1-993d-479d74df39a1">
       <elementDefinition Id="c1cb07ae-d5fc-49e2-ad0d-6a31d63ffc5e" />
@@ -42,8 +42,14 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" name="project data complete" isAbstract="false" isLeaf="false">
+      <useCase Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" name="resource/element add to project" isAbstract="false" isLeaf="false">
         <elementDefinition Id="c2645073-3a3b-429c-845a-c35bbe154183" />
+        <extendedCases>
+          <extend Id="85b65dde-4171-4b4c-91cf-9ebdf95f181a">
+            <useCaseMoniker Id="9e0a94c1-8392-4aa2-9001-ad00f683a8ab" LastKnownName="resource/element create" />
+            <elementDefinition Id="d6c3c229-627c-42db-8002-81704b02f63c" />
+          </extend>
+        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -330,22 +336,6 @@
           </generalization>
         </generalsInternal>
         <targetEnds>
-          <association Id="4f285d27-feec-4892-b484-eec2892987b9" isDerived="false" sourceEndRoleName="Project user" targetEndRoleName="заполнить данные по проекту" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" LastKnownName="project data complete" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="aa520c58-3cd3-4fc8-ab9d-a5ee33a40853" name="Project user" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="bb3f1b24-d21c-475f-97bb-775cbcf11222" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="94e36626-0522-4035-b3e2-4d6799f14ad8" name="заполнить данные по проекту" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="9811ce5d-21b0-4f9b-81d6-7ccaac8ba05e" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="a04df1e8-4d9d-422f-abad-7d14e5413069" />
-          </association>
           <association Id="717f719d-26f3-43f3-b919-1499758a23fd" isDerived="false" sourceEndRoleName="Project user" targetEndRoleName="сгенерировать типовую документацию по проекту" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="e76dde22-b29d-4efc-9ebc-b06c3e3f0fb1" LastKnownName="project documentation generate" />
             <relationshipOwnedElementsInternal>
@@ -361,6 +351,22 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="4f14677c-f549-41d5-9480-45498ccc63f5" />
+          </association>
+          <association Id="3129c064-4889-40c7-b758-79264646de9c" isDerived="false" sourceEndRoleName="Project user" targetEndRoleName="resource/element create" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9e0a94c1-8392-4aa2-9001-ad00f683a8ab" LastKnownName="resource/element create" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="064f92d9-4a71-4593-8bb7-53b1460f544a" name="Project user" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d0c04995-9d1f-406a-bd22-e404cfe4bc31" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3b13edb9-1a91-4ef9-8d44-4d823ed2886e" name="resource/element create" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4a7c07be-2ced-4c13-b17e-7c514fbf1b70" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="33f2ac53-450d-42e2-bc85-a8ceff5c5fb1" />
           </association>
         </targetEnds>
       </actor>
@@ -414,45 +420,50 @@
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="4f2f7f75-75a7-47b6-9714-66701fe01e95" name="update resource/element" isAbstract="false" isLeaf="false">
+      <useCase Id="4f2f7f75-75a7-47b6-9714-66701fe01e95" name="resource/element update" isAbstract="false" isLeaf="false">
         <elementDefinition Id="7c03cce8-ee7e-4320-a015-2ec243314650" />
         <extendedCases>
-          <extend Id="32bd67a7-9ed4-43ea-aac3-77ab6708a567">
-            <useCaseMoniker Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" LastKnownName="project data complete" />
-            <elementDefinition Id="f38801e2-caa5-4edf-800d-698e3e5082ee" />
+          <extend Id="362f33b3-27f9-4114-8227-14f83bbac69f">
+            <useCaseMoniker Id="9e0a94c1-8392-4aa2-9001-ad00f683a8ab" LastKnownName="resource/element create" />
+            <elementDefinition Id="8c28cf0c-f702-4113-a05f-9e383f25c697" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="16ac02e1-ead6-4a46-9191-6077a3f9d223" name="read resource/element" isAbstract="false" isLeaf="false">
+      <useCase Id="16ac02e1-ead6-4a46-9191-6077a3f9d223" name="resource/element read" isAbstract="false" isLeaf="false">
         <elementDefinition Id="7f37f6dc-f61f-4685-9c07-e49de61388cf" />
         <extendedCases>
-          <extend Id="7f14147d-c569-4f37-abd7-3b22a323d91a">
-            <useCaseMoniker Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" LastKnownName="project data complete" />
-            <elementDefinition Id="bead1bc4-e9e4-4d0d-98e3-98a57a7ca901" />
+          <extend Id="3f7ab8e8-265b-4d69-ab99-d6fe92ffc104">
+            <useCaseMoniker Id="9e0a94c1-8392-4aa2-9001-ad00f683a8ab" LastKnownName="resource/element create" />
+            <elementDefinition Id="f4d98613-9390-4359-8dd8-da69fbdf4cbb" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="9e0a94c1-8392-4aa2-9001-ad00f683a8ab" name="create resource/element" isAbstract="false" isLeaf="false">
+      <useCase Id="9e0a94c1-8392-4aa2-9001-ad00f683a8ab" name="resource/element create" isAbstract="false" isLeaf="false">
         <elementDefinition Id="36352ebb-00cd-4f0a-a58a-ee68428b1716" />
-        <extendedCases>
-          <extend Id="f2453476-1bf7-4c44-a4d3-f5d8f791c169">
-            <useCaseMoniker Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" LastKnownName="project data complete" />
-            <elementDefinition Id="a0ace99d-f0e7-4e5d-83e1-bd12c025bd55" />
-          </extend>
-        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="be131375-583c-4770-af94-e0d414af737a" name="delete resource/element" isAbstract="false" isLeaf="false">
+      <useCase Id="be131375-583c-4770-af94-e0d414af737a" name="resource/element delete" isAbstract="false" isLeaf="false">
         <elementDefinition Id="78ca31fb-aba1-4263-9533-0db87dbfdfd0" />
         <extendedCases>
-          <extend Id="d299f869-4c5a-4670-9929-c59bcf0cfb02">
-            <useCaseMoniker Id="670f48e8-d5e2-4e16-89b7-58f80d588b7d" LastKnownName="project data complete" />
-            <elementDefinition Id="f9bc9b39-7b50-499e-96bc-eccdacc8c585" />
+          <extend Id="ab04e844-51f8-4867-937a-a6fe4503b4cc">
+            <useCaseMoniker Id="9e0a94c1-8392-4aa2-9001-ad00f683a8ab" LastKnownName="resource/element create" />
+            <elementDefinition Id="e9d051e0-7547-43b6-a3b6-9befa01e3e54" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="73fdba87-3bf3-423b-9be6-02be3c1c61ee" name="resource/element remove from project" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="decd87f5-569e-426e-9c74-029a85a6dfcc" />
+        <extendedCases>
+          <extend Id="1d9436b6-4580-41de-bb14-6afad8934001">
+            <useCaseMoniker Id="9e0a94c1-8392-4aa2-9001-ad00f683a8ab" LastKnownName="resource/element create" />
+            <elementDefinition Id="6abbb660-8a08-4b48-a2de-13b3ec712625" />
           </extend>
         </extendedCases>
       </useCase>

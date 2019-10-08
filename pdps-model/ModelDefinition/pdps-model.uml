@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="2b3c349b-fd1c-4ce7-b4c2-6bff4a72f9e1"
   name="pdps-model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -100,9 +100,19 @@
     <packageHasNamedElement>
       <useCase
         Id="c2645073-3a3b-429c-845a-c35bbe154183"
-        name="project data complete"
+        name="resource/element add to project"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="d6c3c229-627c-42db-8002-81704b02f63c">
+            <useCaseMoniker
+              Id="36352ebb-00cd-4f0a-a58a-ee68428b1716"
+              LastKnownName="resource/element create"
+              LastKnownLocation="pdps-model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
@@ -766,45 +776,6 @@
         </generalsInternal>
         <targetEnds>
           <association
-            Id="a04df1e8-4d9d-422f-abad-7d14e5413069"
-            isDerived="false"
-            sourceEndRoleName="Project user"
-            targetEndRoleName="заполнить данные по проекту"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="c2645073-3a3b-429c-845a-c35bbe154183"
-              LastKnownName="project data complete"
-              LastKnownLocation="pdps-model.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="bb3f1b24-d21c-475f-97bb-775cbcf11222"
-                  name="Project user"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="9811ce5d-21b0-4f9b-81d6-7ccaac8ba05e"
-                  name="заполнить данные по проекту"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="4f14677c-f549-41d5-9480-45498ccc63f5"
             isDerived="false"
             sourceEndRoleName="Project user"
@@ -833,6 +804,45 @@
                 <memberEnd
                   Id="dc12b5f5-54e6-4119-92cc-4f5fc2fc09be"
                   name="сгенерировать типовую документацию по проекту"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="33f2ac53-450d-42e2-bc85-a8ceff5c5fb1"
+            isDerived="false"
+            sourceEndRoleName="Project user"
+            targetEndRoleName="resource/element create"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="36352ebb-00cd-4f0a-a58a-ee68428b1716"
+              LastKnownName="resource/element create"
+              LastKnownLocation="pdps-model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d0c04995-9d1f-406a-bd22-e404cfe4bc31"
+                  name="Project user"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4a7c07be-2ced-4c13-b17e-7c514fbf1b70"
+                  name="resource/element create"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -928,15 +938,15 @@
     <packageHasNamedElement>
       <useCase
         Id="7c03cce8-ee7e-4320-a015-2ec243314650"
-        name="update resource/element"
+        name="resource/element update"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
           <extend
-            Id="f38801e2-caa5-4edf-800d-698e3e5082ee">
+            Id="8c28cf0c-f702-4113-a05f-9e383f25c697">
             <useCaseMoniker
-              Id="c2645073-3a3b-429c-845a-c35bbe154183"
-              LastKnownName="project data complete"
+              Id="36352ebb-00cd-4f0a-a58a-ee68428b1716"
+              LastKnownName="resource/element create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -945,15 +955,15 @@
     <packageHasNamedElement>
       <useCase
         Id="7f37f6dc-f61f-4685-9c07-e49de61388cf"
-        name="read resource/element"
+        name="resource/element read"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
           <extend
-            Id="bead1bc4-e9e4-4d0d-98e3-98a57a7ca901">
+            Id="f4d98613-9390-4359-8dd8-da69fbdf4cbb">
             <useCaseMoniker
-              Id="c2645073-3a3b-429c-845a-c35bbe154183"
-              LastKnownName="project data complete"
+              Id="36352ebb-00cd-4f0a-a58a-ee68428b1716"
+              LastKnownName="resource/element create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -962,15 +972,22 @@
     <packageHasNamedElement>
       <useCase
         Id="36352ebb-00cd-4f0a-a58a-ee68428b1716"
-        name="create resource/element"
+        name="resource/element create"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="78ca31fb-aba1-4263-9533-0db87dbfdfd0"
+        name="resource/element delete"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
           <extend
-            Id="a0ace99d-f0e7-4e5d-83e1-bd12c025bd55">
+            Id="e9d051e0-7547-43b6-a3b6-9befa01e3e54">
             <useCaseMoniker
-              Id="c2645073-3a3b-429c-845a-c35bbe154183"
-              LastKnownName="project data complete"
+              Id="36352ebb-00cd-4f0a-a58a-ee68428b1716"
+              LastKnownName="resource/element create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -978,16 +995,16 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
-        Id="78ca31fb-aba1-4263-9533-0db87dbfdfd0"
-        name="delete resource/element"
+        Id="decd87f5-569e-426e-9c74-029a85a6dfcc"
+        name="resource/element remove from project"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
           <extend
-            Id="f9bc9b39-7b50-499e-96bc-eccdacc8c585">
+            Id="6abbb660-8a08-4b48-a2de-13b3ec712625">
             <useCaseMoniker
-              Id="c2645073-3a3b-429c-845a-c35bbe154183"
-              LastKnownName="project data complete"
+              Id="36352ebb-00cd-4f0a-a58a-ee68428b1716"
+              LastKnownName="resource/element create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
