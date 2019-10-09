@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="2b3c349b-fd1c-4ce7-b4c2-6bff4a72f9e1"
   name="pdps-model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -7,6 +7,26 @@
     <comment
       Id="c1cb07ae-d5fc-49e2-ad0d-6a31d63ffc5e">
       <body>Все прецеденты подразумевают взаимодействие с внешней базой данных.</body>
+    </comment>
+    <comment
+      Id="23491049-3bd4-4157-8296-325d64b20447">
+      <body>User</body>
+    </comment>
+    <comment
+      Id="9b22ce5e-ad91-4f02-818c-1c6903e02fc4">
+      <body>System</body>
+    </comment>
+    <comment
+      Id="7c744c34-0d3f-4d81-8c78-b706f52c50cf">
+      <body>Administrator</body>
+    </comment>
+    <comment
+      Id="55a0b872-dfd9-40c0-b275-5260fa090e05">
+      <body>System</body>
+    </comment>
+    <comment
+      Id="b2e3637a-720a-419e-bc42-0690749d0884">
+      <body>DataBase</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -100,7 +120,7 @@
     <packageHasNamedElement>
       <useCase
         Id="c2645073-3a3b-429c-845a-c35bbe154183"
-        name="resource/element add to project"
+        name="resource or element add to project"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -108,7 +128,7 @@
             Id="d6c3c229-627c-42db-8002-81704b02f63c">
             <useCaseMoniker
               Id="36352ebb-00cd-4f0a-a58a-ee68428b1716"
-              LastKnownName="resource/element create"
+              LastKnownName="resource or element create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -823,7 +843,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="36352ebb-00cd-4f0a-a58a-ee68428b1716"
-              LastKnownName="resource/element create"
+              LastKnownName="resource or element create"
               LastKnownLocation="pdps-model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -938,7 +958,7 @@
     <packageHasNamedElement>
       <useCase
         Id="7c03cce8-ee7e-4320-a015-2ec243314650"
-        name="resource/element update"
+        name="resource or element update"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -946,7 +966,7 @@
             Id="8c28cf0c-f702-4113-a05f-9e383f25c697">
             <useCaseMoniker
               Id="36352ebb-00cd-4f0a-a58a-ee68428b1716"
-              LastKnownName="resource/element create"
+              LastKnownName="resource or element create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -955,7 +975,7 @@
     <packageHasNamedElement>
       <useCase
         Id="7f37f6dc-f61f-4685-9c07-e49de61388cf"
-        name="resource/element read"
+        name="resource or element read"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -963,7 +983,7 @@
             Id="f4d98613-9390-4359-8dd8-da69fbdf4cbb">
             <useCaseMoniker
               Id="36352ebb-00cd-4f0a-a58a-ee68428b1716"
-              LastKnownName="resource/element create"
+              LastKnownName="resource or element create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -972,14 +992,14 @@
     <packageHasNamedElement>
       <useCase
         Id="36352ebb-00cd-4f0a-a58a-ee68428b1716"
-        name="resource/element create"
+        name="resource or element create"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="78ca31fb-aba1-4263-9533-0db87dbfdfd0"
-        name="resource/element delete"
+        name="resource or element delete"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -987,7 +1007,7 @@
             Id="e9d051e0-7547-43b6-a3b6-9befa01e3e54">
             <useCaseMoniker
               Id="36352ebb-00cd-4f0a-a58a-ee68428b1716"
-              LastKnownName="resource/element create"
+              LastKnownName="resource or element create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
@@ -996,7 +1016,7 @@
     <packageHasNamedElement>
       <useCase
         Id="decd87f5-569e-426e-9c74-029a85a6dfcc"
-        name="resource/element remove from project"
+        name="resource or element remove from project"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -1004,11 +1024,1016 @@
             Id="6abbb660-8a08-4b48-a2de-13b3ec712625">
             <useCaseMoniker
               Id="36352ebb-00cd-4f0a-a58a-ee68428b1716"
-              LastKnownName="resource/element create"
+              LastKnownName="resource or element create"
               LastKnownLocation="pdps-model.uml" />
           </extend>
         </extendedCases>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="dfc2215b-3769-49f9-a93e-7d47c7b68351"
+        name="authorization"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="17484e05-0753-4710-93a6-919b560148ba"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="03a00e2e-3c6b-4fb2-909b-ccd1d958cdce"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3ac1602e-b6cf-4ccd-82a3-bd5a17b217d9"
+                  LastKnownName="Заполнить поля логин пароль"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="3ac1602e-b6cf-4ccd-82a3-bd5a17b217d9"
+            name="Заполнить поля логин пароль"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="87a86c1c-c8f8-42a3-aaf0-e7a37a389f7e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="11cec9ad-88e8-46e4-adc1-c31e944b911c"
+                  LastKnownName="Нажать кнопку Вход"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="11cec9ad-88e8-46e4-adc1-c31e944b911c"
+            name="Нажать кнопку Вход"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7a279318-80af-432b-808d-6cd1b3625a2c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b6706b05-b824-4dcb-bb6c-cda4b135648f"
+                  LastKnownName="Проверка данных учетной записи"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b6706b05-b824-4dcb-bb6c-cda4b135648f"
+            name="Проверка данных учетной записи"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c1ed1472-7540-481b-bbaf-5aa285d8c002"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="b4c073f1-3abd-4df7-ae65-23096385821e"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="b4c073f1-3abd-4df7-ae65-23096385821e"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="263f975a-3f5a-4b61-8ef0-c50883fcdfc8"
+                guard="Пользователь не зарегистрирован"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f5d790e8-4e36-49ef-81e9-a06f79abe515"
+                  LastKnownName="Сообщение об ошибке доступа"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="419a7352-d526-42f6-ac51-c353bba4b030"
+                guard="Пользователь зарегистрирован"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0f602c7d-cf61-41aa-af04-0ab3ea7b2c94"
+                  LastKnownName="Отобразить главное меню GUI роли"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="f5d790e8-4e36-49ef-81e9-a06f79abe515"
+            name="Сообщение об ошибке доступа"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ee8afb18-f67a-49ca-ae28-f463b780bb61"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="37a6b95e-e53d-466f-893d-9e12cbc8ba85"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0f602c7d-cf61-41aa-af04-0ab3ea7b2c94"
+            name="Отобразить главное меню GUI роли"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3654e3c9-09ec-4b2f-8cc2-05d52892f25d"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="37a6b95e-e53d-466f-893d-9e12cbc8ba85"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="37a6b95e-e53d-466f-893d-9e12cbc8ba85"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="aa6fd9c3-2f33-4e5d-8ada-688e5726e56e"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="3e0c95a9-9d1e-4d96-86a1-99efbc4e754b"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <activityFinalNode
+            Id="3e0c95a9-9d1e-4d96-86a1-99efbc4e754b"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="95d885ba-376f-4977-bb80-ba292e207a6f"
+        name="act user create"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <opaqueAction
+            Id="50a6fbe5-49bc-4da0-a1e0-3ebf0144edf3"
+            name="нажимает кнопку Создать пользователя"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ce9e52c1-5860-441e-b8e0-b70208348698"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="288e7f68-2492-4e7a-a7bf-b21b09ebc26c"
+                  LastKnownName="выводит окно Пользователь с пустой формой и кнопкой Создать"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="288e7f68-2492-4e7a-a7bf-b21b09ebc26c"
+            name="выводит окно Пользователь с пустой формой и кнопкой Создать"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ff919d0e-6e2c-4354-80f3-6c4c8533c64e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7d1b4049-df00-4bf8-8f9c-d6625e718a19"
+                  LastKnownName="заполняет поля формы"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7d1b4049-df00-4bf8-8f9c-d6625e718a19"
+            name="заполняет поля формы"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="574670a9-1d4b-4532-89ac-fb2bdb8a6145"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a8a1c47c-cb59-4dd9-ac56-963132a1cf68"
+                  LastKnownName="задает права для пользователя"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a8a1c47c-cb59-4dd9-ac56-963132a1cf68"
+            name="задает права для пользователя"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9a2f7187-06eb-4139-be99-7b3193fd9b15"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c2c3073e-2fd1-48f7-8e55-f6a884072219"
+                  LastKnownName="нажимает кнопку Создать"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c2c3073e-2fd1-48f7-8e55-f6a884072219"
+            name="нажимает кнопку Создать"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="80b453f7-66a2-4eb8-9650-f73d237cbaec"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="19ca504d-8ec4-454c-9060-09456d2ae46f"
+                  LastKnownName="Проверить корректность введенных данных"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="66c5c95e-7047-4552-9a3e-13b2b521a407"
+            name="отправляет запрос БД на добавление записи в таблицу пользователей"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f8aaf0c8-34ee-41b8-8d19-f280332deaab"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="38c8a669-d07f-41b8-a23d-3fe21dbc5a25"
+                  LastKnownName="Добавить данные о новом пользователе в таблицу Пользователи"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="62433e66-26f5-4113-a49a-d2c8a1c09330"
+            name="выводит главное окно GUI роли Administrator"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d2c69638-712a-43be-a49e-7ff638228f90"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="680338e8-c546-4e22-a24e-7abc860ce66b"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="38c8a669-d07f-41b8-a23d-3fe21dbc5a25"
+            name="Добавить данные о новом пользователе в таблицу Пользователи"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ea771ce4-cf19-45a9-9a31-32b44d44b623"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c289c5d8-840a-47ac-977f-ff77c2036821"
+                  LastKnownName="Отправить ответ об успешном выплнении операции"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c289c5d8-840a-47ac-977f-ff77c2036821"
+            name="Отправить ответ об успешном выплнении операции"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="130295c1-2380-40cf-bd68-584d1e4186e6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6303426a-832b-44a3-b2e7-bf7c754e7456"
+                  LastKnownName="Отображает ответ об успешном добавлении"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode
+            Id="19bd09e9-d266-4cae-97ad-f5cbea9cf678"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="930b9ad2-abe6-48ad-9c26-0360a3417025"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="6fd0bad3-65d0-43ff-981e-2dcfe997ebaf"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="19ca504d-8ec4-454c-9060-09456d2ae46f"
+            name="Проверить корректность введенных данных"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8f0ad167-da8a-4cc5-beae-63a3434e3603"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="e49b55e5-2ce4-43dd-b943-0989c7c153f5"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="e49b55e5-2ce4-43dd-b943-0989c7c153f5"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="78ff2dc8-afc4-4d50-b5ab-52fa9f633cc1"
+                guard="Данные заполнены некорректно"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="dedd9d3c-6a16-4c38-876c-f47a8382158d"
+                  LastKnownName="выдает сообщение об ошибке и остается в окне Пользователь с сохранением состояния формы"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="e075e588-a8f8-4170-99d8-7cea6d4aabe6"
+                guard="Данные заполнены корректно"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="66c5c95e-7047-4552-9a3e-13b2b521a407"
+                  LastKnownName="отправляет запрос БД на добавление записи в таблицу пользователей"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="dedd9d3c-6a16-4c38-876c-f47a8382158d"
+            name="выдает сообщение об ошибке и остается в окне Пользователь с сохранением состояния формы"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="480cd280-96fb-4906-910a-cf7e157234cb"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="9dafc05a-1fcb-47ae-8d61-5e468102ddaf"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3e5b0bf9-501a-4ae6-acad-061b4ba8c071"
+            name="Нажать кнопку Выход"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="677b0341-257f-4c0c-8b4d-23009bdc00a0"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="43acbe0d-a25e-4e9d-b232-45e468b0b1a5"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="9dafc05a-1fcb-47ae-8d61-5e468102ddaf"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="51a8a2c1-ab42-4aa2-a27b-07fa86a4b666"
+                guard="Продолжить создание нового пользователя"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7d1b4049-df00-4bf8-8f9c-d6625e718a19"
+                  LastKnownName="заполняет поля формы"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="1f784e72-d8a1-40bc-9bec-25a12dd2c5df"
+                guard="Не продолжать создание нового пользователя"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3e5b0bf9-501a-4ae6-acad-061b4ba8c071"
+                  LastKnownName="Нажать кнопку Выход"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <mergeNode
+            Id="43acbe0d-a25e-4e9d-b232-45e468b0b1a5"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6994c305-7365-4c28-9be7-06cc287b8f6a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="62433e66-26f5-4113-a49a-d2c8a1c09330"
+                  LastKnownName="выводит главное окно GUI роли Administrator"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <activityFinalNode
+            Id="680338e8-c546-4e22-a24e-7abc860ce66b"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="29fe6b40-987a-4e4b-b5d5-892a724d8af0"
+            name="нажимает кнопку Список пользователей"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b02e3bb7-04d7-453b-955a-81c8c7ecea04"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="55dc3a88-ebb6-4a5b-b447-e96b50507106"
+                  LastKnownName="Отправить запрос БД на получение данных таблицы пользователей"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="6fd0bad3-65d0-43ff-981e-2dcfe997ebaf"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="53a6d484-38c5-4945-98ab-4d4a3085c7b6"
+                guard="Добавить нового пользователя"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="50a6fbe5-49bc-4da0-a1e0-3ebf0144edf3"
+                  LastKnownName="нажимает кнопку Создать пользователя"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="5d3377ec-f6d4-4310-8487-63b3d2719a84"
+                guard="Работать с существующими пользователями"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="29fe6b40-987a-4e4b-b5d5-892a724d8af0"
+                  LastKnownName="нажимает кнопку Список пользователей"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="55dc3a88-ebb6-4a5b-b447-e96b50507106"
+            name="Отправить запрос БД на получение данных таблицы пользователей"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c6334c5b-963d-41d2-99d1-d5c38f91d13e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a7a9c3cd-8950-4f3c-9524-3436f553d0d5"
+                  LastKnownName="Сформировать ответ"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a7a9c3cd-8950-4f3c-9524-3436f553d0d5"
+            name="Сформировать ответ"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ab38638e-6783-48dc-8fbf-9e1a65280b59"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a712f638-8a6f-4274-b6e1-5bbf7e0e68f6"
+                  LastKnownName="Отправить ответ"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a712f638-8a6f-4274-b6e1-5bbf7e0e68f6"
+            name="Отправить ответ"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="92f18320-8ce9-4da9-9d91-ddd62bd54780"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="11d2c27c-b534-473d-b0c8-d1d7e5f66463"
+                  LastKnownName="кеширует полученные данные"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="11d2c27c-b534-473d-b0c8-d1d7e5f66463"
+            name="кеширует полученные данные"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d871464d-0f60-4196-be18-84ce5b36412d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="99b54d1c-4bdf-4eb6-ba6b-c6c9db951e9a"
+                  LastKnownName="отображает окно Список пользователей"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="99b54d1c-4bdf-4eb6-ba6b-c6c9db951e9a"
+            name="отображает окно Список пользователей"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f35eed3f-67e6-43a8-ba3e-4c3483dd2cee"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="7b6fb649-098c-49b6-a8d2-3682aab728c5"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="7b6fb649-098c-49b6-a8d2-3682aab728c5"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fbed4c33-a2ed-49c7-82ac-3245828e43e4"
+                guard="Просмотр данных о пользователе"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="52e8ff89-8bef-4f7f-8cfe-43b79eabbb4a"
+                  LastKnownName="нажимает на пользователя из списка"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="da4b72e1-5f46-4c6c-adfc-5f102849dbf7"
+                guard="Удалить пользователя"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="404e4c62-5857-4cff-adce-615cb5555581"
+                  LastKnownName="нажимает кнопку Удалить напротив выбранного пользователя"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="d5a7fe0c-1af9-4d9f-94d5-529d09799a88"
+                guard="Изменение данных"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9b079997-f08c-43b5-ad37-a638bc264877"
+                  LastKnownName="нажимает кнопку Изменить напротив выбранного пользователя"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="03507af1-287c-4943-b66a-808ce4201f16"
+                guard="Выйти в главное меню"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3e5b0bf9-501a-4ae6-acad-061b4ba8c071"
+                  LastKnownName="Нажать кнопку Выход"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="52e8ff89-8bef-4f7f-8cfe-43b79eabbb4a"
+            name="нажимает на пользователя из списка"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b75c8706-ea1c-47ad-a2d7-9d9bc1e79a1e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2e9168eb-bac4-4a92-84cd-a5192c3302d4"
+                  LastKnownName="Отправить запрос БД на получение данных о пользователе"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="404e4c62-5857-4cff-adce-615cb5555581"
+            name="нажимает кнопку Удалить напротив выбранного пользователя"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="64915524-33d5-43f9-bcf0-6ed1de70c7db"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1976670f-7015-49e3-8d77-9151f5ba24ac"
+                  LastKnownName="отправляет запрос БД на удаление записи"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9b079997-f08c-43b5-ad37-a638bc264877"
+            name="нажимает кнопку Изменить напротив выбранного пользователя"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="058c0752-c1fe-4126-ad48-3848349d9727"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2e9168eb-bac4-4a92-84cd-a5192c3302d4"
+                  LastKnownName="Отправить запрос БД на получение данных о пользователе"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2e9168eb-bac4-4a92-84cd-a5192c3302d4"
+            name="Отправить запрос БД на получение данных о пользователе"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d9ee0252-398e-4c60-9549-da8c899ecf33"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4bd5ead4-991d-4761-b2ad-99666169b763"
+                  LastKnownName="Сформировать ответ1"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4bd5ead4-991d-4761-b2ad-99666169b763"
+            name="Сформировать ответ1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f9a13f9c-0741-458e-8d77-58ef9f7c5116"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="43aa2d63-b0c6-4a16-95df-b2ca45928f6e"
+                  LastKnownName="Отправить ответ1"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="43aa2d63-b0c6-4a16-95df-b2ca45928f6e"
+            name="Отправить ответ1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a9b1da67-fa80-4c17-a56d-afdfe4705961"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="44e118f1-15c2-457d-b5ae-6a72018f1f2c"
+                  LastKnownName="кеширует полученные данные1"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="44e118f1-15c2-457d-b5ae-6a72018f1f2c"
+            name="кеширует полученные данные1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1b1635ba-33a9-4e71-a7f8-6d267b8483b6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e8443899-21fe-4215-bfb5-1c21e065b791"
+                  LastKnownName="отображает окно Пользователь с заполненной формой и неактивными для редактирования полями"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="61053277-92a8-4090-ac61-0cf44d9ce259"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="648d1fea-15b4-4597-874c-1d43fe2ffa93"
+                  LastKnownName="выводит окно Пользователь с заполненными полями и кнопкой Изменить"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e8443899-21fe-4215-bfb5-1c21e065b791"
+            name="отображает окно Пользователь с заполненной формой и неактивными для редактирования полями"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="120585c7-7255-4df2-8dbe-5ce49555d52c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7562369d-1db6-4de0-a95c-3609f7f8ed7c"
+                  LastKnownName="нажимает кнопку Выйти"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7562369d-1db6-4de0-a95c-3609f7f8ed7c"
+            name="нажимает кнопку Выйти"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="036fbda9-0d99-4a7d-b1dc-26919ee6456d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="99b54d1c-4bdf-4eb6-ba6b-c6c9db951e9a"
+                  LastKnownName="отображает окно Список пользователей"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1976670f-7015-49e3-8d77-9151f5ba24ac"
+            name="отправляет запрос БД на удаление записи"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2243b71f-8f8f-42ec-b051-47c884a54eb3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c2325812-5d67-493a-a2e1-e1db434902b4"
+                  LastKnownName="Проверка зависимостей"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c2325812-5d67-493a-a2e1-e1db434902b4"
+            name="Проверка зависимостей"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3023bb9d-3ba5-46d8-b6f5-1e0bc4b6ead5"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="fe7cab98-275c-4201-a272-6ae3a51eb36c"
+                  LastKnownName="Decision5"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="fe7cab98-275c-4201-a272-6ae3a51eb36c"
+            name="Decision5"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9bfbc612-3fcb-48eb-9470-b99248d07f87"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8a3a1b60-d663-471c-affb-73afb1fc2e84"
+                  LastKnownName="Отправить ошибку зависимостей"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="4633da67-20ad-4526-aef1-8588d9016464"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="92abe853-c68a-46aa-8f27-4a7df787e922"
+                  LastKnownName="Отправить ответ об успешном выплнении операции1"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="8a3a1b60-d663-471c-affb-73afb1fc2e84"
+            name="Отправить ошибку зависимостей"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="31b322c5-4fd4-4fef-8be5-a0ece11051df"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9fb947cb-5049-4222-8b6b-ed2e77c258d7"
+                  LastKnownName="отображает сообщение о невозможности удаления пользователя с выводом списка зависимостей"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="92abe853-c68a-46aa-8f27-4a7df787e922"
+            name="Отправить ответ об успешном выплнении операции1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3e42c6a6-262c-459f-a3bc-84f73282d15b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5ac0fd99-9dd2-4d6a-9a66-690048cd5198"
+                  LastKnownName="удаляет запись о пользователе из кеша"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9fb947cb-5049-4222-8b6b-ed2e77c258d7"
+            name="отображает сообщение о невозможности удаления пользователя с выводом списка зависимостей"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3a4e553a-8797-4df7-a51d-014659cd447b"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="72b31586-aab6-4dc7-b7fe-5775cfc40f36"
+                  LastKnownName="Merge3"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5ac0fd99-9dd2-4d6a-9a66-690048cd5198"
+            name="удаляет запись о пользователе из кеша"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="82b8f766-be9b-440e-aa6e-443574320bc3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5a53ef4c-5039-4d8d-af1b-db79758ea962"
+                  LastKnownName="отображает сообщение об успешном удалении"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5a53ef4c-5039-4d8d-af1b-db79758ea962"
+            name="отображает сообщение об успешном удалении"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e693a978-5e01-4260-abbd-776c887d2c21"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="72b31586-aab6-4dc7-b7fe-5775cfc40f36"
+                  LastKnownName="Merge3"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="72b31586-aab6-4dc7-b7fe-5775cfc40f36"
+            name="Merge3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="56f85bca-8f7f-4a05-ab6e-a403865783d3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="99b54d1c-4bdf-4eb6-ba6b-c6c9db951e9a"
+                  LastKnownName="отображает окно Список пользователей"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="648d1fea-15b4-4597-874c-1d43fe2ffa93"
+            name="выводит окно Пользователь с заполненными полями и кнопкой Изменить"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="025136fd-b7ce-4689-966a-cbec584b246b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d544cbd3-6aa6-4920-a10f-13e5e0bd317d"
+                  LastKnownName="Редактирует поля"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d544cbd3-6aa6-4920-a10f-13e5e0bd317d"
+            name="Редактирует поля"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a1af0f2a-4d5c-4dea-a0cf-fa331833f3d8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="67bd1ba6-5aa3-4595-b8ef-fd859bdb5a98"
+                  LastKnownName="нажимаеткнопку Изменить"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="67bd1ba6-5aa3-4595-b8ef-fd859bdb5a98"
+            name="нажимаеткнопку Изменить"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1ab4618c-7671-401a-a372-ae829c797ef6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d7340729-4a20-42de-9021-8d8a6cb59699"
+                  LastKnownName="отправляет запрос БД на изменение записи в таблице пользователей"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d7340729-4a20-42de-9021-8d8a6cb59699"
+            name="отправляет запрос БД на изменение записи в таблице пользователей"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="977599f6-264f-455e-ba8d-2ddc7aa91347"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5eec150f-acc4-4c70-adff-537756198198"
+                  LastKnownName="Обновить данные о пользователе в таблице Пользователи"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5eec150f-acc4-4c70-adff-537756198198"
+            name="Обновить данные о пользователе в таблице Пользователи"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2530cb78-58f8-4524-aac0-615446cbbc11"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bb94a059-2283-47da-9b56-28f90cf7521a"
+                  LastKnownName="Отправить ответ об успешном выплнении операции2"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="bb94a059-2283-47da-9b56-28f90cf7521a"
+            name="Отправить ответ об успешном выплнении операции2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="37786b41-c265-4c71-abcd-b5282e1f8b20"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c9af7a63-b9f4-498a-82f4-8685d9f8f01f"
+                  LastKnownName="изменяет данные о пользователе в кеше"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c9af7a63-b9f4-498a-82f4-8685d9f8f01f"
+            name="изменяет данные о пользователе в кеше"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="873c41c0-24bb-4e01-bac2-101704cbb2d1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="709de57a-aa15-46a6-9102-9a55f6c26ba2"
+                  LastKnownName="Отображает ответ об успешном изменении"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6303426a-832b-44a3-b2e7-bf7c754e7456"
+            name="Отображает ответ об успешном добавлении"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d04832fb-238a-44aa-ad23-600baf756391"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="43acbe0d-a25e-4e9d-b232-45e468b0b1a5"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="709de57a-aa15-46a6-9102-9a55f6c26ba2"
+            name="Отображает ответ об успешном изменении"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b23cf96a-7df8-439c-bd13-398c543b3fd8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="99b54d1c-4bdf-4eb6-ba6b-c6c9db951e9a"
+                  LastKnownName="отображает окно Список пользователей"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

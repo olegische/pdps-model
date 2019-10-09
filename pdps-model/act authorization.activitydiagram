@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="162fda07-073f-41a6-b2ab-f27e426e62b2" name="authorization" linkedPackageId="03ace759-a81d-460f-b40b-4adc9a6347e2" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="ce8eb774-5a9c-49ae-9b97-1f1af86768c2">
+      <elementDefinition Id="23491049-3bd4-4157-8296-325d64b20447" />
+      <body>User</body>
+    </comment>
+    <comment Id="797802f7-ad32-4283-b764-685e029f3f17">
+      <elementDefinition Id="9b22ce5e-ad91-4f02-818c-1c6903e02fc4" />
+      <body>System</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="9625447c-3c1a-4f29-af32-12929d60332a">
+      <profileInstance Id="22eb27d4-8367-4a98-a71b-a2a03424551e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2a616892-edd8-4882-a002-cf765db809a9">
+      <profileInstance Id="510100fd-3773-4988-a585-d8404e42b02b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="0928d888-8ed3-4d43-b503-e8335af59b2d" name="authorization" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="dfc2215b-3769-49f9-a93e-7d47c7b68351" />
+        <nodes>
+          <initialNode Id="1b25400b-b979-4e32-987a-3a58a57e3374" name="Initial1" isLeaf="false">
+            <elementDefinition Id="17484e05-0753-4710-93a6-919b560148ba" />
+            <flowNodeTargets>
+              <controlFlow Id="64f00c2d-07b4-4105-853b-5f95b4502583" isLeaf="false">
+                <opaqueActionMoniker Id="3867523f-6198-42ee-9b03-b14adba7b3cb" LastKnownName="Заполнить поля логин пароль" />
+                <elementDefinition Id="03a00e2e-3c6b-4fb2-909b-ccd1d958cdce" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="3867523f-6198-42ee-9b03-b14adba7b3cb" name="Заполнить поля логин пароль" isLeaf="false">
+            <elementDefinition Id="3ac1602e-b6cf-4ccd-82a3-bd5a17b217d9" />
+            <flowNodeTargets>
+              <controlFlow Id="a41462b5-b084-4fc5-abf6-f91c03f0b78d" isLeaf="false">
+                <opaqueActionMoniker Id="744c5569-9a16-4fcc-9cf4-def9837c1683" LastKnownName="Нажать кнопку Вход" />
+                <elementDefinition Id="87a86c1c-c8f8-42a3-aaf0-e7a37a389f7e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="744c5569-9a16-4fcc-9cf4-def9837c1683" name="Нажать кнопку Вход" isLeaf="false">
+            <elementDefinition Id="11cec9ad-88e8-46e4-adc1-c31e944b911c" />
+            <flowNodeTargets>
+              <controlFlow Id="7cae6116-4709-4bd2-a457-2186b554f7ce" isLeaf="false">
+                <opaqueActionMoniker Id="524bb01a-76d6-4e99-9e85-06b138b22c17" LastKnownName="Проверка данных учетной записи" />
+                <elementDefinition Id="7a279318-80af-432b-808d-6cd1b3625a2c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="524bb01a-76d6-4e99-9e85-06b138b22c17" name="Проверка данных учетной записи" isLeaf="false">
+            <elementDefinition Id="b6706b05-b824-4dcb-bb6c-cda4b135648f" />
+            <flowNodeTargets>
+              <controlFlow Id="5803e6eb-1950-44c1-8268-5ec3ae06e95d" isLeaf="false">
+                <decisionNodeMoniker Id="4896abd4-7bc1-48a8-b016-8497da836187" LastKnownName="Decision1" />
+                <elementDefinition Id="c1ed1472-7540-481b-bbaf-5aa285d8c002" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="4896abd4-7bc1-48a8-b016-8497da836187" name="Decision1" isLeaf="false">
+            <elementDefinition Id="b4c073f1-3abd-4df7-ae65-23096385821e" />
+            <flowNodeTargets>
+              <controlFlow Id="fab8e72b-59e5-4b7d-b0c0-9fe32f2f90c5" guard="Пользователь не зарегистрирован" isLeaf="false">
+                <opaqueActionMoniker Id="20df3ae0-3319-48ca-b40f-608d06cc1b66" LastKnownName="Сообщение об ошибке доступа" />
+                <elementDefinition Id="263f975a-3f5a-4b61-8ef0-c50883fcdfc8" />
+              </controlFlow>
+              <controlFlow Id="3fa1b30f-398e-4c5c-98ad-f96d827fe907" guard="Пользователь зарегистрирован" isLeaf="false">
+                <opaqueActionMoniker Id="2cd295e4-9260-43c1-8872-e9d952f7e261" LastKnownName="Отобразить главное меню GUI роли" />
+                <elementDefinition Id="419a7352-d526-42f6-ac51-c353bba4b030" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="20df3ae0-3319-48ca-b40f-608d06cc1b66" name="Сообщение об ошибке доступа" isLeaf="false">
+            <elementDefinition Id="f5d790e8-4e36-49ef-81e9-a06f79abe515" />
+            <flowNodeTargets>
+              <controlFlow Id="da8bfff8-3d7a-4f53-9f14-756fb6946754" isLeaf="false">
+                <mergeNodeMoniker Id="86d9e913-e5ce-4e77-afc8-d1107de02fe9" LastKnownName="Merge1" />
+                <elementDefinition Id="ee8afb18-f67a-49ca-ae28-f463b780bb61" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="2cd295e4-9260-43c1-8872-e9d952f7e261" name="Отобразить главное меню GUI роли" isLeaf="false">
+            <elementDefinition Id="0f602c7d-cf61-41aa-af04-0ab3ea7b2c94" />
+            <flowNodeTargets>
+              <controlFlow Id="5a2656cd-9897-4181-bf94-13ff576d31e0" isLeaf="false">
+                <mergeNodeMoniker Id="86d9e913-e5ce-4e77-afc8-d1107de02fe9" LastKnownName="Merge1" />
+                <elementDefinition Id="3654e3c9-09ec-4b2f-8cc2-05d52892f25d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="86d9e913-e5ce-4e77-afc8-d1107de02fe9" name="Merge1" isLeaf="false">
+            <elementDefinition Id="37a6b95e-e53d-466f-893d-9e12cbc8ba85" />
+            <flowNodeTargets>
+              <controlFlow Id="fa1a436d-d2e0-4d6a-952b-0e53f47cd125" isLeaf="false">
+                <activityFinalNodeMoniker Id="b0991d55-87a0-4826-8b04-34322ce66226" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="aa6fd9c3-2f33-4e5d-8ada-688e5726e56e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <activityFinalNode Id="b0991d55-87a0-4826-8b04-34322ce66226" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="3e0c95a9-9d1e-4d96-86a1-99efbc4e754b" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="03ace759-a81d-460f-b40b-4adc9a6347e2" name="pdps-model">
+    <elementDefinition Id="2b3c349b-fd1c-4ce7-b4c2-6bff4a72f9e1" />
+  </package>
+</activityRootModel>
