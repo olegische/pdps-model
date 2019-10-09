@@ -28,6 +28,22 @@
       Id="b2e3637a-720a-419e-bc42-0690749d0884">
       <body>DataBase</body>
     </comment>
+    <comment
+      Id="e591f42b-c32b-4a19-bc35-7394e08cd9ee">
+      <body>Project manager</body>
+    </comment>
+    <comment
+      Id="eaca8c2f-7734-4dcc-8e59-99ffca65083e">
+      <body>System</body>
+    </comment>
+    <comment
+      Id="0db5a839-4cf2-4312-a6d8-c8c3b71c301a">
+      <body>Storage</body>
+    </comment>
+    <comment
+      Id="23fe9487-fb22-4d37-8861-fb096e27a91b">
+      <body>Queue</body>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
@@ -2032,6 +2048,257 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="3ddb5473-055d-4336-b462-b5ecff39cd2a"
+        name="act documentation forms upload"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="451d9d07-e5bb-431b-a985-074fdcac87e2"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2aefb228-d495-42bc-8340-1e2df24e608b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e4edf9d7-945b-4751-8c9b-2953e6ca9281"
+                  LastKnownName="нажимает кнопку Загрузить документацию для нового проекта"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="e4edf9d7-945b-4751-8c9b-2953e6ca9281"
+            name="нажимает кнопку Загрузить документацию для нового проекта"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="72af4370-aa6a-4d48-88fa-f068a5d4cd11"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="972adfd0-499c-4c01-9341-dfe941c894ba"
+                  LastKnownName="отображает окно Загрузки документации с пустой формой"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="972adfd0-499c-4c01-9341-dfe941c894ba"
+            name="отображает окно Загрузки документации с пустой формой"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b6354395-0ae6-4e32-835e-60265397bd8c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6cf2fb25-d324-46a2-93b6-ebdbae0a7b7c"
+                  LastKnownName="заполняет поля формы"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6cf2fb25-d324-46a2-93b6-ebdbae0a7b7c"
+            name="заполняет поля формы"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c1d4c785-f5d5-4579-ac9e-59a0ae7ed172"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4f83f56c-af5f-45ad-a28a-d7a5e7238d8d"
+                  LastKnownName="нажимает кнопку Загрузить"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4f83f56c-af5f-45ad-a28a-d7a5e7238d8d"
+            name="нажимает кнопку Загрузить"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f9fdc86c-5206-4367-ae9e-eac8d131a396"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="abefef98-2b08-450c-af8c-009757e8398b"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b713ff64-cf4a-479c-8fbb-02da680b5ac3"
+            name="помещает документацию в Storage"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="81342df4-611b-410d-953f-8e666d308359"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b8fcbcc1-1003-42b8-aefc-efb4f7f4bba2"
+                  LastKnownName="Сохранить файлы"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="abefef98-2b08-450c-af8c-009757e8398b"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="39958a00-4c4e-4a74-8c08-0298b851a26b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="34c6eda2-5d8a-4c0f-bf51-8cf3007bfc59"
+                  LastKnownName="отправляет запрос на добавление элемента в очередь на сервер Queue"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="1fe8a41a-e9b4-478a-8c3f-fc12568222ec"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="abd556cb-b0cc-4fce-b019-b59b92623c2e"
+                  LastKnownName="Запрос на создание каталога документации"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="34c6eda2-5d8a-4c0f-bf51-8cf3007bfc59"
+            name="отправляет запрос на добавление элемента в очередь на сервер Queue"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e83a10d3-490b-4156-9b67-ce76af6cd3f2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bf426cfa-4391-4c3e-b083-6401f6687508"
+                  LastKnownName="Добавить сообщение в очередь"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="11d5c724-e8ab-4aae-b738-79a0b05a0981"
+            name="выводит главное окно GUI роли Project manager"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dc08b460-5d55-4f5d-aab0-1bdc2f8b6dfd"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="a6ac4fea-6c73-4f29-9ae0-5ec6dfca9294"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="90f1d259-289b-4387-ab91-90d56c60d423"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b93fab2c-be97-465b-8b80-90734b585621"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b323ad0c-c8c2-4174-9b57-20472699b953"
+                  LastKnownName="Выводит сообщение об успешной загрузке документации"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction
+            Id="c5b03d07-df4b-4ea3-aca5-3630da449020"
+            name="Создание каталога"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="88027be1-3d10-41e5-bfec-5095c7dfea97"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b713ff64-cf4a-479c-8fbb-02da680b5ac3"
+                  LastKnownName="помещает документацию в Storage"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="abd556cb-b0cc-4fce-b019-b59b92623c2e"
+            name="Запрос на создание каталога документации"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d62937f6-0910-483f-9730-09ede5b1abda"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c5b03d07-df4b-4ea3-aca5-3630da449020"
+                  LastKnownName="Создание каталога"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b8fcbcc1-1003-42b8-aefc-efb4f7f4bba2"
+            name="Сохранить файлы"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ecb5a85c-4ec8-4ed8-be0e-e683d31c78b8"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="90f1d259-289b-4387-ab91-90d56c60d423"
+                  LastKnownName="Join1"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="bf426cfa-4391-4c3e-b083-6401f6687508"
+            name="Добавить сообщение в очередь"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2809a6f8-6789-46d3-9986-a64e664015d9"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="90f1d259-289b-4387-ab91-90d56c60d423"
+                  LastKnownName="Join1"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b323ad0c-c8c2-4174-9b57-20472699b953"
+            name="Выводит сообщение об успешной загрузке документации"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="29d25353-e990-469a-87d1-9ed5296670df"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="11d5c724-e8ab-4aae-b738-79a0b05a0981"
+                  LastKnownName="выводит главное окно GUI роли Project manager"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="a6ac4fea-6c73-4f29-9ae0-5ec6dfca9294"
+            name="ActivityFinal1"
+            isLeaf="false" />
         </nodes>
       </activity>
     </packageHasNamedElement>

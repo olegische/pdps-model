@@ -1,1 +1,189 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="e6468129-fd58-4f0e-a24f-6b7e943a63a8" name="act documentation forms upload" linkedPackageId="ee7fbc56-8320-4f6e-9ab2-6bb5f3fd1aa6" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="0f5399d2-1dd9-45be-bbbb-852fc7b0506c">
+      <elementDefinition Id="e591f42b-c32b-4a19-bc35-7394e08cd9ee" />
+      <body>Project manager</body>
+    </comment>
+    <comment Id="d81518ca-8217-457c-8a66-590100046392">
+      <elementDefinition Id="eaca8c2f-7734-4dcc-8e59-99ffca65083e" />
+      <body>System</body>
+    </comment>
+    <comment Id="dfe29898-1d52-4460-a820-331fbdeeaea3">
+      <elementDefinition Id="0db5a839-4cf2-4312-a6d8-c8c3b71c301a" />
+      <body>Storage</body>
+    </comment>
+    <comment Id="24eabaac-e4f5-4381-8846-242b3ff53de6">
+      <elementDefinition Id="23fe9487-fb22-4d37-8861-fb096e27a91b" />
+      <body>Queue</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="ecb8ea09-10fa-4f95-a047-141b97893d73">
+      <profileInstance Id="fdff459b-7256-488d-9780-d4447fcd74d5" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2b82588d-4099-41f2-88a5-f67da86c2683">
+      <profileInstance Id="10f52e83-59c8-4394-9d43-967451eb8f6f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="6ee7431a-e87b-44b5-8b81-c3e15ab5e3da" name="act documentation forms upload" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="3ddb5473-055d-4336-b462-b5ecff39cd2a" />
+        <nodes>
+          <initialNode Id="15f99625-da53-4f40-a60a-53f40de7f365" name="Initial1" isLeaf="false">
+            <elementDefinition Id="451d9d07-e5bb-431b-a985-074fdcac87e2" />
+            <flowNodeTargets>
+              <controlFlow Id="36f27293-9543-4b00-9ed6-a76723ee45bf" isLeaf="false">
+                <opaqueActionMoniker Id="0c7a9d70-9802-4ecf-bfea-a93ad358f0ec" LastKnownName="нажимает кнопку Загрузить документацию для нового проекта" />
+                <elementDefinition Id="2aefb228-d495-42bc-8340-1e2df24e608b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="0c7a9d70-9802-4ecf-bfea-a93ad358f0ec" name="нажимает кнопку Загрузить документацию для нового проекта" isLeaf="false">
+            <elementDefinition Id="e4edf9d7-945b-4751-8c9b-2953e6ca9281" />
+            <flowNodeTargets>
+              <controlFlow Id="0e9f465c-0b4f-4a2e-8ce0-5bbf25a0675b" isLeaf="false">
+                <opaqueActionMoniker Id="10b013f2-24ba-40a4-8af5-e9c263f232d9" LastKnownName="отображает окно Загрузки документации с пустой формой" />
+                <elementDefinition Id="72af4370-aa6a-4d48-88fa-f068a5d4cd11" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="10b013f2-24ba-40a4-8af5-e9c263f232d9" name="отображает окно Загрузки документации с пустой формой" isLeaf="false">
+            <elementDefinition Id="972adfd0-499c-4c01-9341-dfe941c894ba" />
+            <flowNodeTargets>
+              <controlFlow Id="6b9b194b-7b0f-4afa-9304-77f2f3246ac5" isLeaf="false">
+                <opaqueActionMoniker Id="280d9ed0-8924-4b26-8160-21c7804e9087" LastKnownName="заполняет поля формы" />
+                <elementDefinition Id="b6354395-0ae6-4e32-835e-60265397bd8c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="280d9ed0-8924-4b26-8160-21c7804e9087" name="заполняет поля формы" isLeaf="false">
+            <elementDefinition Id="6cf2fb25-d324-46a2-93b6-ebdbae0a7b7c" />
+            <flowNodeTargets>
+              <controlFlow Id="97e1a1c0-eee7-4cfa-ae3c-a1d644ce0884" isLeaf="false">
+                <opaqueActionMoniker Id="7a131b12-83cb-4d6e-b88e-10af970b3715" LastKnownName="нажимает кнопку Загрузить" />
+                <elementDefinition Id="c1d4c785-f5d5-4579-ac9e-59a0ae7ed172" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7a131b12-83cb-4d6e-b88e-10af970b3715" name="нажимает кнопку Загрузить" isLeaf="false">
+            <elementDefinition Id="4f83f56c-af5f-45ad-a28a-d7a5e7238d8d" />
+            <flowNodeTargets>
+              <controlFlow Id="0a951a69-049c-443f-b676-e14d9593734a" isLeaf="false">
+                <forkNodeMoniker Id="639ae26a-ae33-4bf8-bf90-8fc9b389f34b" LastKnownName="Fork1" />
+                <elementDefinition Id="f9fdc86c-5206-4367-ae9e-eac8d131a396" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="2f0f6445-baec-4ff4-a3ad-6dda59d07a3d" name="помещает документацию в Storage" isLeaf="false">
+            <elementDefinition Id="b713ff64-cf4a-479c-8fbb-02da680b5ac3" />
+            <flowNodeTargets>
+              <controlFlow Id="10c7905d-c65f-4fcf-b0af-108b4d46a4ab" isLeaf="false">
+                <opaqueActionMoniker Id="4e7ecde4-e449-433e-aa00-26202a31b45c" LastKnownName="Сохранить файлы" />
+                <elementDefinition Id="81342df4-611b-410d-953f-8e666d308359" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="639ae26a-ae33-4bf8-bf90-8fc9b389f34b" name="Fork1" isLeaf="false">
+            <elementDefinition Id="abefef98-2b08-450c-af8c-009757e8398b" />
+            <flowNodeTargets>
+              <controlFlow Id="4c5046dc-1906-415b-9937-790761923fca" isLeaf="false">
+                <opaqueActionMoniker Id="b0e1e465-37d4-41f5-bff2-0042b0b30dc8" LastKnownName="отправляет запрос на добавление элемента в очередь на сервер Queue" />
+                <elementDefinition Id="39958a00-4c4e-4a74-8c08-0298b851a26b" />
+              </controlFlow>
+              <controlFlow Id="a0d3cc19-a4d6-49e5-a3ca-2eb78715fe5e" isLeaf="false">
+                <opaqueActionMoniker Id="337489a9-7ca1-4427-baff-f359647b0778" LastKnownName="Запрос на создание каталога документации" />
+                <elementDefinition Id="1fe8a41a-e9b4-478a-8c3f-fc12568222ec" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="b0e1e465-37d4-41f5-bff2-0042b0b30dc8" name="отправляет запрос на добавление элемента в очередь на сервер Queue" isLeaf="false">
+            <elementDefinition Id="34c6eda2-5d8a-4c0f-bf51-8cf3007bfc59" />
+            <flowNodeTargets>
+              <controlFlow Id="24b8cd72-579c-4a14-858c-d779e604e22c" isLeaf="false">
+                <opaqueActionMoniker Id="6988b699-0594-4655-93fa-bffcdb0af12c" LastKnownName="Добавить сообщение в очередь" />
+                <elementDefinition Id="e83a10d3-490b-4156-9b67-ce76af6cd3f2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c98dcf6b-5245-46b7-be49-cec282c88d35" name="выводит главное окно GUI роли Project manager" isLeaf="false">
+            <elementDefinition Id="11d5c724-e8ab-4aae-b738-79a0b05a0981" />
+            <flowNodeTargets>
+              <controlFlow Id="a9d27446-a345-4564-ba51-53c5ee3a1f2a" isLeaf="false">
+                <activityFinalNodeMoniker Id="b539d54a-b107-42f0-8374-81f5118bae46" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="dc08b460-5d55-4f5d-aab0-1bdc2f8b6dfd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="e02e57d5-bb9f-4f1c-af73-58fd3a81c21d" name="Join1" isLeaf="false">
+            <elementDefinition Id="90f1d259-289b-4387-ab91-90d56c60d423" />
+            <flowNodeTargets>
+              <controlFlow Id="4cc2c095-48b5-4f8b-a20b-95278ad7bfd6" isLeaf="false">
+                <opaqueActionMoniker Id="78dd175f-6ace-49a3-a55b-378b8bcaa51b" LastKnownName="Выводит сообщение об успешной загрузке документации" />
+                <elementDefinition Id="b93fab2c-be97-465b-8b80-90734b585621" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="a457b688-ac61-4418-953c-64bfdaab0e77" name="Создание каталога" isLeaf="false">
+            <elementDefinition Id="c5b03d07-df4b-4ea3-aca5-3630da449020" />
+            <flowNodeTargets>
+              <controlFlow Id="e6456bfe-feb0-4563-ae52-6df43d8bd787" isLeaf="false">
+                <opaqueActionMoniker Id="2f0f6445-baec-4ff4-a3ad-6dda59d07a3d" LastKnownName="помещает документацию в Storage" />
+                <elementDefinition Id="88027be1-3d10-41e5-bfec-5095c7dfea97" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="337489a9-7ca1-4427-baff-f359647b0778" name="Запрос на создание каталога документации" isLeaf="false">
+            <elementDefinition Id="abd556cb-b0cc-4fce-b019-b59b92623c2e" />
+            <flowNodeTargets>
+              <controlFlow Id="75d3d885-2ae0-4d9c-bc90-2c4cbc609ce6" isLeaf="false">
+                <opaqueActionMoniker Id="a457b688-ac61-4418-953c-64bfdaab0e77" LastKnownName="Создание каталога" />
+                <elementDefinition Id="d62937f6-0910-483f-9730-09ede5b1abda" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4e7ecde4-e449-433e-aa00-26202a31b45c" name="Сохранить файлы" isLeaf="false">
+            <elementDefinition Id="b8fcbcc1-1003-42b8-aefc-efb4f7f4bba2" />
+            <flowNodeTargets>
+              <controlFlow Id="98559fc7-08ea-46a3-8f02-ff8d94046cef" isLeaf="false">
+                <joinNodeMoniker Id="e02e57d5-bb9f-4f1c-af73-58fd3a81c21d" LastKnownName="Join1" />
+                <elementDefinition Id="ecb5a85c-4ec8-4ed8-be0e-e683d31c78b8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6988b699-0594-4655-93fa-bffcdb0af12c" name="Добавить сообщение в очередь" isLeaf="false">
+            <elementDefinition Id="bf426cfa-4391-4c3e-b083-6401f6687508" />
+            <flowNodeTargets>
+              <controlFlow Id="0cfdc1e2-1e2e-4e51-afbf-14a4f351da9a" isLeaf="false">
+                <joinNodeMoniker Id="e02e57d5-bb9f-4f1c-af73-58fd3a81c21d" LastKnownName="Join1" />
+                <elementDefinition Id="2809a6f8-6789-46d3-9986-a64e664015d9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="78dd175f-6ace-49a3-a55b-378b8bcaa51b" name="Выводит сообщение об успешной загрузке документации" isLeaf="false">
+            <elementDefinition Id="b323ad0c-c8c2-4174-9b57-20472699b953" />
+            <flowNodeTargets>
+              <controlFlow Id="9df030be-d678-4cc0-ba30-51ddcdc1ba09" isLeaf="false">
+                <opaqueActionMoniker Id="c98dcf6b-5245-46b7-be49-cec282c88d35" LastKnownName="выводит главное окно GUI роли Project manager" />
+                <elementDefinition Id="29d25353-e990-469a-87d1-9ed5296670df" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="b539d54a-b107-42f0-8374-81f5118bae46" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="a6ac4fea-6c73-4f29-9ae0-5ec6dfca9294" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="ee7fbc56-8320-4f6e-9ab2-6bb5f3fd1aa6" name="pdps-model">
+    <elementDefinition Id="2b3c349b-fd1c-4ce7-b4c2-6bff4a72f9e1" />
+  </package>
+</activityRootModel>
