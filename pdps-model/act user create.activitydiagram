@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="72d40540-a0d5-4e90-9e5d-d190037bd711" name="act user create" linkedPackageId="f9f3318f-fb3b-474c-8c9e-090d90e1a801" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="72d40540-a0d5-4e90-9e5d-d190037bd711" name="act user create" linkedPackageId="f9f3318f-fb3b-474c-8c9e-090d90e1a801" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
     <comment Id="bd08b7b7-fa19-4904-b6f4-b74f2576ad94">
       <elementDefinition Id="7c744c34-0d3f-4d81-8c78-b706f52c50cf" />
@@ -22,9 +22,9 @@
           <opaqueAction Id="7a0002c4-c68b-4cc2-85ea-09105c4cf0e7" name="нажимает кнопку Создать пользователя" isLeaf="false">
             <elementDefinition Id="50a6fbe5-49bc-4da0-a1e0-3ebf0144edf3" />
             <flowNodeTargets>
-              <controlFlow Id="8f8abb9b-7637-4262-a215-fb71efdb8bc8" isLeaf="false">
-                <opaqueActionMoniker Id="5a6565d1-e245-457c-ba50-839572c57f9c" LastKnownName="выводит окно Пользователь с пустой формой и кнопкой Создать" />
-                <elementDefinition Id="ce9e52c1-5860-441e-b8e0-b70208348698" />
+              <controlFlow Id="c069f7b3-63a1-4e37-8b69-3ec26971f448" isLeaf="false">
+                <opaqueActionMoniker Id="a3464641-669c-4280-83c0-1872d47fb4a3" LastKnownName="запросить данные для создания окна Пользователь" />
+                <elementDefinition Id="fe7298cb-3988-4394-85b6-16d9f735f306" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -519,6 +519,33 @@
               <controlFlow Id="a3e25117-af8e-4845-801a-aade12c7563e" isLeaf="false">
                 <opaqueActionMoniker Id="ad015821-fe61-46c4-83e5-20201f163dde" LastKnownName="удаляет запись о пользователе из кеша" />
                 <elementDefinition Id="b58cd88a-97b4-4492-b4f0-9f191cf492b0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="a3464641-669c-4280-83c0-1872d47fb4a3" name="запросить данные для создания окна Пользователь" isLeaf="false">
+            <elementDefinition Id="1da6035b-ec0b-45a1-8e9c-c20a367e2212" />
+            <flowNodeTargets>
+              <controlFlow Id="809c9528-1700-4532-81be-01a7a167ca26" isLeaf="false">
+                <opaqueActionMoniker Id="dd75ce2d-94ac-4995-b993-6f543a1b0d64" LastKnownName="Сформировать ответ2" />
+                <elementDefinition Id="33e768ff-abe5-4480-a69b-27d858101079" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="dd75ce2d-94ac-4995-b993-6f543a1b0d64" name="Сформировать ответ2" isLeaf="false">
+            <elementDefinition Id="72db9983-7fa4-4a15-a3c6-c311fdc3627b" />
+            <flowNodeTargets>
+              <controlFlow Id="cc870cd4-11b1-4b96-bab4-af99954196d8" isLeaf="false">
+                <opaqueActionMoniker Id="e574ca9e-7168-4ec6-bd84-066b9e641e56" LastKnownName="Отправить ответ2" />
+                <elementDefinition Id="ff670295-48fc-43b0-b9c5-9d753f9fc768" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e574ca9e-7168-4ec6-bd84-066b9e641e56" name="Отправить ответ2" isLeaf="false">
+            <elementDefinition Id="7470ef8b-6052-490e-950c-f4931d990c2f" />
+            <flowNodeTargets>
+              <controlFlow Id="3244a0bc-3aa7-453b-8b2d-eb208e7ac4c1" isLeaf="false">
+                <opaqueActionMoniker Id="5a6565d1-e245-457c-ba50-839572c57f9c" LastKnownName="выводит окно Пользователь с пустой формой и кнопкой Создать" />
+                <elementDefinition Id="2e3cd9c1-096c-46cf-b95e-65b4d2b6d50a" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
