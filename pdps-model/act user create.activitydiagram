@@ -14,20 +14,6 @@
       <body>DataBase</body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="01cac1a8-3bf6-4d4b-a84a-9e6d50a1af5f">
-      <profileInstance Id="e75f9be1-e797-47e7-80ff-c8f207ccd28c" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="a9e04735-400c-458c-b109-a6af2292dcd7">
-      <profileInstance Id="2b9870cf-82be-4149-9ce5-50cc339b2d61" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="a3fdb8e9-4f18-4a5a-a184-f49ccd8214c5" name="act user create" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -109,7 +95,7 @@
             <elementDefinition Id="c289c5d8-840a-47ac-977f-ff77c2036821" />
             <flowNodeTargets>
               <controlFlow Id="0fdb8b4d-f3f3-45da-8f44-e0967dd9b162" isLeaf="false">
-                <opaqueActionMoniker Id="96e0bf6d-0db0-4dc1-af03-a5f475908a74" LastKnownName="Отображает ответ об успешном добавлении" />
+                <opaqueActionMoniker Id="96e0bf6d-0db0-4dc1-af03-a5f475908a74" LastKnownName="Отображает ответ об успешном добавлении пользователя" />
                 <elementDefinition Id="130295c1-2380-40cf-bd68-584d1e4186e6" />
               </controlFlow>
             </flowNodeTargets>
@@ -509,7 +495,7 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="96e0bf6d-0db0-4dc1-af03-a5f475908a74" name="Отображает ответ об успешном добавлении" isLeaf="false">
+          <opaqueAction Id="96e0bf6d-0db0-4dc1-af03-a5f475908a74" name="Отображает ответ об успешном добавлении пользователя" isLeaf="false">
             <elementDefinition Id="6303426a-832b-44a3-b2e7-bf7c754e7456" />
             <flowNodeTargets>
               <controlFlow Id="9b9a8bb5-47ea-4bde-9632-2e878e512676" isLeaf="false">
@@ -533,5 +519,19 @@
   </packagedElements>
   <package Id="f9f3318f-fb3b-474c-8c9e-090d90e1a801" name="pdps-model">
     <elementDefinition Id="2b3c349b-fd1c-4ce7-b4c2-6bff4a72f9e1" />
+    <profileInstances>
+      <packageHasProfileInstances Id="01cac1a8-3bf6-4d4b-a84a-9e6d50a1af5f">
+        <profileInstance Id="e75f9be1-e797-47e7-80ff-c8f207ccd28c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a9e04735-400c-458c-b109-a6af2292dcd7">
+        <profileInstance Id="2b9870cf-82be-4149-9ce5-50cc339b2d61" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>
