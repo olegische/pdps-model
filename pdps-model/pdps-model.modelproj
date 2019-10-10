@@ -64,6 +64,55 @@
       <SubType>Content</SubType>
       <DependentUpon>act user create.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="seq authorization.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="seq authorization.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>seq authorization.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="seq configuration create.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="seq configuration create.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>seq configuration create.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="seq documentation forms upload.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="seq documentation forms upload.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>seq documentation forms upload.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="seq project create.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="seq project create.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>seq project create.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="seq project documentation generate.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="seq project documentation generate.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>seq project documentation generate.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="seq resource or element create.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="seq resource or element create.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>seq resource or element create.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="seq user create.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="seq user create.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>seq user create.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="uc pdps.usecasediagram">
       <SubType>Content</SubType>
     </Content>

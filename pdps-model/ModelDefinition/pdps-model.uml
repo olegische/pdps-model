@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="2b3c349b-fd1c-4ce7-b4c2-6bff4a72f9e1"
   name="pdps-model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -119,6 +119,10 @@
     <comment
       Id="3ee695c5-3690-4a02-85c2-8593f77dc9d8">
       <body>Список проектов выводится изначально</body>
+    </comment>
+    <comment
+      Id="68f44248-234e-4d78-ac10-950a2c8bcd58">
+      <body>DataBase</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -1173,51 +1177,26 @@
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="b6706b05-b824-4dcb-bb6c-cda4b135648f"
-                  LastKnownName="Проверка данных учетной записи"
+                  LastKnownName="отправить запрос к БД на получение данных о пользователе"
                   LastKnownLocation="pdps-model.uml" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
           <opaqueAction
             Id="b6706b05-b824-4dcb-bb6c-cda4b135648f"
-            name="Проверка данных учетной записи"
+            name="отправить запрос к БД на получение данных о пользователе"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="c1ed1472-7540-481b-bbaf-5aa285d8c002"
+                Id="d6d308bf-c05c-45d5-8c5d-58e5449da7c2"
                 isLeaf="false">
                 <decisionNodeMoniker
-                  Id="b4c073f1-3abd-4df7-ae65-23096385821e"
-                  LastKnownName="Decision1"
+                  Id="55022840-a8ce-4c1f-b10b-be6c44450f67"
+                  LastKnownName="Decision2"
                   LastKnownLocation="pdps-model.uml" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <decisionNode
-            Id="b4c073f1-3abd-4df7-ae65-23096385821e"
-            name="Decision1"
-            isLeaf="false">
-            <flowNodeTargets>
-              <controlFlow
-                Id="263f975a-3f5a-4b61-8ef0-c50883fcdfc8"
-                guard="Пользователь не зарегистрирован"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="f5d790e8-4e36-49ef-81e9-a06f79abe515"
-                  LastKnownName="Сообщение об ошибке доступа"
-                  LastKnownLocation="pdps-model.uml" />
-              </controlFlow>
-              <controlFlow
-                Id="419a7352-d526-42f6-ac51-c353bba4b030"
-                guard="Пользователь зарегистрирован"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="0f602c7d-cf61-41aa-af04-0ab3ea7b2c94"
-                  LastKnownName="Отобразить главное меню GUI роли"
-                  LastKnownLocation="pdps-model.uml" />
-              </controlFlow>
-            </flowNodeTargets>
-          </decisionNode>
           <opaqueAction
             Id="f5d790e8-4e36-49ef-81e9-a06f79abe515"
             name="Сообщение об ошибке доступа"
@@ -1267,6 +1246,61 @@
             Id="3e0c95a9-9d1e-4d96-86a1-99efbc4e754b"
             name="ActivityFinal1"
             isLeaf="false" />
+          <decisionNode
+            Id="55022840-a8ce-4c1f-b10b-be6c44450f67"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d6fb8ebf-c283-46fe-9d0e-22d8e58dcf34"
+                guard="Запись отсутствует"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="035037d0-2996-44fa-b3f4-288ebc5687d8"
+                  LastKnownName="сообщить об отсутствии записи"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="1dd45010-be2a-492a-a843-d8080b100a1c"
+                guard="Записть присутствует"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="561e51e7-7670-45e4-b852-ad62f8d32d41"
+                  LastKnownName="сформировать ответ с данными"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="035037d0-2996-44fa-b3f4-288ebc5687d8"
+            name="сообщить об отсутствии записи"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b78a4944-3373-4c39-ab2f-d7f3b539e2c2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f5d790e8-4e36-49ef-81e9-a06f79abe515"
+                  LastKnownName="Сообщение об ошибке доступа"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="561e51e7-7670-45e4-b852-ad62f8d32d41"
+            name="сформировать ответ с данными"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3bee142f-4caa-4d64-940b-1e3e07ec035b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0f602c7d-cf61-41aa-af04-0ab3ea7b2c94"
+                  LastKnownName="Отобразить главное меню GUI роли"
+                  LastKnownLocation="pdps-model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </packageHasNamedElement>
@@ -5903,6 +5937,844 @@
           </opaqueAction>
         </nodes>
       </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="4d83bb5b-122a-47ca-a0c4-597fdc281b4b"
+        name="seq authorization"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="b56634a9-d144-43d7-96ae-1de5ebb416da">
+            <body>user registered</body>
+          </comment>
+          <comment
+            Id="b9723e14-0bfc-4cd2-8b59-23553fd37179">
+            <body>user unregistered</body>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="eacfef14-b586-4ea2-a668-b44d70f33a23"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="e8746dc2-c4b1-46f8-be50-0b5aa7ceb6b1"
+                LastKnownName="authorization : Authorization"
+                LastKnownLocation="pdps-model.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="31cb392d-45cb-4dc9-a046-2b895c12ab19"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="pdps-model.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="cb2b0f03-5865-4358-a94d-2cb45032a061"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="pdps-model.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="9688346e-e4ac-4b45-996f-33b2e87ff853"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="pdps-model.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="cb2b0f03-5865-4358-a94d-2cb45032a061"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4aab2d06-8487-428b-a681-3df197d21485"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="pdps-model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e8746dc2-c4b1-46f8-be50-0b5aa7ceb6b1"
+                LastKnownName="authorization : Authorization"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bd7411c3-d382-411d-be15-8f902b872022"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="6ec75d6c-da25-4fce-b018-c155316d7229"
+                LastKnownName="user : User"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9688346e-e4ac-4b45-996f-33b2e87ff853"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="e8746dc2-c4b1-46f8-be50-0b5aa7ceb6b1"
+                LastKnownName="authorization : Authorization"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="31cb392d-45cb-4dc9-a046-2b895c12ab19"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="44b95e9e-69dd-466c-9e66-fac77bedaca2"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="pdps-model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e8746dc2-c4b1-46f8-be50-0b5aa7ceb6b1"
+                LastKnownName="authorization : Authorization"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="807fd11a-51da-48bd-a3c7-b93443f640c9"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="364af223-a205-4109-83a5-994cc3b80766"
+                LastKnownName="dataBase : DataBase"
+                LastKnownLocation="pdps-model.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="f686352b-ce81-468a-a343-03c90ebc2200"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="pdps-model.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="3d6a9780-0ef9-4220-ad43-bb286389affd"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="pdps-model.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="e95713a4-a3f2-4280-9268-c387d2d2aaa4"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="pdps-model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a94f1551-0134-4037-a4f5-b6eab3363098"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="pdps-model.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="3d6a9780-0ef9-4220-ad43-bb286389affd"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="64ffdfa7-8914-47e0-9703-0d6987c7a3fc"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="pdps-model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="364af223-a205-4109-83a5-994cc3b80766"
+                LastKnownName="dataBase : DataBase"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d5d05b72-b0c6-4992-9559-43b68fb65ed8"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="e8746dc2-c4b1-46f8-be50-0b5aa7ceb6b1"
+                LastKnownName="authorization : Authorization"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e95713a4-a3f2-4280-9268-c387d2d2aaa4"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="364af223-a205-4109-83a5-994cc3b80766"
+                LastKnownName="dataBase : DataBase"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a94f1551-0134-4037-a4f5-b6eab3363098"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="364af223-a205-4109-83a5-994cc3b80766"
+                LastKnownName="dataBase : DataBase"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cf9d7472-17e1-41b2-93da-537f9a3b546e"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="e8746dc2-c4b1-46f8-be50-0b5aa7ceb6b1"
+                LastKnownName="authorization : Authorization"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="f686352b-ce81-468a-a343-03c90ebc2200"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="86790eef-a801-4f3d-ba2c-d74107f112a9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="pdps-model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="364af223-a205-4109-83a5-994cc3b80766"
+                LastKnownName="dataBase : DataBase"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="2ca795db-aeed-4832-ba13-1cb66260d7ae"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="6ec75d6c-da25-4fce-b018-c155316d7229"
+                LastKnownName="user : User"
+                LastKnownLocation="pdps-model.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c147090e-2762-468a-99f3-dd0143e5a62d"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="pdps-model.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="23aba857-9ad5-4b44-a6b9-c2d1bf24007c"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="pdps-model.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="f14b1cc8-232b-4872-a871-8ca6c431a406"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="pdps-model.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="23aba857-9ad5-4b44-a6b9-c2d1bf24007c"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="da4f280a-d181-44d2-ae37-b1837b6a82c7"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="pdps-model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="6ec75d6c-da25-4fce-b018-c155316d7229"
+                LastKnownName="user : User"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8e433d6e-9a48-4ef2-a509-032154df654b"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="e8746dc2-c4b1-46f8-be50-0b5aa7ceb6b1"
+                LastKnownName="authorization : Authorization"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f14b1cc8-232b-4872-a871-8ca6c431a406"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="6ec75d6c-da25-4fce-b018-c155316d7229"
+                LastKnownName="user : User"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c147090e-2762-468a-99f3-dd0143e5a62d"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="3b4c9d82-3c6c-4b8a-9ac4-f68ed9ec0b12"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="pdps-model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="6ec75d6c-da25-4fce-b018-c155316d7229"
+                LastKnownName="user : User"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="f4ba5d45-7a4e-4e64-9c2d-9f4e9d410a94"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="364af223-a205-4109-83a5-994cc3b80766"
+                LastKnownName="dataBase : DataBase"
+                LastKnownLocation="pdps-model.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="2a977918-b363-463f-b72b-24afb7e25f02"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="pdps-model.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a06e4d03-74c9-4948-9354-de89df3ccb9c"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="pdps-model.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="505eef3d-12f0-4839-817b-c9c369ed8883"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="pdps-model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="bcb5e1dc-c729-4cb1-9427-79d77dd08719"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="pdps-model.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a06e4d03-74c9-4948-9354-de89df3ccb9c"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c9178614-6300-4a05-91fe-056c9bc6056a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="pdps-model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="364af223-a205-4109-83a5-994cc3b80766"
+                LastKnownName="dataBase : DataBase"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="62d6aa88-ffa6-4d7a-b70c-9b3cac36a780"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="e8746dc2-c4b1-46f8-be50-0b5aa7ceb6b1"
+                LastKnownName="authorization : Authorization"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="505eef3d-12f0-4839-817b-c9c369ed8883"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="364af223-a205-4109-83a5-994cc3b80766"
+                LastKnownName="dataBase : DataBase"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bcb5e1dc-c729-4cb1-9427-79d77dd08719"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="364af223-a205-4109-83a5-994cc3b80766"
+                LastKnownName="dataBase : DataBase"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bc4741a4-5a75-429d-a2ae-a7ea281e172f"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="e8746dc2-c4b1-46f8-be50-0b5aa7ceb6b1"
+                LastKnownName="authorization : Authorization"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="2a977918-b363-463f-b72b-24afb7e25f02"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b467b817-f0c5-4338-b89d-8cc590cd7312"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="pdps-model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="364af223-a205-4109-83a5-994cc3b80766"
+                LastKnownName="dataBase : DataBase"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="62c6be97-1349-4857-b281-c5f1d314e63c"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="6ec75d6c-da25-4fce-b018-c155316d7229"
+                LastKnownName="user : User"
+                LastKnownLocation="pdps-model.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="1081222a-302f-4608-8053-0f1c665b06e0"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="pdps-model.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="0dfea406-3d8d-4ac4-85c3-a87d99846ccb"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="pdps-model.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="91db27c1-9fd1-4258-b651-e1ec702e43f0"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="pdps-model.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="0dfea406-3d8d-4ac4-85c3-a87d99846ccb"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b1e6a052-b267-4ccd-8952-9a773a140910"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="pdps-model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="6ec75d6c-da25-4fce-b018-c155316d7229"
+                LastKnownName="user : User"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b9205231-6910-4c13-89f6-25f969933da0"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="e8746dc2-c4b1-46f8-be50-0b5aa7ceb6b1"
+                LastKnownName="authorization : Authorization"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="91db27c1-9fd1-4258-b651-e1ec702e43f0"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="6ec75d6c-da25-4fce-b018-c155316d7229"
+                LastKnownName="user : User"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1081222a-302f-4608-8053-0f1c665b06e0"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8bb4bb6e-c251-45ef-9913-4b81e920a119"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="pdps-model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="6ec75d6c-da25-4fce-b018-c155316d7229"
+                LastKnownName="user : User"
+                LastKnownLocation="pdps-model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="6ec75d6c-da25-4fce-b018-c155316d7229"
+            name="user : User"
+            isActor="true"
+            lifelineDisplayName="user : User">
+            <represents>
+              <propertyMoniker
+                Id="f5329802-f257-4a98-af73-ed0c2915dc88"
+                LastKnownLocation="pdps-model.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="bd7411c3-d382-411d-be15-8f902b872022"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="pdps-model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="23aba857-9ad5-4b44-a6b9-c2d1bf24007c"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="pdps-model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c147090e-2762-468a-99f3-dd0143e5a62d"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="pdps-model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="0dfea406-3d8d-4ac4-85c3-a87d99846ccb"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="pdps-model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1081222a-302f-4608-8053-0f1c665b06e0"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="pdps-model.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="e8746dc2-c4b1-46f8-be50-0b5aa7ceb6b1"
+            name="authorization : Authorization"
+            isActor="false"
+            lifelineDisplayName="authorization : Authorization">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="cb2b0f03-5865-4358-a94d-2cb45032a061"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="pdps-model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="31cb392d-45cb-4dc9-a046-2b895c12ab19"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="pdps-model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d5d05b72-b0c6-4992-9559-43b68fb65ed8"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="pdps-model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="cf9d7472-17e1-41b2-93da-537f9a3b546e"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="pdps-model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8e433d6e-9a48-4ef2-a509-032154df654b"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="pdps-model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="62d6aa88-ffa6-4d7a-b70c-9b3cac36a780"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="pdps-model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="bc4741a4-5a75-429d-a2ae-a7ea281e172f"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="pdps-model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b9205231-6910-4c13-89f6-25f969933da0"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="pdps-model.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="364af223-a205-4109-83a5-994cc3b80766"
+            name="dataBase : DataBase"
+            isActor="true"
+            lifelineDisplayName="dataBase : DataBase">
+            <represents>
+              <propertyMoniker
+                Id="ac04ca93-a47a-42f7-9838-dff49526fb18"
+                LastKnownLocation="pdps-model.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="3d6a9780-0ef9-4220-ad43-bb286389affd"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="pdps-model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f686352b-ce81-468a-a343-03c90ebc2200"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="pdps-model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a06e4d03-74c9-4948-9354-de89df3ccb9c"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="pdps-model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2a977918-b363-463f-b72b-24afb7e25f02"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="pdps-model.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="21b073ff-4da4-40c5-a53e-a3d7377de2b2"
+            name="sendUserData"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bd7411c3-d382-411d-be15-8f902b872022"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="pdps-model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9688346e-e4ac-4b45-996f-33b2e87ff853"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="pdps-model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e004a8f6-4432-452d-94e0-6317ecdf7590"
+            name="getUserData"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d5d05b72-b0c6-4992-9559-43b68fb65ed8"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="pdps-model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e95713a4-a3f2-4280-9268-c387d2d2aaa4"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="pdps-model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="dded27e1-21f4-4324-a568-10810c3c9123"
+            name="&lt;&lt;return userData&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a94f1551-0134-4037-a4f5-b6eab3363098"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="pdps-model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cf9d7472-17e1-41b2-93da-537f9a3b546e"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="pdps-model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="109197d4-a12b-4bca-b710-4aa346bb4150"
+            name="showMainMenu"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8e433d6e-9a48-4ef2-a509-032154df654b"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="pdps-model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f14b1cc8-232b-4872-a871-8ca6c431a406"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="pdps-model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9d8259f5-5586-4476-b5c6-f9ca3c6cb86a"
+            name="getUserData"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="62d6aa88-ffa6-4d7a-b70c-9b3cac36a780"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="pdps-model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="505eef3d-12f0-4839-817b-c9c369ed8883"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="pdps-model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="16bfadf7-04d4-408f-8dd6-4331e2d84d9b"
+            name="&lt;&lt;return error&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bcb5e1dc-c729-4cb1-9427-79d77dd08719"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="pdps-model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bc4741a4-5a75-429d-a2ae-a7ea281e172f"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="pdps-model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="5e49c79e-03ff-45fe-afc3-60d5a791924c"
+            name="showAuthorizationError"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b9205231-6910-4c13-89f6-25f969933da0"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="pdps-model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="91db27c1-9fd1-4258-b651-e1ec702e43f0"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="pdps-model.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="f5329802-f257-4a98-af73-ed0c2915dc88"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="eb361810-e9a6-42d0-82dc-e5ce70d480f5"
+                LastKnownName="User"
+                LastKnownLocation="pdps-model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ac04ca93-a47a-42f7-9838-dff49526fb18"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="02d046ac-2879-4efe-b159-60c7bd2e166f"
+                LastKnownName="DataBase"
+                LastKnownLocation="pdps-model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fd0030da-d7db-44f1-9ab1-6ca2088c8d5a"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <useCaseMoniker
+                Id="40c56baf-4021-41da-be0d-53b04c22fc5d"
+                LastKnownName="authorization"
+                LastKnownLocation="pdps-model.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6004cd68-b0e3-44e5-949d-3c92ffb91a16"
+        name="Authorisation"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4aab2d06-8487-428b-a681-3df197d21485"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="44b95e9e-69dd-466c-9e66-fac77bedaca2"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="64ffdfa7-8914-47e0-9703-0d6987c7a3fc"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="86790eef-a801-4f3d-ba2c-d74107f112a9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="da4f280a-d181-44d2-ae37-b1837b6a82c7"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="3b4c9d82-3c6c-4b8a-9ac4-f68ed9ec0b12"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c9178614-6300-4a05-91fe-056c9bc6056a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b467b817-f0c5-4338-b89d-8cc590cd7312"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b1e6a052-b267-4ccd-8952-9a773a140910"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8bb4bb6e-c251-45ef-9913-4b81e920a119"
+        name="ExecutionEvent" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
