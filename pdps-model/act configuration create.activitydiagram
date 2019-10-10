@@ -376,7 +376,7 @@
                 <elementDefinition Id="45d4eef6-a239-4a41-a3b8-7145eeb5d119" />
               </controlFlow>
               <controlFlow Id="efaba636-7678-4da9-87f0-ed2bd8f45740" guard="Нет зависимостей" isLeaf="false">
-                <opaqueActionMoniker Id="5b41b725-8e04-45e3-a8de-8b1e4d414de8" LastKnownName="Отправить ответ об успешном выплнении операции1" />
+                <opaqueActionMoniker Id="5b41b725-8e04-45e3-a8de-8b1e4d414de8" LastKnownName="Удалить запись о конфигурации с таблице конфигураций" />
                 <elementDefinition Id="5e7a5fb8-96a2-48ed-a021-7544954a4872" />
               </controlFlow>
             </flowNodeTargets>
@@ -390,12 +390,12 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="5b41b725-8e04-45e3-a8de-8b1e4d414de8" name="Отправить ответ об успешном выплнении операции1" isLeaf="false">
+          <opaqueAction Id="5b41b725-8e04-45e3-a8de-8b1e4d414de8" name="Удалить запись о конфигурации с таблице конфигураций" isLeaf="false">
             <elementDefinition Id="d83135c8-44e7-4744-bf2e-6748ce30b210" />
             <flowNodeTargets>
-              <controlFlow Id="abbdbe42-4ab6-42be-93ed-62addd5d91a0" isLeaf="false">
-                <opaqueActionMoniker Id="0a915b73-9b0c-423e-9e52-a39367e390df" LastKnownName="удаляет запись о конфигурации из кеша" />
-                <elementDefinition Id="1ccfb5bd-fed9-4f80-8dea-c3ce997ceb38" />
+              <controlFlow Id="17dff66f-cfcc-4bb7-93ca-e47d88c3b255" isLeaf="false">
+                <opaqueActionMoniker Id="3175265a-f49e-4aa3-a5c4-381a03622a13" LastKnownName="Отправить ответ об успешном выплнении операции1" />
+                <elementDefinition Id="9b913119-2ab0-4e02-a20f-ce1481727311" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -554,6 +554,15 @@
               </controlFlow>
             </flowNodeTargets>
           </joinNode>
+          <opaqueAction Id="3175265a-f49e-4aa3-a5c4-381a03622a13" name="Отправить ответ об успешном выплнении операции1" isLeaf="false">
+            <elementDefinition Id="62e20e84-ee7d-4b74-b8ef-6e3efb32f68f" />
+            <flowNodeTargets>
+              <controlFlow Id="2280dd15-2da3-41e6-a202-0cc18d39bac8" isLeaf="false">
+                <opaqueActionMoniker Id="0a915b73-9b0c-423e-9e52-a39367e390df" LastKnownName="удаляет запись о конфигурации из кеша" />
+                <elementDefinition Id="07847c39-c0e4-41fb-b2ea-16eff2e79496" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </activityRootModelHasActivity>

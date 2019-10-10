@@ -373,7 +373,7 @@
                 <elementDefinition Id="9bfbc612-3fcb-48eb-9470-b99248d07f87" />
               </controlFlow>
               <controlFlow Id="19eb49cb-0809-4187-87bb-b5bed123d9bf" guard="Нет зависимостей" isLeaf="false">
-                <opaqueActionMoniker Id="3e407106-11a2-4a04-a688-029c4ff7b336" LastKnownName="Отправить ответ об успешном выплнении операции1" />
+                <opaqueActionMoniker Id="3e407106-11a2-4a04-a688-029c4ff7b336" LastKnownName="удалить запись о пользователе из таблицы пользователей" />
                 <elementDefinition Id="4633da67-20ad-4526-aef1-8588d9016464" />
               </controlFlow>
             </flowNodeTargets>
@@ -387,12 +387,12 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="3e407106-11a2-4a04-a688-029c4ff7b336" name="Отправить ответ об успешном выплнении операции1" isLeaf="false">
+          <opaqueAction Id="3e407106-11a2-4a04-a688-029c4ff7b336" name="удалить запись о пользователе из таблицы пользователей" isLeaf="false">
             <elementDefinition Id="92abe853-c68a-46aa-8f27-4a7df787e922" />
             <flowNodeTargets>
-              <controlFlow Id="ee873ba7-9f40-433f-b8af-5e0997e8a912" isLeaf="false">
-                <opaqueActionMoniker Id="ad015821-fe61-46c4-83e5-20201f163dde" LastKnownName="удаляет запись о пользователе из кеша" />
-                <elementDefinition Id="3e42c6a6-262c-459f-a3bc-84f73282d15b" />
+              <controlFlow Id="13bfc441-eaef-46cf-8b16-d718476c093d" isLeaf="false">
+                <opaqueActionMoniker Id="02b7a130-8484-4025-8677-7dcb3fed01de" LastKnownName="Отправить ответ об успешном выплнении операции1" />
+                <elementDefinition Id="acca60c9-8dc5-40af-8409-8788739f929b" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -510,6 +510,15 @@
               <controlFlow Id="ddb8308d-bc32-4440-9ecb-502f456fceef" isLeaf="false">
                 <opaqueActionMoniker Id="54376960-ca44-4e6b-a968-fc9ab03128a2" LastKnownName="отображает окно Список пользователей" />
                 <elementDefinition Id="b23cf96a-7df8-439c-bd13-398c543b3fd8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="02b7a130-8484-4025-8677-7dcb3fed01de" name="Отправить ответ об успешном выплнении операции1" isLeaf="false">
+            <elementDefinition Id="551a15a9-5424-49df-9457-7cf075c381a4" />
+            <flowNodeTargets>
+              <controlFlow Id="a3e25117-af8e-4845-801a-aade12c7563e" isLeaf="false">
+                <opaqueActionMoniker Id="ad015821-fe61-46c4-83e5-20201f163dde" LastKnownName="удаляет запись о пользователе из кеша" />
+                <elementDefinition Id="b58cd88a-97b4-4492-b4f0-9f191cf492b0" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>

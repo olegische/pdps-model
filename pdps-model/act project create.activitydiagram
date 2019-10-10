@@ -80,10 +80,6 @@
                 <opaqueActionMoniker Id="9073eb6b-182f-4482-b7b6-f7daca645c66" LastKnownName="изменить записи о проекте" />
                 <elementDefinition Id="8c060005-b88a-4038-8a01-2962315e4e2e" />
               </controlFlow>
-              <controlFlow Id="a3b4b0b0-8f97-40a2-8920-37a251d19164" isLeaf="false">
-                <opaqueActionMoniker Id="f01a40bf-65e3-4b2c-a392-964aff17acb9" LastKnownName="отправляет запрос БД на создание всех таблиц проекта" />
-                <elementDefinition Id="8e107129-15be-4cb4-ae66-5dabcffd3988" />
-              </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
           <opaqueAction Id="1145f84b-97bd-4f67-a64c-17b1576d4594" name="выводит главное окно GUI роли Project manager" isLeaf="false">
@@ -106,6 +102,12 @@
           </opaqueAction>
           <opaqueAction Id="30988532-3923-4336-9a22-01dacabffd12" name="Отправить ответ об успешном выплнении операции" isLeaf="false">
             <elementDefinition Id="1c8b0cae-473d-492c-84d0-65b4e124912f" />
+            <flowNodeTargets>
+              <controlFlow Id="cef904be-6b59-440d-b074-755d543d3c6c" isLeaf="false">
+                <opaqueActionMoniker Id="f01a40bf-65e3-4b2c-a392-964aff17acb9" LastKnownName="отправляет запрос БД на создание всех таблиц проекта" />
+                <elementDefinition Id="4182551d-bd0d-4d49-8171-fe7b1016a383" />
+              </controlFlow>
+            </flowNodeTargets>
           </opaqueAction>
           <initialNode Id="39a2acf4-0c9c-446c-b67f-f85a0051d472" name="Initial1" isLeaf="false">
             <elementDefinition Id="6c9cba92-a60e-4285-97a8-f5d7608d9d93" />
@@ -371,7 +373,7 @@
                 <elementDefinition Id="c18db072-0b48-4ee3-aab5-89e2c0a05636" />
               </controlFlow>
               <controlFlow Id="ad9c896e-5d97-4714-ad41-4f1f0e813227" guard="Нет зависимостей" isLeaf="false">
-                <opaqueActionMoniker Id="0b7241b7-4f05-4d12-ab84-86cf899af6ca" LastKnownName="Отправить ответ об успешном выплнении операции1" />
+                <opaqueActionMoniker Id="0b7241b7-4f05-4d12-ab84-86cf899af6ca" LastKnownName="удалить все записи и таблицы, связанные с проектом" />
                 <elementDefinition Id="a09ff8b9-cb93-4c29-bd17-7a1194ecb9f8" />
               </controlFlow>
             </flowNodeTargets>
@@ -385,12 +387,12 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="0b7241b7-4f05-4d12-ab84-86cf899af6ca" name="Отправить ответ об успешном выплнении операции1" isLeaf="false">
+          <opaqueAction Id="0b7241b7-4f05-4d12-ab84-86cf899af6ca" name="удалить все записи и таблицы, связанные с проектом" isLeaf="false">
             <elementDefinition Id="cb5d6458-c667-4d33-9cac-823047cdaf92" />
             <flowNodeTargets>
-              <controlFlow Id="ad5c2fb0-941e-4306-826e-c5193589aaae" isLeaf="false">
-                <opaqueActionMoniker Id="6118ff85-7888-497f-a44f-e8ec882b029c" LastKnownName="удаляет запись о проекте из кеша" />
-                <elementDefinition Id="50f7898c-fe07-42a6-890c-1cc50a096e1a" />
+              <controlFlow Id="e1c2e216-affb-4377-b72a-de80d16d75f8" isLeaf="false">
+                <opaqueActionMoniker Id="7226dad7-d4ec-4b66-bac6-be13b2a23d2f" LastKnownName="Отправить ответ об успешном выплнении операции1" />
+                <elementDefinition Id="ae7a1fde-87ba-4837-8815-ff5a3c2217a3" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -562,6 +564,15 @@
               <controlFlow Id="c041496a-89cf-41bf-a416-44a82ea180e9" isLeaf="false">
                 <opaqueActionMoniker Id="70274afd-0ef0-4ea3-86e7-0a60d832c434" LastKnownName="Отображает ответ об успешном добавлении" />
                 <elementDefinition Id="1a9ce09b-0ca2-4266-9004-b34a1645de31" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7226dad7-d4ec-4b66-bac6-be13b2a23d2f" name="Отправить ответ об успешном выплнении операции1" isLeaf="false">
+            <elementDefinition Id="c97d88d3-1b37-4466-b369-93013748eb0d" />
+            <flowNodeTargets>
+              <controlFlow Id="840feb4d-187a-4ef4-aabb-4bf02e19798b" isLeaf="false">
+                <opaqueActionMoniker Id="6118ff85-7888-497f-a44f-e8ec882b029c" LastKnownName="удаляет запись о проекте из кеша" />
+                <elementDefinition Id="5054d7e3-bc2a-4d34-8cd6-6be729821b03" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>

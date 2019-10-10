@@ -1,1 +1,791 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="438eee5b-dd33-4702-9f81-f8e389cc961b" name="act resource or element create" linkedPackageId="986f1430-8ae8-4a32-9a1e-a337a219b1bf" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="778f5c75-ebc5-41af-b38f-af05d270c30e">
+      <elementDefinition Id="293d7b11-27db-4413-8c50-b4a0136c042d" />
+      <body>Project user</body>
+    </comment>
+    <comment Id="0e07a1a0-5eb7-4205-9185-83a7741e3f1c">
+      <elementDefinition Id="300110bb-dfc7-454e-82ba-fee017df8436" />
+      <body>System</body>
+    </comment>
+    <comment Id="1b7f5952-f40c-4328-a3ab-f73c8367d425">
+      <elementDefinition Id="ff7a1ec2-10f1-4b22-84f5-b01ffde3b4e1" />
+      <body>DataBase</body>
+    </comment>
+    <comment Id="5b863c54-0c4d-4363-8038-daf5bdcd1d8a">
+      <elementDefinition Id="27d3a664-ac5c-4c20-8de7-e2e679a31bfd" />
+      <body>Список проектов выводится изначально</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="b730093d-bfbe-48da-8954-b106c3b24a60">
+      <profileInstance Id="f43160b2-4f9c-4a56-8210-a4290ac4dbcc" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4fee6892-f72d-4074-92e2-a69b0d3c3fee">
+      <profileInstance Id="749f5f11-347f-4630-8cb7-391e371f071a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="de23ec7b-e97a-4669-9b26-4e13d54f0ecb" name="act resource or element create" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="ab418273-ebdf-4417-8762-066a4ee82482" />
+        <nodes>
+          <opaqueAction Id="2600d373-0c83-4380-96ed-9edbe86143a5" name="нажимает кнопку Создать ресурс / Создать элемент" isLeaf="false">
+            <elementDefinition Id="3078233a-8a46-4263-bb67-c9e8b9ac25a0" />
+            <flowNodeTargets>
+              <controlFlow Id="f9d67ca4-a267-44e6-8448-6edee5051576" isLeaf="false">
+                <opaqueActionMoniker Id="71422e0d-32c9-4e9e-afa7-8b7b7f8c0b83" LastKnownName="считывает данные о конфигурации ресурса/элемента" />
+                <elementDefinition Id="1d465a3c-c5a9-4e2b-bd57-1434b0f1ca73" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3877a123-e012-4219-941f-5f5ad317d15b" name="выводит окно Ресурс/ окно Элемент с пустой формой, сгенерированной на основе конфигурации, и кнопкой Создать" isLeaf="false">
+            <elementDefinition Id="56e91a51-6ee6-474d-8269-e5c92d5a9d3c" />
+            <flowNodeTargets>
+              <controlFlow Id="46b80e69-db4c-4b8e-807f-72bd5f0586be" isLeaf="false">
+                <opaqueActionMoniker Id="27d40755-1830-451b-a7cc-1cac2dcd4a78" LastKnownName="заполняет поля формы" />
+                <elementDefinition Id="23a5ce99-c291-45c5-9410-069b107eae78" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="27d40755-1830-451b-a7cc-1cac2dcd4a78" name="заполняет поля формы" isLeaf="false">
+            <elementDefinition Id="c8866f9a-dd73-4b2d-aab8-c835e85a2434" />
+            <flowNodeTargets>
+              <controlFlow Id="1c397a3d-8037-47b8-9f43-c7e60aa0db13" isLeaf="false">
+                <opaqueActionMoniker Id="50882144-8fcc-4ca2-a306-fae1ae0bfa03" LastKnownName="нажимает кнопку Создать" />
+                <elementDefinition Id="be61c7b3-0b8e-4a71-aaa4-4198e520193c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="50882144-8fcc-4ca2-a306-fae1ae0bfa03" name="нажимает кнопку Создать" isLeaf="false">
+            <elementDefinition Id="fb574c97-81b1-4bf2-ab8b-cc34a646ad92" />
+            <flowNodeTargets>
+              <controlFlow Id="534d35ac-912e-4626-a5cb-4a030cfa678c" isLeaf="false">
+                <opaqueActionMoniker Id="3bc1bba2-8356-41ff-9c06-96a2d6c2e654" LastKnownName="Проверить корректность введенных данных" />
+                <elementDefinition Id="4ca3e79d-f458-4e81-85ab-c09dda0b6c49" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="a02a7b97-2b87-4a48-ac00-538320e8b85c" name="отправляет запрос БД на добавление записей, связанных с ресурсом/элементом" isLeaf="false">
+            <elementDefinition Id="53d39e1a-dc84-4212-bfc4-189de20991aa" />
+            <flowNodeTargets>
+              <controlFlow Id="98c1c9f9-5d13-4218-82a1-4da71528b820" isLeaf="false">
+                <opaqueActionMoniker Id="48c715db-2677-441f-acf8-f17b500f8c74" LastKnownName="добавить занные о ресурсе/элементе в таблицу ресурсов/элементов" />
+                <elementDefinition Id="aad78295-1f40-4503-be49-f3a7fce3d7bd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="aec14874-eecc-4e97-bda0-f67a47ab30a5" name="выводит главное окно GUI роли Project user" isLeaf="false">
+            <elementDefinition Id="92132f27-37f6-42c6-88f3-4bc152f3ee5e" />
+            <flowNodeTargets>
+              <controlFlow Id="307dfac3-9b27-436a-832c-59205d90cc3d" isLeaf="false">
+                <activityFinalNodeMoniker Id="8b13dbca-156c-4f73-8343-cf84f8b8994a" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="f7f72a9c-107b-4a1e-9fc2-73468249f427" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="48c715db-2677-441f-acf8-f17b500f8c74" name="добавить занные о ресурсе/элементе в таблицу ресурсов/элементов" isLeaf="false">
+            <elementDefinition Id="321db46b-0e40-4628-9177-05f122c79847" />
+            <flowNodeTargets>
+              <controlFlow Id="44ecf60f-6686-4005-b009-5b9f96569c31" isLeaf="false">
+                <opaqueActionMoniker Id="5a924834-962b-47f7-b3fb-2450301f0c4d" LastKnownName="Отправить ответ об успешном выплнении операции" />
+                <elementDefinition Id="0a64fe19-5d50-4c80-a7bb-6f9265ac0559" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5a924834-962b-47f7-b3fb-2450301f0c4d" name="Отправить ответ об успешном выплнении операции" isLeaf="false">
+            <elementDefinition Id="87aede1c-e894-467d-9f5b-296c30bddbf9" />
+            <flowNodeTargets>
+              <controlFlow Id="4ef16e05-87c8-47a8-b4c3-73fa1574625e" isLeaf="false">
+                <opaqueActionMoniker Id="f3a7badd-7a44-4164-9c82-12474d67c015" LastKnownName="Отображает ответ об успешном добавлении" />
+                <elementDefinition Id="8574e7f8-bc3b-4c43-a088-9ed54be46ce1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode Id="b53b0527-5a15-41f3-93c1-f51d890917f3" name="Initial1" isLeaf="false">
+            <elementDefinition Id="1bdb60d3-cc9b-4032-b511-4d97526258e3" />
+            <flowNodeTargets>
+              <controlFlow Id="9d217e16-af2a-47fd-809d-3186c4857a45" isLeaf="false">
+                <decisionNodeMoniker Id="ccc2f06c-1175-4e1e-b7a3-c3c0cfb30d59" LastKnownName="Decision3" />
+                <elementDefinition Id="c2bd0a0d-6a5e-4bb3-8172-a846048a6a39" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="3bc1bba2-8356-41ff-9c06-96a2d6c2e654" name="Проверить корректность введенных данных" isLeaf="false">
+            <elementDefinition Id="93dbf247-6bd2-41ad-89c0-b0404bd9ca12" />
+            <flowNodeTargets>
+              <controlFlow Id="3dcdc2b5-6336-4c8c-8607-ca2d9ecb7000" isLeaf="false">
+                <decisionNodeMoniker Id="7b0320c4-ae5b-4a6f-9bf8-0565d937c99b" LastKnownName="Decision1" />
+                <elementDefinition Id="a0cd6fa5-ad33-4020-911e-c84504d4cdf9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="7b0320c4-ae5b-4a6f-9bf8-0565d937c99b" name="Decision1" isLeaf="false">
+            <elementDefinition Id="bbc4dc52-08e5-4fc1-8814-e361f374a1ed" />
+            <flowNodeTargets>
+              <controlFlow Id="b42f70b1-b4bd-46e2-8b69-76b6991f668b" guard="Данные заполнены некорректно" isLeaf="false">
+                <opaqueActionMoniker Id="10af37d6-7e88-4c0d-81e7-54fdd502d743" LastKnownName="выдает сообщение об ошибке и остается в окне Проект с сохранением состояния формы" />
+                <elementDefinition Id="abb5de5c-8e93-4e90-b66b-5b1ec9b5e631" />
+              </controlFlow>
+              <controlFlow Id="aa82248c-ecf6-4260-b95d-66f7a8f557db" guard="Данные заполнены корректно" isLeaf="false">
+                <opaqueActionMoniker Id="a02a7b97-2b87-4a48-ac00-538320e8b85c" LastKnownName="отправляет запрос БД на добавление записей, связанных с ресурсом/элементом" />
+                <elementDefinition Id="a6eb7f21-ff0e-4ac5-b97d-389400fd3a42" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="10af37d6-7e88-4c0d-81e7-54fdd502d743" name="выдает сообщение об ошибке и остается в окне Проект с сохранением состояния формы" isLeaf="false">
+            <elementDefinition Id="ffda8c88-1bb8-40f8-b8c5-828aa9514f19" />
+            <flowNodeTargets>
+              <controlFlow Id="7e26f58b-f370-4c1c-8977-857a6b9783ae" isLeaf="false">
+                <decisionNodeMoniker Id="ccd29130-0713-4e98-a3e6-f867824aaa45" LastKnownName="Decision2" />
+                <elementDefinition Id="792a6f11-fcda-4b19-a1d7-af18bbb1d482" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d590a3c6-5224-4a04-8191-d4eeb2576dca" name="Нажать кнопку Выход" isLeaf="false">
+            <elementDefinition Id="975cc926-292f-45ad-9300-4614194c55a5" />
+            <flowNodeTargets>
+              <controlFlow Id="2eda847c-64a9-41a4-b639-db247921ac47" isLeaf="false">
+                <opaqueActionMoniker Id="aec14874-eecc-4e97-bda0-f67a47ab30a5" LastKnownName="выводит главное окно GUI роли Project user" />
+                <elementDefinition Id="6c700407-43ae-4460-ae60-e5d7564e36c5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="ccd29130-0713-4e98-a3e6-f867824aaa45" name="Decision2" isLeaf="false">
+            <elementDefinition Id="bf574fdc-f96b-4347-9e7e-a077b3bc56ad" />
+            <flowNodeTargets>
+              <controlFlow Id="fdcd557a-3445-4816-a82f-336f687a92cc" guard="Продолжить создание ресурса/элемента" isLeaf="false">
+                <opaqueActionMoniker Id="27d40755-1830-451b-a7cc-1cac2dcd4a78" LastKnownName="заполняет поля формы" />
+                <elementDefinition Id="629d3cb4-8e86-4881-8f3d-a6a2130d4f5d" />
+              </controlFlow>
+              <controlFlow Id="fb702204-7d20-45ba-8e4a-6f73c3e6afcb" guard="Не продолжать создание нового пользователя" isLeaf="false">
+                <opaqueActionMoniker Id="d590a3c6-5224-4a04-8191-d4eeb2576dca" LastKnownName="Нажать кнопку Выход" />
+                <elementDefinition Id="5b64d52f-eb82-43b2-b5dd-e359592b25ad" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="8b13dbca-156c-4f73-8343-cf84f8b8994a" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="a3f143eb-cb20-41c0-a289-378ce2046e3d" />
+          </activityFinalNode>
+          <opaqueAction Id="25ba1d0c-e7ae-4f7f-8d60-e48ee44be4d4" name="нажимает кнопку Просмотр библиотеки ресурсов и элементов" isLeaf="false">
+            <elementDefinition Id="46cb7a2a-f9a6-4eb2-b69b-dd86f27fa6c2" />
+            <flowNodeTargets>
+              <controlFlow Id="100b44ef-ceaa-4419-bd60-71a7f5313d2c" isLeaf="false">
+                <opaqueActionMoniker Id="1aaaf77b-06a0-49f3-b213-98adf583891b" LastKnownName="получает от БД данные таблицы ресурсов и таблицы элементов" />
+                <elementDefinition Id="51b84c0a-a399-47e7-aec9-18f0d2601edc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1aaaf77b-06a0-49f3-b213-98adf583891b" name="получает от БД данные таблицы ресурсов и таблицы элементов" isLeaf="false">
+            <elementDefinition Id="6de57afd-97c0-47b6-ab02-232bf230d76b" />
+            <flowNodeTargets>
+              <controlFlow Id="e2338586-7e16-48ef-9149-5b6a8c6bd78c" isLeaf="false">
+                <opaqueActionMoniker Id="46f6c895-cb5c-4e67-8c79-74de39ddef10" LastKnownName="Сформировать ответ" />
+                <elementDefinition Id="54d622e5-728c-406d-90cc-58c5320feed8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="46f6c895-cb5c-4e67-8c79-74de39ddef10" name="Сформировать ответ" isLeaf="false">
+            <elementDefinition Id="fb5babc4-b3f2-40c7-af42-c23d5d643d09" />
+            <flowNodeTargets>
+              <controlFlow Id="2c5e6576-b7bd-494f-95c2-3c9269a4460c" isLeaf="false">
+                <opaqueActionMoniker Id="c6921f86-a95c-4b72-973c-b160dfeb635e" LastKnownName="Отправить ответ" />
+                <elementDefinition Id="d081d8ff-11ad-4821-9687-41a73ad6f063" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c6921f86-a95c-4b72-973c-b160dfeb635e" name="Отправить ответ" isLeaf="false">
+            <elementDefinition Id="31bfe25f-dd69-4621-89f7-49daf948e8cc" />
+            <flowNodeTargets>
+              <controlFlow Id="43a1aacd-dcc7-409a-aa7e-c109c2b0bb8d" isLeaf="false">
+                <opaqueActionMoniker Id="b3db3c8f-08bb-488e-8c2e-350f54f6af3a" LastKnownName="кеширует полученные данные" />
+                <elementDefinition Id="bd610a60-de39-4268-af13-4bd9070f311a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b3db3c8f-08bb-488e-8c2e-350f54f6af3a" name="кеширует полученные данные" isLeaf="false">
+            <elementDefinition Id="b15c80e8-2235-4b3b-a20a-d84a863aa7a1" />
+            <flowNodeTargets>
+              <controlFlow Id="71b16e54-8506-49c2-98d2-cc7ff3373f3c" isLeaf="false">
+                <opaqueActionMoniker Id="5bec9dc6-d907-4b2a-8c0f-3c58fa12a8af" LastKnownName="отображает окно Библиотека ресурсов и элементов" />
+                <elementDefinition Id="07e253f7-ded7-4fee-b111-450daa5e1b9d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5bec9dc6-d907-4b2a-8c0f-3c58fa12a8af" name="отображает окно Библиотека ресурсов и элементов" isLeaf="false">
+            <elementDefinition Id="23403b3a-2850-4985-a6e1-f2865d3a6e99" />
+            <flowNodeTargets>
+              <controlFlow Id="d0e453b7-c3a5-4094-adb6-c40342acc785" isLeaf="false">
+                <decisionNodeMoniker Id="43ca7545-c686-406d-b20b-0b71bee97845" LastKnownName="Decision4" />
+                <elementDefinition Id="e1f97d09-7eff-497b-aa48-5cc7697ba4cd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="43ca7545-c686-406d-b20b-0b71bee97845" name="Decision4" isLeaf="false">
+            <elementDefinition Id="fb539954-219b-4847-ab79-4f0b4eca2151" />
+            <flowNodeTargets>
+              <controlFlow Id="2e33ae5e-6808-4440-aafa-4d532d8759eb" guard="Просмотр данных" isLeaf="false">
+                <opaqueActionMoniker Id="484aea69-69ac-447a-b580-178a5624ed60" LastKnownName="нажимает на ресурс/элемент из списка" />
+                <elementDefinition Id="f79d0b01-185c-4c71-a3ae-4dc7e89644bb" />
+              </controlFlow>
+              <controlFlow Id="db1408c7-4e73-4e99-87d8-8c0a20d5583c" guard="Удалить" isLeaf="false">
+                <opaqueActionMoniker Id="ca6c6e3a-b4d5-45ec-bb13-77cf0a0959e9" LastKnownName="нажимает кнопку Удалить напротив выбранного ресурса/элемента" />
+                <elementDefinition Id="d014920e-624f-4035-b392-b2f19b65811e" />
+              </controlFlow>
+              <controlFlow Id="2afd3b7e-2de0-4653-9ca9-d5ef36316f07" guard="Изменение данных" isLeaf="false">
+                <opaqueActionMoniker Id="4400131b-b5d2-4929-9e49-1db490e63676" LastKnownName="нажимает кнопку Изменить напротив выбранного ресурса/элемента" />
+                <elementDefinition Id="cd2f47ee-8ddd-4eeb-a7ae-30edb582ce6e" />
+              </controlFlow>
+              <controlFlow Id="17cefc94-3ded-4c11-9113-fd1274dfe793" guard="Выйти в главное меню" isLeaf="false">
+                <opaqueActionMoniker Id="d590a3c6-5224-4a04-8191-d4eeb2576dca" LastKnownName="Нажать кнопку Выход" />
+                <elementDefinition Id="06c19bbf-8230-4e2c-8872-3e250c57c856" />
+              </controlFlow>
+              <controlFlow Id="fd1d7600-f75c-4748-88cb-f6191ef36749" guard="Создать" isLeaf="false">
+                <opaqueActionMoniker Id="2600d373-0c83-4380-96ed-9edbe86143a5" LastKnownName="нажимает кнопку Создать ресурс / Создать элемент" />
+                <elementDefinition Id="11184a6e-67b1-45f1-8e91-e668c1de6905" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="484aea69-69ac-447a-b580-178a5624ed60" name="нажимает на ресурс/элемент из списка" isLeaf="false">
+            <elementDefinition Id="7cf17208-e6cf-43a0-bdb4-7821480ed32f" />
+            <flowNodeTargets>
+              <controlFlow Id="feff20c7-3b75-4df3-aa70-dc1abb40b90a" isLeaf="false">
+                <opaqueActionMoniker Id="ca10b301-287e-4777-b4aa-a07a54d6dc41" LastKnownName="получает от БД данные по выбранному ресурсу/элементу" />
+                <elementDefinition Id="803bf458-b964-4ced-816d-12bba539ebb2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ca6c6e3a-b4d5-45ec-bb13-77cf0a0959e9" name="нажимает кнопку Удалить напротив выбранного ресурса/элемента" isLeaf="false">
+            <elementDefinition Id="8e881a6a-1ff4-451a-b29f-171906cfad89" />
+            <flowNodeTargets>
+              <controlFlow Id="ccdebcdc-fa3e-45d6-bcb8-153d8e57f46f" isLeaf="false">
+                <opaqueActionMoniker Id="319b4f89-ff1e-4e18-b5b6-a61617280044" LastKnownName="отправляет запрос БД на удаление записи" />
+                <elementDefinition Id="f813d344-2086-4deb-8a00-fec67ced21fe" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4400131b-b5d2-4929-9e49-1db490e63676" name="нажимает кнопку Изменить напротив выбранного ресурса/элемента" isLeaf="false">
+            <elementDefinition Id="99436a23-42c8-4b8c-9fde-8a216b2ed733" />
+            <flowNodeTargets>
+              <controlFlow Id="f856287e-fed7-4b96-9135-4e46196143f5" isLeaf="false">
+                <opaqueActionMoniker Id="ca10b301-287e-4777-b4aa-a07a54d6dc41" LastKnownName="получает от БД данные по выбранному ресурсу/элементу" />
+                <elementDefinition Id="82fa272e-1557-4a53-acf9-88e56e9072ec" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ca10b301-287e-4777-b4aa-a07a54d6dc41" name="получает от БД данные по выбранному ресурсу/элементу" isLeaf="false">
+            <elementDefinition Id="5eb6f43d-4167-40a1-813f-053fdfab70b2" />
+            <flowNodeTargets>
+              <controlFlow Id="e6904a6e-9007-4360-9a7b-0bc3cfb66ce8" isLeaf="false">
+                <opaqueActionMoniker Id="c4353c54-6ef3-4ab1-8a8f-857cbf0811e6" LastKnownName="Сформировать ответ1" />
+                <elementDefinition Id="589a33a6-b716-4b57-a635-9347c4e70979" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c4353c54-6ef3-4ab1-8a8f-857cbf0811e6" name="Сформировать ответ1" isLeaf="false">
+            <elementDefinition Id="4e6f6ec7-f328-4ece-a019-d748ef9a4db9" />
+            <flowNodeTargets>
+              <controlFlow Id="3377b2ef-fcf2-4847-a8b2-001e3b712f1d" isLeaf="false">
+                <opaqueActionMoniker Id="90d39260-65b4-480a-94f4-60417071f2dc" LastKnownName="Отправить ответ1" />
+                <elementDefinition Id="55a0c840-d96b-454f-af82-d149f245687d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="90d39260-65b4-480a-94f4-60417071f2dc" name="Отправить ответ1" isLeaf="false">
+            <elementDefinition Id="59d5ef03-6171-4a62-a2d4-65f487ca6d62" />
+            <flowNodeTargets>
+              <controlFlow Id="bc5239af-e938-41e3-87bb-10f005ff390b" isLeaf="false">
+                <opaqueActionMoniker Id="90e523da-f46e-4734-a79f-51e0ecc05cf7" LastKnownName="кеширует полученные данные1" />
+                <elementDefinition Id="a302f7a7-7a1a-442c-8ea6-7c06c26ccd71" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="90e523da-f46e-4734-a79f-51e0ecc05cf7" name="кеширует полученные данные1" isLeaf="false">
+            <elementDefinition Id="0c799fc4-0dfa-4742-a8f8-c40b4fb7850e" />
+            <flowNodeTargets>
+              <controlFlow Id="bbf0b174-9a5f-4a7d-91c3-c55632528089" isLeaf="false">
+                <opaqueActionMoniker Id="fc7efca8-584a-4522-95a2-56bcbedf69dc" LastKnownName="отображает окно Ресурс/окно Элемент с заполненной формой и неактивными для редактирования полями" />
+                <elementDefinition Id="a3f32d94-af7d-4e4d-abe7-8ef91ffbe2df" />
+              </controlFlow>
+              <controlFlow Id="7b325bc1-4375-4f30-98ff-019aaeef880a" isLeaf="false">
+                <opaqueActionMoniker Id="cf4f9fa3-1ec4-44be-ac6a-32ce6019ff90" LastKnownName="выводит окно Ресурс/ окно Элемент с заполненными полями и кнопкой Изменить" />
+                <elementDefinition Id="7a3b820f-914e-4aec-ba96-390c0bc701d5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="fc7efca8-584a-4522-95a2-56bcbedf69dc" name="отображает окно Ресурс/окно Элемент с заполненной формой и неактивными для редактирования полями" isLeaf="false">
+            <elementDefinition Id="6479424d-253d-41a7-aa94-4989fa9ca92c" />
+            <flowNodeTargets>
+              <controlFlow Id="5f3778b5-ede3-454f-88d3-4f117a02444d" isLeaf="false">
+                <opaqueActionMoniker Id="1fa30e1c-75ea-4531-91d4-c2142e4e81c1" LastKnownName="нажимает кнопку Выйти" />
+                <elementDefinition Id="c87eda0b-8d67-4b1e-b0e9-1e03937197ce" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1fa30e1c-75ea-4531-91d4-c2142e4e81c1" name="нажимает кнопку Выйти" isLeaf="false">
+            <elementDefinition Id="4315a6d8-1957-4265-bae0-b5b0f39555c6" />
+            <flowNodeTargets>
+              <controlFlow Id="bc975477-b764-4434-a718-f6bf8c0fea22" isLeaf="false">
+                <opaqueActionMoniker Id="5bec9dc6-d907-4b2a-8c0f-3c58fa12a8af" LastKnownName="отображает окно Библиотека ресурсов и элементов" />
+                <elementDefinition Id="053c157e-0395-440b-9c0c-1f99feaa7c84" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="319b4f89-ff1e-4e18-b5b6-a61617280044" name="отправляет запрос БД на удаление записи" isLeaf="false">
+            <elementDefinition Id="ce1bd022-3216-4f25-bf5f-c297300aeeee" />
+            <flowNodeTargets>
+              <controlFlow Id="8d6e1dab-e1f0-4305-a6c1-5ce6217bd25c" isLeaf="false">
+                <opaqueActionMoniker Id="2f7204cb-3cc6-4820-89bd-bb72f92a66f6" LastKnownName="Проверка зависимостей" />
+                <elementDefinition Id="147dd6c1-8c35-4567-8fa4-33488f21c656" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="2f7204cb-3cc6-4820-89bd-bb72f92a66f6" name="Проверка зависимостей" isLeaf="false">
+            <elementDefinition Id="274615c4-4021-4287-91d6-05a547eb207c" />
+            <flowNodeTargets>
+              <controlFlow Id="fd906a61-483b-4cd6-9b06-316e7d215b0c" isLeaf="false">
+                <decisionNodeMoniker Id="795d1fd3-e1ca-4f4a-9caa-aa5f38addd48" LastKnownName="Decision5" />
+                <elementDefinition Id="c245f53e-ec47-41ba-a758-b77bc3c32a11" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="795d1fd3-e1ca-4f4a-9caa-aa5f38addd48" name="Decision5" isLeaf="false">
+            <elementDefinition Id="117a8e7e-3723-414a-99ca-33c1d5a69461" />
+            <flowNodeTargets>
+              <controlFlow Id="26f1a503-8558-45e8-844c-e63d52a47721" guard="Есть зависимости" isLeaf="false">
+                <opaqueActionMoniker Id="86cc29e3-3033-4950-95aa-b174297e7f0f" LastKnownName="Отправить ошибку зависимостей" />
+                <elementDefinition Id="99f1c8b6-f8e8-4465-9b85-43a1dfb2cd53" />
+              </controlFlow>
+              <controlFlow Id="fb7b7d1a-7d56-48d8-a95c-27d3f7907b42" guard="Нет зависимостей" isLeaf="false">
+                <opaqueActionMoniker Id="45c968c9-ff5c-4c61-b789-e00e8dd2c61b" LastKnownName="удалить ресурс/элемент из всех таблиц" />
+                <elementDefinition Id="760d018d-bd1e-446f-9a57-d4b11f6415c8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="86cc29e3-3033-4950-95aa-b174297e7f0f" name="Отправить ошибку зависимостей" isLeaf="false">
+            <elementDefinition Id="a71c9975-eb72-4f4e-898d-ac180a6b0a89" />
+            <flowNodeTargets>
+              <controlFlow Id="79d77070-919d-4fef-bfcc-19a337af15c7" isLeaf="false">
+                <opaqueActionMoniker Id="7d4a9d36-3699-48e9-a5fb-a6540b6e1a1a" LastKnownName="отображает сообщение о невозможности удаления ресурса/элемента с выводом списка зависимостей" />
+                <elementDefinition Id="ad92dd91-f7e8-4513-92a1-58dd424c59aa" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="45c968c9-ff5c-4c61-b789-e00e8dd2c61b" name="удалить ресурс/элемент из всех таблиц" isLeaf="false">
+            <elementDefinition Id="616278cb-9e9d-4592-ad24-2c30073b862f" />
+            <flowNodeTargets>
+              <controlFlow Id="9c235fe6-e00c-4e1e-9fa3-5bee6f228334" isLeaf="false">
+                <opaqueActionMoniker Id="aadabae1-f20b-48f2-bceb-2493b730a775" LastKnownName="Отправить ответ об успешном выплнении операции1" />
+                <elementDefinition Id="fa832558-2686-48df-980e-1334724aa6cb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7d4a9d36-3699-48e9-a5fb-a6540b6e1a1a" name="отображает сообщение о невозможности удаления ресурса/элемента с выводом списка зависимостей" isLeaf="false">
+            <elementDefinition Id="c1d79d3f-0acd-4094-90f7-7b5561e3b41a" />
+            <flowNodeTargets>
+              <controlFlow Id="7d632a12-fec6-4f41-88fe-96fea302e626" isLeaf="false">
+                <mergeNodeMoniker Id="f00e8cf6-22b1-4a7d-b071-ef93f5e4f67f" LastKnownName="Merge3" />
+                <elementDefinition Id="62aab824-5f92-4ae3-9fd4-2f9bbd1d13ad" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="43dfa864-cbc8-40fc-ae38-16b4ea6509e9" name="удаляет запись о ресурсе/элементе из кеша" isLeaf="false">
+            <elementDefinition Id="9cf7b4c0-7294-47d6-9c5f-91908a16d300" />
+            <flowNodeTargets>
+              <controlFlow Id="45681711-6a38-4591-82cd-5f1d6cc0a1b0" isLeaf="false">
+                <opaqueActionMoniker Id="69ba41a5-f45a-43f9-a2f2-fc44c208cf7c" LastKnownName="отображает сообщение об успешном удалении" />
+                <elementDefinition Id="a8d22294-36d4-4901-8711-913b038c64da" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="69ba41a5-f45a-43f9-a2f2-fc44c208cf7c" name="отображает сообщение об успешном удалении" isLeaf="false">
+            <elementDefinition Id="b1242492-671c-4569-bf92-6fd53580b9a1" />
+            <flowNodeTargets>
+              <controlFlow Id="2fb97d61-8c36-4f57-8eda-b132b767138e" isLeaf="false">
+                <mergeNodeMoniker Id="f00e8cf6-22b1-4a7d-b071-ef93f5e4f67f" LastKnownName="Merge3" />
+                <elementDefinition Id="01b43dc9-71df-42da-bca1-b23e2d257ec4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="f00e8cf6-22b1-4a7d-b071-ef93f5e4f67f" name="Merge3" isLeaf="false">
+            <elementDefinition Id="70d13e5f-4b85-477f-b54d-6be32bb30a38" />
+            <flowNodeTargets>
+              <controlFlow Id="ad2a7e25-e067-413c-a3f6-390e9fa53b71" isLeaf="false">
+                <opaqueActionMoniker Id="5bec9dc6-d907-4b2a-8c0f-3c58fa12a8af" LastKnownName="отображает окно Библиотека ресурсов и элементов" />
+                <elementDefinition Id="753de536-a774-409a-843e-9331f828a970" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction Id="cf4f9fa3-1ec4-44be-ac6a-32ce6019ff90" name="выводит окно Ресурс/ окно Элемент с заполненными полями и кнопкой Изменить" isLeaf="false">
+            <elementDefinition Id="f52b057e-0fa6-4863-a7f3-2a9c64242642" />
+            <flowNodeTargets>
+              <controlFlow Id="4d017ae5-5563-4cf3-85a6-2c5d17b9818f" isLeaf="false">
+                <opaqueActionMoniker Id="e283629b-1cae-4eec-b3d2-c82b6855f106" LastKnownName="Редактирует поля" />
+                <elementDefinition Id="c9267076-b9b0-44f1-bc29-ada0cd138546" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e283629b-1cae-4eec-b3d2-c82b6855f106" name="Редактирует поля" isLeaf="false">
+            <elementDefinition Id="06137a05-fa45-422f-85e5-72110952c9a7" />
+            <flowNodeTargets>
+              <controlFlow Id="b0e33f29-050f-4841-87f7-3049d9d0b55d" isLeaf="false">
+                <opaqueActionMoniker Id="3af7e3be-8304-4b94-9ed9-0e4a46e7ef88" LastKnownName="нажимаеткнопку Изменить" />
+                <elementDefinition Id="bae81ce0-eb51-4f92-bdb7-8e5fbc4592f4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3af7e3be-8304-4b94-9ed9-0e4a46e7ef88" name="нажимаеткнопку Изменить" isLeaf="false">
+            <elementDefinition Id="eca6abae-7dc1-4e2f-b907-02dd681fe88c" />
+            <flowNodeTargets>
+              <controlFlow Id="e5430d43-17bc-4859-a7a6-e3779bf35056" isLeaf="false">
+                <opaqueActionMoniker Id="92406103-f29b-41cc-841f-2c86a8071f6c" LastKnownName="отправляет запрос БД на изменение всех записей, связанных с ресурсом/элементом" />
+                <elementDefinition Id="245cce05-3508-45e3-afac-83ecf43eda96" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="92406103-f29b-41cc-841f-2c86a8071f6c" name="отправляет запрос БД на изменение всех записей, связанных с ресурсом/элементом" isLeaf="false">
+            <elementDefinition Id="09b08057-37c6-4edc-8a0e-04c68c0a6dca" />
+            <flowNodeTargets>
+              <controlFlow Id="dea1f455-39a0-4e6b-b20f-ccb32a8835a4" isLeaf="false">
+                <opaqueActionMoniker Id="2fff0f2c-34b2-4686-a770-cb4b30b20e17" LastKnownName="Обновить все записи о ресурсе/элементе во всех таблицах" />
+                <elementDefinition Id="a6cf19b3-cbc2-47d7-bda9-93a662a36667" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="2fff0f2c-34b2-4686-a770-cb4b30b20e17" name="Обновить все записи о ресурсе/элементе во всех таблицах" isLeaf="false">
+            <elementDefinition Id="c2466e6c-6ff1-44eb-b674-89d7ade20459" />
+            <flowNodeTargets>
+              <controlFlow Id="a2838d58-99b8-44bc-9855-8eebf2140457" isLeaf="false">
+                <opaqueActionMoniker Id="2dbb0c20-9561-438f-be78-f7ddcd9ac131" LastKnownName="Отправить ответ об успешном выплнении операции2" />
+                <elementDefinition Id="06f1bc9e-b41a-4cd6-b0fd-5bee89df22c2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="2dbb0c20-9561-438f-be78-f7ddcd9ac131" name="Отправить ответ об успешном выплнении операции2" isLeaf="false">
+            <elementDefinition Id="bb95acf6-ccca-4bc7-bfde-35e5f7a4c362" />
+            <flowNodeTargets>
+              <controlFlow Id="65c43b49-c556-49e5-98d9-f63f89bdab5f" isLeaf="false">
+                <opaqueActionMoniker Id="d8c4f83d-d162-4411-826e-92057ba3b3df" LastKnownName="изменяет данные о ресурсе/элементе в кеше" />
+                <elementDefinition Id="a935fe56-b3f5-440c-be19-ab28a1dcc96f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d8c4f83d-d162-4411-826e-92057ba3b3df" name="изменяет данные о ресурсе/элементе в кеше" isLeaf="false">
+            <elementDefinition Id="afe9663e-aa6f-489d-b5d9-919db21519eb" />
+            <flowNodeTargets>
+              <controlFlow Id="a8cd25b0-1265-43af-99c0-10078ad1ef92" isLeaf="false">
+                <opaqueActionMoniker Id="4f9e4fce-066f-4bee-b8dd-948ffbc32260" LastKnownName="Отображает ответ об успешном изменении" />
+                <elementDefinition Id="f9d7aeae-1e46-45ef-b455-5fd70e9e585b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f3a7badd-7a44-4164-9c82-12474d67c015" name="Отображает ответ об успешном добавлении" isLeaf="false">
+            <elementDefinition Id="8f94d396-3c07-4f77-8d54-19bfbaca166d" />
+            <flowNodeTargets>
+              <controlFlow Id="a9da1b08-2fcf-4cc7-8ec1-84cf640f7f34" isLeaf="false">
+                <opaqueActionMoniker Id="5bec9dc6-d907-4b2a-8c0f-3c58fa12a8af" LastKnownName="отображает окно Библиотека ресурсов и элементов" />
+                <elementDefinition Id="e5e7b62f-38d0-4f53-a576-6f5f63542945" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4f9e4fce-066f-4bee-b8dd-948ffbc32260" name="Отображает ответ об успешном изменении" isLeaf="false">
+            <elementDefinition Id="152d6209-c240-41ca-bb4a-ce88c805eaf0" />
+            <flowNodeTargets>
+              <controlFlow Id="80f6e973-ee0e-4168-9164-8467a5ed1ead" isLeaf="false">
+                <opaqueActionMoniker Id="5bec9dc6-d907-4b2a-8c0f-3c58fa12a8af" LastKnownName="отображает окно Библиотека ресурсов и элементов" />
+                <elementDefinition Id="ac5e33d2-68d9-4cb0-b87a-75c15c36004a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="71422e0d-32c9-4e9e-afa7-8b7b7f8c0b83" name="считывает данные о конфигурации ресурса/элемента" isLeaf="false">
+            <elementDefinition Id="8c3b9b4f-e415-4bf8-b2e5-5159e8943806" />
+            <flowNodeTargets>
+              <controlFlow Id="aa754185-58f1-449e-99e8-7f7f2f81ba66" isLeaf="false">
+                <opaqueActionMoniker Id="5ca1811f-0346-4945-b5af-0520c1267aa1" LastKnownName="Сформировать ответ2" />
+                <elementDefinition Id="97dcdcea-6dfe-4915-a9c7-c48535b65652" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5ca1811f-0346-4945-b5af-0520c1267aa1" name="Сформировать ответ2" isLeaf="false">
+            <elementDefinition Id="91792922-25b9-49b6-a7bc-c8a081f76a85" />
+            <flowNodeTargets>
+              <controlFlow Id="be606a8c-a6cc-4a90-a31f-2d1bb5c37aa9" isLeaf="false">
+                <opaqueActionMoniker Id="79d3b12b-a009-4d9f-902f-ebd46fcfb8d6" LastKnownName="Отправить ответ2" />
+                <elementDefinition Id="cf234e5d-84fb-46e5-bf9d-c58242a07d24" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="79d3b12b-a009-4d9f-902f-ebd46fcfb8d6" name="Отправить ответ2" isLeaf="false">
+            <elementDefinition Id="9db04e12-fcf6-4283-99ae-e5621a748cf4" />
+            <flowNodeTargets>
+              <controlFlow Id="c4f67438-3b78-41ad-970a-71620efae22c" isLeaf="false">
+                <opaqueActionMoniker Id="3877a123-e012-4219-941f-5f5ad317d15b" LastKnownName="выводит окно Ресурс/ окно Элемент с пустой формой, сгенерированной на основе конфигурации, и кнопкой Создать" />
+                <elementDefinition Id="bde1017b-a6a9-4b41-ad32-e01778ca0a78" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="ccc2f06c-1175-4e1e-b7a3-c3c0cfb30d59" name="Decision3" isLeaf="false">
+            <elementDefinition Id="6307d514-9c9f-4295-a8f0-73dd47edd154" />
+            <flowNodeTargets>
+              <controlFlow Id="5d8dbb59-0d2e-4ed6-a6e9-71346a11ca3d" guard="Работать с библиотекой ресурсов и элементов" isLeaf="false">
+                <opaqueActionMoniker Id="25ba1d0c-e7ae-4f7f-8d60-e48ee44be4d4" LastKnownName="нажимает кнопку Просмотр библиотеки ресурсов и элементов" />
+                <elementDefinition Id="1dbc4a63-8303-4bd4-b93a-e75f94826083" />
+              </controlFlow>
+              <controlFlow Id="4132bce0-b978-4e46-8110-9444462906ea" guard="Работать с проектом" isLeaf="false">
+                <opaqueActionMoniker Id="1f809aeb-131e-4b69-bd11-a6f54bbf2619" LastKnownName="нажимает кнопку Работа с проектом напротив выбранного проекта из списка" />
+                <elementDefinition Id="cc4a6d89-f755-452c-a87e-4ae9c01480b2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="1f809aeb-131e-4b69-bd11-a6f54bbf2619" name="нажимает кнопку Работа с проектом напротив выбранного проекта из списка" isLeaf="false">
+            <elementDefinition Id="a6eea2db-75af-4be2-9f7e-13b3c7f2fcac" />
+            <flowNodeTargets>
+              <controlFlow Id="2ee73c91-f8ba-44eb-8fd4-44b05cc8a2be" isLeaf="false">
+                <opaqueActionMoniker Id="24fb2f5f-3c75-463e-9bc6-5a1b7b4fd809" LastKnownName="Отправить запрос БД на получение данных о проекте" />
+                <elementDefinition Id="cd7c5d46-82cd-4251-b3b1-8edb67a62c47" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="24fb2f5f-3c75-463e-9bc6-5a1b7b4fd809" name="Отправить запрос БД на получение данных о проекте" isLeaf="false">
+            <elementDefinition Id="0d26812a-2471-4c62-8b1d-73846f99f842" />
+            <flowNodeTargets>
+              <controlFlow Id="74132ad1-0598-45cc-9bf2-fcc930e36160" isLeaf="false">
+                <opaqueActionMoniker Id="8106851b-c800-46d5-890f-4793ea362689" LastKnownName="Сформировать ответ3" />
+                <elementDefinition Id="9f42ecd4-4ac6-4256-8059-04741ffcea62" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8106851b-c800-46d5-890f-4793ea362689" name="Сформировать ответ3" isLeaf="false">
+            <elementDefinition Id="d661e363-54f0-45ec-8e55-b6754bd79409" />
+            <flowNodeTargets>
+              <controlFlow Id="73812b0d-c0d7-41b6-a7f7-be48b0032551" isLeaf="false">
+                <opaqueActionMoniker Id="308eec17-12c4-4676-802e-e371e6fca374" LastKnownName="Отправить ответ3" />
+                <elementDefinition Id="f55a2917-13e9-4c03-b434-71eb63f37835" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="308eec17-12c4-4676-802e-e371e6fca374" name="Отправить ответ3" isLeaf="false">
+            <elementDefinition Id="0b4c916f-9b19-439b-8376-04b56f3c4397" />
+            <flowNodeTargets>
+              <controlFlow Id="1ce8ff56-8986-4699-9524-6abe73e3d26c" isLeaf="false">
+                <opaqueActionMoniker Id="8db66c43-e825-4495-aa9b-1fcba7a8ab48" LastKnownName="кеширует полученные данные3" />
+                <elementDefinition Id="bddeabac-02bb-4650-86e4-845d519e79ea" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8db66c43-e825-4495-aa9b-1fcba7a8ab48" name="кеширует полученные данные3" isLeaf="false">
+            <elementDefinition Id="e440b862-a19f-4f1d-855d-243e12e0b139" />
+            <flowNodeTargets>
+              <controlFlow Id="02596bc4-baca-4348-ac71-b097f5980bef" isLeaf="false">
+                <opaqueActionMoniker Id="cbd2673c-a11b-4043-bee8-30a4a3e6f401" LastKnownName="выводит окно Проект с заполненными полями и кнопкой Изменить" />
+                <elementDefinition Id="978744ff-f3f9-4af1-a6a9-4f9ab7502f5e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cbd2673c-a11b-4043-bee8-30a4a3e6f401" name="выводит окно Проект с заполненными полями и кнопкой Изменить" isLeaf="false">
+            <elementDefinition Id="32898608-2a7c-4e9d-bc11-27a664e55f36" />
+            <flowNodeTargets>
+              <controlFlow Id="00b23a2f-9f06-4830-8741-f44fca31c225" isLeaf="false">
+                <decisionNodeMoniker Id="cd162d3c-a3b8-4b7e-92cb-416809ed6080" LastKnownName="Decision6" />
+                <elementDefinition Id="1fc983d0-a05d-4aa6-8771-08f15b11023e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ef3ea73d-3fac-4d8d-8908-6b5e0e72ea06" name="нажимает кнопку Добавить ресурс / Добавить элемент" isLeaf="false">
+            <elementDefinition Id="2a2aecdb-c871-4637-868b-767b8da6eff3" />
+            <flowNodeTargets>
+              <controlFlow Id="cfb2e946-c10b-4ffe-8d8c-14cad0afc160" isLeaf="false">
+                <opaqueActionMoniker Id="8dc2a4bb-8cfd-4180-b753-0635c5f1eb50" LastKnownName="выводит список доступных ресурсов/элементов" />
+                <elementDefinition Id="b304b55b-1507-4fed-b899-ec890b3a2eac" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8dc2a4bb-8cfd-4180-b753-0635c5f1eb50" name="выводит список доступных ресурсов/элементов" isLeaf="false">
+            <elementDefinition Id="8b849f38-863d-4d5c-94fd-1b60666d0e44" />
+            <flowNodeTargets>
+              <controlFlow Id="0ef0f3dd-a559-443f-bc29-c3b7100b762e" isLeaf="false">
+                <opaqueActionMoniker Id="d4f09c0f-1af5-42cd-bd66-4aaf55421460" LastKnownName="выбирает ресурс/элемент из списка" />
+                <elementDefinition Id="67f52a1c-840e-455b-a98c-6299ec00112e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d4f09c0f-1af5-42cd-bd66-4aaf55421460" name="выбирает ресурс/элемент из списка" isLeaf="false">
+            <elementDefinition Id="95b48592-a7cd-4ffb-8c9b-52c91a08ad1f" />
+            <flowNodeTargets>
+              <controlFlow Id="41974dca-8bdb-4e5b-b58d-9bc470450ac1" isLeaf="false">
+                <opaqueActionMoniker Id="cbecaf05-6572-4c49-a735-2a4253426d29" LastKnownName="отправляет запрос БД на добавление записи о ресурсе/элементе в проект" />
+                <elementDefinition Id="48e932cc-0a0c-41cf-8b43-039f20e33ad8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cbecaf05-6572-4c49-a735-2a4253426d29" name="отправляет запрос БД на добавление записи о ресурсе/элементе в проект" isLeaf="false">
+            <elementDefinition Id="8b60d616-5809-4e2f-9bbd-3b612722bd7c" />
+            <flowNodeTargets>
+              <controlFlow Id="ce6a213f-0562-4546-812f-53e69752ded7" isLeaf="false">
+                <opaqueActionMoniker Id="9c469eef-ae8b-44e3-9e17-e5525c45bc59" LastKnownName="Обновить все записи о ресурсе/элементе во всех таблицах1" />
+                <elementDefinition Id="36770746-e262-42b7-8c1d-011197df7226" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9c469eef-ae8b-44e3-9e17-e5525c45bc59" name="Обновить все записи о ресурсе/элементе во всех таблицах1" isLeaf="false">
+            <elementDefinition Id="d5d1461b-02b7-4513-8855-4253f9813348" />
+            <flowNodeTargets>
+              <controlFlow Id="b5dc68c5-3551-450f-a522-a6380346faea" isLeaf="false">
+                <opaqueActionMoniker Id="ebf69739-93b6-44a8-aeeb-edd12255b2a7" LastKnownName="Отправить ответ об успешном выплнении операции22" />
+                <elementDefinition Id="6505e903-3e67-462b-af94-8248928a5921" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ebf69739-93b6-44a8-aeeb-edd12255b2a7" name="Отправить ответ об успешном выплнении операции22" isLeaf="false">
+            <elementDefinition Id="2857b918-3a94-4c04-aeb4-381fb00fa361" />
+            <flowNodeTargets>
+              <controlFlow Id="5805da0b-7e26-49ee-a219-ea458488913f" isLeaf="false">
+                <opaqueActionMoniker Id="cbd2673c-a11b-4043-bee8-30a4a3e6f401" LastKnownName="выводит окно Проект с заполненными полями и кнопкой Изменить" />
+                <elementDefinition Id="62bd44f6-ace1-4613-bf5b-9695262e6380" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="cd162d3c-a3b8-4b7e-92cb-416809ed6080" name="Decision6" isLeaf="false">
+            <elementDefinition Id="fcfd3ebd-0116-4f25-8a4f-2ff7c261c0ee" />
+            <flowNodeTargets>
+              <controlFlow Id="bb70ae20-a86c-4c45-b8e9-8d4406181ab7" guard="Добавить ресурс/элемент в проект" isLeaf="false">
+                <opaqueActionMoniker Id="ef3ea73d-3fac-4d8d-8908-6b5e0e72ea06" LastKnownName="нажимает кнопку Добавить ресурс / Добавить элемент" />
+                <elementDefinition Id="18b36176-7b59-4674-8f1e-605a2b0a0d79" />
+              </controlFlow>
+              <controlFlow Id="26a8d7a6-fb6e-4869-872b-b812dda70e91" guard="Выйти в главное меню" isLeaf="false">
+                <opaqueActionMoniker Id="d590a3c6-5224-4a04-8191-d4eeb2576dca" LastKnownName="Нажать кнопку Выход" />
+                <elementDefinition Id="1eb7e46e-5401-48ed-90ea-bf513344d119" />
+              </controlFlow>
+              <controlFlow Id="268d8f61-538e-4067-b298-aa18dedf5832" guard="Убрать ресурс/элемент из проекта" isLeaf="false">
+                <opaqueActionMoniker Id="3d5d9b0c-ceaa-4b01-a2fe-b51cd4b393e2" LastKnownName="нажимает кнопку Убрать напротив выбранного ресурса/элемента" />
+                <elementDefinition Id="f67f9223-6b42-4595-8dc2-3abdc5cfb648" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="3d5d9b0c-ceaa-4b01-a2fe-b51cd4b393e2" name="нажимает кнопку Убрать напротив выбранного ресурса/элемента" isLeaf="false">
+            <elementDefinition Id="49a0760e-87a7-45ef-8aa9-37ceb54deebb" />
+            <flowNodeTargets>
+              <controlFlow Id="0529527b-37d6-40b7-a9be-cfe36d0009ff" isLeaf="false">
+                <opaqueActionMoniker Id="6b09113c-d91a-4a00-bb04-0e39b3a588ac" LastKnownName="отправляет запрос БД на удаление записи о ресурсе/элементе из проекта" />
+                <elementDefinition Id="b7fc59ab-4e61-43fc-a355-0fab7a73c343" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6b09113c-d91a-4a00-bb04-0e39b3a588ac" name="отправляет запрос БД на удаление записи о ресурсе/элементе из проекта" isLeaf="false">
+            <elementDefinition Id="9074b341-2058-4927-9503-3d0de1b89dac" />
+            <flowNodeTargets>
+              <controlFlow Id="a32ebb0d-ef63-4a9f-b595-9728bac29912" isLeaf="false">
+                <opaqueActionMoniker Id="5131c332-8a3e-44a9-aa3d-f7396dafe542" LastKnownName="Проверка зависимостей1" />
+                <elementDefinition Id="1144cf7c-59c5-4302-9666-02d0f5a13c6d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b1260b77-b4ff-403f-9cc0-ae19b0ab873b" name="Отправить ответ об успешном выплнении операции11" isLeaf="false">
+            <elementDefinition Id="27e4a5ca-faee-47e0-860b-c0e18f0c8969" />
+            <flowNodeTargets>
+              <controlFlow Id="8cd8c3de-44b1-45bc-bba3-e28af073f8f0" isLeaf="false">
+                <opaqueActionMoniker Id="ad8758e6-c99f-48aa-b359-4105a9a23477" LastKnownName="удаляет запись о ресурсе/элемент в проекте из кеша" />
+                <elementDefinition Id="1a98cb73-dc82-43b4-9d2e-119e2595bd4c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5131c332-8a3e-44a9-aa3d-f7396dafe542" name="Проверка зависимостей1" isLeaf="false">
+            <elementDefinition Id="e6cd2df2-e00b-4cc0-ae26-6f1cfd75761c" />
+            <flowNodeTargets>
+              <controlFlow Id="290aeb24-1fcd-4608-8c69-3767981f52e5" isLeaf="false">
+                <decisionNodeMoniker Id="97b854af-ffc2-4daf-acaf-a4635c686f72" LastKnownName="Decision51" />
+                <elementDefinition Id="460d24da-47a2-43b4-87e2-7eb4eef09b43" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="97b854af-ffc2-4daf-acaf-a4635c686f72" name="Decision51" isLeaf="false">
+            <elementDefinition Id="8647824e-2a23-431d-9117-d7c8be7abbbd" />
+            <flowNodeTargets>
+              <controlFlow Id="11b9eb11-0e32-44e9-b612-9885af96e4de" guard="Есть зависимости" isLeaf="false">
+                <opaqueActionMoniker Id="ba491ff9-5e52-4cc6-a363-c11741cbe1ad" LastKnownName="Отправить ошибку зависимостей1" />
+                <elementDefinition Id="5a8da35d-0f63-42f4-aefa-1173bbd7d21c" />
+              </controlFlow>
+              <controlFlow Id="e7fe3c43-e533-4449-9d52-453a37d2d63f" guard="Нет зависимостей" isLeaf="false">
+                <opaqueActionMoniker Id="f0f2da54-7fc3-438d-8b23-fcd4c9a0e760" LastKnownName="удалить ресурс/элемент из всех таблиц, связанных с проектом" />
+                <elementDefinition Id="cacf7f28-1398-4a25-a9e6-30b587a7c618" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="ba491ff9-5e52-4cc6-a363-c11741cbe1ad" name="Отправить ошибку зависимостей1" isLeaf="false">
+            <elementDefinition Id="f350ef10-cca9-440d-b072-b98a956fb8a2" />
+            <flowNodeTargets>
+              <controlFlow Id="2179bb00-316b-4db8-8c7f-192c81a3fcf8" isLeaf="false">
+                <opaqueActionMoniker Id="7e219d75-bb65-45c4-8864-a164e45bfbe1" LastKnownName="отображает сообщение о невозможности удаления ресурса/элемента с выводом списка зависимостей1" />
+                <elementDefinition Id="1098a35a-2c19-4f01-91cd-39a271b57935" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f0f2da54-7fc3-438d-8b23-fcd4c9a0e760" name="удалить ресурс/элемент из всех таблиц, связанных с проектом" isLeaf="false">
+            <elementDefinition Id="c16e7d0f-1511-4560-a9b8-6174d074ccb5" />
+            <flowNodeTargets>
+              <controlFlow Id="c116f601-f2d9-4b3e-8301-cc5f4826a0de" isLeaf="false">
+                <opaqueActionMoniker Id="b1260b77-b4ff-403f-9cc0-ae19b0ab873b" LastKnownName="Отправить ответ об успешном выплнении операции11" />
+                <elementDefinition Id="13dbb9c9-c24a-4c20-accd-2b608a377d45" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="aadabae1-f20b-48f2-bceb-2493b730a775" name="Отправить ответ об успешном выплнении операции1" isLeaf="false">
+            <elementDefinition Id="bf4d3f9f-c20c-413f-98fb-6db762843ca2" />
+            <flowNodeTargets>
+              <controlFlow Id="9ec6965e-dc3c-45ad-883e-96635d910083" isLeaf="false">
+                <opaqueActionMoniker Id="43dfa864-cbc8-40fc-ae38-16b4ea6509e9" LastKnownName="удаляет запись о ресурсе/элементе из кеша" />
+                <elementDefinition Id="1188460a-5ea1-43c6-bacb-5a56052f4d9a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7e219d75-bb65-45c4-8864-a164e45bfbe1" name="отображает сообщение о невозможности удаления ресурса/элемента с выводом списка зависимостей1" isLeaf="false">
+            <elementDefinition Id="11b409b9-4632-4524-aa27-a9dc72d5a8d8" />
+            <flowNodeTargets>
+              <controlFlow Id="90cc1e6b-fbe4-4868-8608-9de03e91e5e3" isLeaf="false">
+                <mergeNodeMoniker Id="078abff4-b1b5-4882-aca7-c0ea6fcb8eff" LastKnownName="Merge1" />
+                <elementDefinition Id="bf513216-f48d-4182-8c15-9696cd0f60b3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ad8758e6-c99f-48aa-b359-4105a9a23477" name="удаляет запись о ресурсе/элемент в проекте из кеша" isLeaf="false">
+            <elementDefinition Id="942c7b64-5949-4894-8173-84695f68b289" />
+            <flowNodeTargets>
+              <controlFlow Id="597a6d50-ac87-49a6-ae38-f832638d2ba3" isLeaf="false">
+                <opaqueActionMoniker Id="d5aaacaf-0361-4d88-94d4-34b39acee368" LastKnownName="отображает сообщение об успешном удалении1" />
+                <elementDefinition Id="7f15c7ad-6478-4567-adbf-b123f55c24ec" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d5aaacaf-0361-4d88-94d4-34b39acee368" name="отображает сообщение об успешном удалении1" isLeaf="false">
+            <elementDefinition Id="c85ae3df-5e5a-48b1-94a6-701852276c78" />
+            <flowNodeTargets>
+              <controlFlow Id="f06612ac-e163-44a8-9133-f5d6db54c843" isLeaf="false">
+                <mergeNodeMoniker Id="078abff4-b1b5-4882-aca7-c0ea6fcb8eff" LastKnownName="Merge1" />
+                <elementDefinition Id="c4df9dcb-e0a2-401a-89bd-ea39f617ed11" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="078abff4-b1b5-4882-aca7-c0ea6fcb8eff" name="Merge1" isLeaf="false">
+            <elementDefinition Id="c2ff14cb-5480-491b-b17a-4d646b91bff4" />
+            <flowNodeTargets>
+              <controlFlow Id="18499bd6-4315-487a-9f03-48650f3c9bdc" isLeaf="false">
+                <opaqueActionMoniker Id="cbd2673c-a11b-4043-bee8-30a4a3e6f401" LastKnownName="выводит окно Проект с заполненными полями и кнопкой Изменить" />
+                <elementDefinition Id="1432cf7c-e032-4b58-929d-9312a33e756a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="986f1430-8ae8-4a32-9a1e-a337a219b1bf" name="pdps-model">
+    <elementDefinition Id="2b3c349b-fd1c-4ce7-b4c2-6bff4a72f9e1" />
+  </package>
+</activityRootModel>
