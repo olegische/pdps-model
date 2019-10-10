@@ -21,21 +21,11 @@
       <elementDefinition Id="8071136a-8798-49a5-b15f-601c06cb0344" />
       <body>Queue</body>
     </comment>
+    <comment Id="01512904-c7f7-4f34-9373-9aee7d29cad4">
+      <elementDefinition Id="1c0cc12e-61ba-4cae-99fb-ee11986e842c" />
+      <body>В таблице конфигураций в БД должны быть записи, в противном случае кнопка не активна</body>
+    </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="e9a16e73-2d29-473c-9812-ac014532b492">
-      <profileInstance Id="d57f1f9f-5672-482e-8518-a73072ba3252" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="15677f01-0cf1-4f7e-98fb-7cc03fe344fd">
-      <profileInstance Id="7b457571-53cb-4015-8652-965b9f65c4b1" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="c4b960e4-5937-4eee-ab44-e1cebad3133f" name="act configuration create" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -381,11 +371,11 @@
           <decisionNode Id="fab1c97a-e0ed-4cb1-b41d-e4d273b9b653" name="Decision5" isLeaf="false">
             <elementDefinition Id="4a597360-6114-457e-81d6-f207f1060eb5" />
             <flowNodeTargets>
-              <controlFlow Id="e4f81228-d54b-45ca-9555-17b335c4573b" isLeaf="false">
+              <controlFlow Id="e4f81228-d54b-45ca-9555-17b335c4573b" guard="Есть зависимости" isLeaf="false">
                 <opaqueActionMoniker Id="ca2f09a0-72dd-4c4b-a836-90a9184e6dd8" LastKnownName="Отправить ошибку зависимостей" />
                 <elementDefinition Id="45d4eef6-a239-4a41-a3b8-7145eeb5d119" />
               </controlFlow>
-              <controlFlow Id="efaba636-7678-4da9-87f0-ed2bd8f45740" isLeaf="false">
+              <controlFlow Id="efaba636-7678-4da9-87f0-ed2bd8f45740" guard="Нет зависимостей" isLeaf="false">
                 <opaqueActionMoniker Id="5b41b725-8e04-45e3-a8de-8b1e4d414de8" LastKnownName="Отправить ответ об успешном выплнении операции1" />
                 <elementDefinition Id="5e7a5fb8-96a2-48ed-a021-7544954a4872" />
               </controlFlow>
@@ -570,5 +560,19 @@
   </packagedElements>
   <package Id="4da1855d-a3e9-4492-b3bb-ed1b7698f265" name="pdps-model">
     <elementDefinition Id="2b3c349b-fd1c-4ce7-b4c2-6bff4a72f9e1" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e9a16e73-2d29-473c-9812-ac014532b492">
+        <profileInstance Id="d57f1f9f-5672-482e-8518-a73072ba3252" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="15677f01-0cf1-4f7e-98fb-7cc03fe344fd">
+        <profileInstance Id="7b457571-53cb-4015-8652-965b9f65c4b1" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

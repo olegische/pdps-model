@@ -622,7 +622,7 @@
       </nodes>
     </controlFlowConnector>
     <actionShape Id="9d6aa68d-7097-4087-9d29-490762cb980a" absoluteBounds="6.125, 8.875, 1.125, 0.625" customColor="161, 199, 231">
-      <opaqueActionMoniker Id="96e0bf6d-0db0-4dc1-af03-a5f475908a74" LastKnownName="Отображает ответ об успешном добавлении пользователя" />
+      <opaqueActionMoniker Id="96e0bf6d-0db0-4dc1-af03-a5f475908a74" LastKnownName="Отображает ответ об успешном добавлении" />
     </actionShape>
     <controlFlowConnector edgePoints="[(10.125 : 9.125); (7.25 : 9.125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <controlFlowMoniker Id="0fdb8b4d-f3f3-45da-8f44-e0967dd9b162" />

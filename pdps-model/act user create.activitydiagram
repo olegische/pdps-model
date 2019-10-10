@@ -95,7 +95,7 @@
             <elementDefinition Id="c289c5d8-840a-47ac-977f-ff77c2036821" />
             <flowNodeTargets>
               <controlFlow Id="0fdb8b4d-f3f3-45da-8f44-e0967dd9b162" isLeaf="false">
-                <opaqueActionMoniker Id="96e0bf6d-0db0-4dc1-af03-a5f475908a74" LastKnownName="Отображает ответ об успешном добавлении пользователя" />
+                <opaqueActionMoniker Id="96e0bf6d-0db0-4dc1-af03-a5f475908a74" LastKnownName="Отображает ответ об успешном добавлении" />
                 <elementDefinition Id="130295c1-2380-40cf-bd68-584d1e4186e6" />
               </controlFlow>
             </flowNodeTargets>
@@ -368,11 +368,11 @@
           <decisionNode Id="4b39377b-ee0d-44e6-ad8f-c24310f01e85" name="Decision5" isLeaf="false">
             <elementDefinition Id="fe7cab98-275c-4201-a272-6ae3a51eb36c" />
             <flowNodeTargets>
-              <controlFlow Id="0e377abe-36f1-4de2-af1a-7bc020a7273f" isLeaf="false">
+              <controlFlow Id="0e377abe-36f1-4de2-af1a-7bc020a7273f" guard="Есть зависимости" isLeaf="false">
                 <opaqueActionMoniker Id="b5b82274-838d-4845-b956-9500fed241cc" LastKnownName="Отправить ошибку зависимостей" />
                 <elementDefinition Id="9bfbc612-3fcb-48eb-9470-b99248d07f87" />
               </controlFlow>
-              <controlFlow Id="19eb49cb-0809-4187-87bb-b5bed123d9bf" isLeaf="false">
+              <controlFlow Id="19eb49cb-0809-4187-87bb-b5bed123d9bf" guard="Нет зависимостей" isLeaf="false">
                 <opaqueActionMoniker Id="3e407106-11a2-4a04-a688-029c4ff7b336" LastKnownName="Отправить ответ об успешном выплнении операции1" />
                 <elementDefinition Id="4633da67-20ad-4526-aef1-8588d9016464" />
               </controlFlow>
@@ -495,7 +495,7 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="96e0bf6d-0db0-4dc1-af03-a5f475908a74" name="Отображает ответ об успешном добавлении пользователя" isLeaf="false">
+          <opaqueAction Id="96e0bf6d-0db0-4dc1-af03-a5f475908a74" name="Отображает ответ об успешном добавлении" isLeaf="false">
             <elementDefinition Id="6303426a-832b-44a3-b2e7-bf7c754e7456" />
             <flowNodeTargets>
               <controlFlow Id="9b9a8bb5-47ea-4bde-9632-2e878e512676" isLeaf="false">
