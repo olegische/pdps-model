@@ -1281,7 +1281,7 @@
               <messageOccurrenceSpecificationMoniker Id="7e4c8ead-30ac-4afe-84e8-e6f342a5aafe" LastKnownName="MessageOccurrenceSpecification26" />
             </receiveEvent>
           </message>
-          <message Id="9a5fe48f-32ac-4de2-bc98-11bb23bdd525" name="move" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="9a5fe48f-32ac-4de2-bc98-11bb23bdd525" name="upload" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
             <elementDefinition Id="8eb69c84-39a4-4824-b1cb-c2b5ca117d71" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="810cf847-3abe-4f75-aa6d-74190f431684" LastKnownName="MessageOccurrenceSpecification27" />
