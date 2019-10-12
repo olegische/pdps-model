@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="0cf6bd7b-5d7f-4412-9e3f-2b33b65745e9" name="seq project documentation generate" linkedPackageId="2035e29b-b9df-48de-bfe3-8f4216681a5f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="81e0b549-0590-411e-91c0-de4bffa6802b">
-      <profileInstance Id="8ce0b38a-b667-4da1-9530-cf392e98de30" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="4ffcfdcd-31e3-43ac-aa78-e137cf94d4ff">
-      <profileInstance Id="7a9f8b39-c135-4ddf-b17d-c3a452913a08" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="de5bc106-205d-4e18-8b91-f7924463a3f4" name="seq project documentation generate" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
@@ -968,7 +954,7 @@
               <messageOccurrenceSpecificationMoniker Id="9f5afbb0-3cba-40a5-91a0-d3da6e3278ed" LastKnownName="MessageOccurrenceSpecification2" />
             </receiveEvent>
           </message>
-          <message Id="2fb4907b-ca96-4d1b-9ad3-98f039ee41f6" name="get" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="2fb4907b-ca96-4d1b-9ad3-98f039ee41f6" name="get" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ get(request : String) : String">
             <elementDefinition Id="4e3bf2d2-3ff2-4cf9-81d5-38907193755a" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="5a59aed4-2cce-4519-a077-53c903b4d1df" LastKnownName="MessageOccurrenceSpecification5" />
@@ -977,7 +963,7 @@
               <messageOccurrenceSpecificationMoniker Id="6e689636-e4a3-4006-9dc0-9035a19ccd8d" LastKnownName="MessageOccurrenceSpecification6" />
             </receiveEvent>
           </message>
-          <message Id="0d5b92f3-192a-44a5-8e73-de93f06ca375" name="package" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="0d5b92f3-192a-44a5-8e73-de93f06ca375" name="package" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ package(uid : String) : Boolean">
             <elementDefinition Id="3d34a040-5868-4acd-8c2c-f168fec9af54" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="95de63a0-99b7-4057-9202-d18fa8bfb21b" LastKnownName="MessageOccurrenceSpecification9" />
@@ -986,7 +972,7 @@
               <messageOccurrenceSpecificationMoniker Id="7e7d23c5-1851-4182-b1f4-ffe876646c1e" LastKnownName="MessageOccurrenceSpecification10" />
             </receiveEvent>
           </message>
-          <message Id="5524c81f-d95c-4686-be05-7f15fca1ea3c" name="getProjectData" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="5524c81f-d95c-4686-be05-7f15fca1ea3c" name="select" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
             <elementDefinition Id="6ef562a6-d7c5-4e9f-b508-c80654eda40b" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="7bb0ed09-f723-4a5f-aaee-31de535bd2be" LastKnownName="MessageOccurrenceSpecification13" />
@@ -995,7 +981,7 @@
               <messageOccurrenceSpecificationMoniker Id="0b1863ff-aa71-49fb-8af7-c50121ac634d" LastKnownName="MessageOccurrenceSpecification14" />
             </receiveEvent>
           </message>
-          <message Id="43cfaa45-0170-4328-9b23-838a9df9f797" name="&lt;&lt;return projectData&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="43cfaa45-0170-4328-9b23-838a9df9f797" name="&lt;&lt;return project&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="1269d021-ea42-4512-bb92-700a4ebe75b0" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="a306058e-bbae-42e1-a113-5fec15a9ca1c" LastKnownName="MessageOccurrenceSpecification15" />
@@ -1004,7 +990,7 @@
               <messageOccurrenceSpecificationMoniker Id="71e6db4c-6c1c-4b42-8134-80a5dca179bc" LastKnownName="MessageOccurrenceSpecification16" />
             </receiveEvent>
           </message>
-          <message Id="4c02a742-c627-437e-9bce-36c6cccd2d1f" name="getResElemList" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="4c02a742-c627-437e-9bce-36c6cccd2d1f" name="readList" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ readList(table : String) : String">
             <elementDefinition Id="63be9fb6-ee4a-4350-a639-874c035eedfc" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="16641ea8-99aa-4c72-80b4-5b65d425eaa6" LastKnownName="MessageOccurrenceSpecification13" />
@@ -1022,7 +1008,7 @@
               <messageOccurrenceSpecificationMoniker Id="8b7fa030-a43e-4979-8db9-7719199babf9" LastKnownName="MessageOccurrenceSpecification22" />
             </receiveEvent>
           </message>
-          <message Id="9f3bdf1a-1b8c-4e86-b3b2-f54d0ff22112" name="&lt;&lt;return resTableData&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="9f3bdf1a-1b8c-4e86-b3b2-f54d0ff22112" name="&lt;&lt;return resTable&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="45334b1b-cf2f-422a-8b65-c1a8c4853f0a" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="faa6e51a-3f3b-4a3b-a456-5802b907c6a7" LastKnownName="MessageOccurrenceSpecification23" />
@@ -1040,7 +1026,7 @@
               <messageOccurrenceSpecificationMoniker Id="9ef7d4f0-017a-44b7-92a5-c0c1bf80da56" LastKnownName="MessageOccurrenceSpecification42" />
             </receiveEvent>
           </message>
-          <message Id="4946659e-eec1-4b40-9f01-bf711fed86d0" name="&lt;&lt;return elemTableData&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="4946659e-eec1-4b40-9f01-bf711fed86d0" name="&lt;&lt;return elemTable&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="a64166a3-aeca-4d78-b089-348af961e1d9" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="35a18115-4051-4918-9e5a-f992bd7890ba" LastKnownName="MessageOccurrenceSpecification43" />
@@ -1049,7 +1035,7 @@
               <messageOccurrenceSpecificationMoniker Id="da6c8489-d080-4a60-bee4-c3d93546b481" LastKnownName="MessageOccurrenceSpecification44" />
             </receiveEvent>
           </message>
-          <message Id="4ab8e760-71e3-4195-9ebe-454bf353379a" name="&lt;&lt;return resElemListData&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="4ab8e760-71e3-4195-9ebe-454bf353379a" name="&lt;&lt;return instList&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="132cc961-ab67-44a4-9095-88832910f2cc" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="8a29be3a-3b77-4c5b-aa88-794bf37b8537" LastKnownName="MessageOccurrenceSpecification15" />
@@ -1058,7 +1044,7 @@
               <messageOccurrenceSpecificationMoniker Id="850acccb-0e03-4625-8661-c7a8a212f4ea" LastKnownName="MessageOccurrenceSpecification16" />
             </receiveEvent>
           </message>
-          <message Id="bcce1e03-69b2-4ad9-9ead-ede1c7490571" name="getInstData" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="bcce1e03-69b2-4ad9-9ead-ede1c7490571" name="read" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ read(uid : String) : String">
             <elementDefinition Id="6dbd206d-f34f-44d1-a67b-8db01468009d" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="d647cabd-6dd7-4c56-9c28-f27062623b70" LastKnownName="MessageOccurrenceSpecification59" />
@@ -1076,7 +1062,7 @@
               <messageOccurrenceSpecificationMoniker Id="809f2a7a-710c-4a1e-90d6-3ef0fb824f3c" LastKnownName="MessageOccurrenceSpecification64" />
             </receiveEvent>
           </message>
-          <message Id="3006f81e-3729-4d9d-8b9f-e761255a31f2" name="&lt;&lt;return instData&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="3006f81e-3729-4d9d-8b9f-e761255a31f2" name="&lt;&lt;return inst&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="f6cb3cbf-5f7a-4c3a-baaf-46cee9b152f9" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="c9d8abe5-0ae7-4dab-af90-ee3e399a1de0" LastKnownName="MessageOccurrenceSpecification65" />
@@ -1085,7 +1071,7 @@
               <messageOccurrenceSpecificationMoniker Id="7112edfd-f0de-4a9c-a723-981a6a8bea9f" LastKnownName="MessageOccurrenceSpecification66" />
             </receiveEvent>
           </message>
-          <message Id="554af3ec-3f5d-466b-a73f-7b959ebd51d0" name="&lt;&lt;return instData&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="554af3ec-3f5d-466b-a73f-7b959ebd51d0" name="&lt;&lt;return inst&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="8be97a83-02c1-4912-a3ac-58c51ff3e148" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="8ad42f03-c165-47c2-b5d4-cdb492da872e" LastKnownName="MessageOccurrenceSpecification61" />
@@ -1112,7 +1098,7 @@
               <messageOccurrenceSpecificationMoniker Id="c3b0d723-000e-4958-a1dd-1fc81715100c" LastKnownName="MessageOccurrenceSpecification36" />
             </receiveEvent>
           </message>
-          <message Id="a4fd3dc2-ba44-4bb3-b2c7-1984e0186bbc" name="upload" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="a4fd3dc2-ba44-4bb3-b2c7-1984e0186bbc" name="move" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
             <elementDefinition Id="68347552-b539-4e66-add6-c444bd929b44" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="b7fdb273-60ad-406b-9bbb-3e2fdb44fcf1" LastKnownName="MessageOccurrenceSpecification21" />
@@ -1408,5 +1394,19 @@
   </packagedElements>
   <package Id="2035e29b-b9df-48de-bfe3-8f4216681a5f" name="pdps-model">
     <elementDefinition Id="2b3c349b-fd1c-4ce7-b4c2-6bff4a72f9e1" />
+    <profileInstances>
+      <packageHasProfileInstances Id="81e0b549-0590-411e-91c0-de4bffa6802b">
+        <profileInstance Id="8ce0b38a-b667-4da1-9530-cf392e98de30" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4ffcfdcd-31e3-43ac-aa78-e137cf94d4ff">
+        <profileInstance Id="7a9f8b39-c135-4ddf-b17d-c3a452913a08" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </SequenceDesignerModel>

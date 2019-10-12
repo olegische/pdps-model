@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="d2694239-8c14-4eb2-88fd-be0138337ce2" name="act project documentation generate" linkedPackageId="5e15fb89-d716-46f6-aabf-b71069713b9c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="d2694239-8c14-4eb2-88fd-be0138337ce2" name="act project documentation generate" linkedPackageId="5e15fb89-d716-46f6-aabf-b71069713b9c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
     <comment Id="35044f08-2db8-45c8-8157-1ab7428e4d08">
       <elementDefinition Id="92ba1de9-efd5-41cf-b72c-5806c5ecf5de" />
@@ -22,20 +22,6 @@
       <body>Список проектов выводится изначально</body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="b9a65551-84d5-43e0-a862-a2428b336a7d">
-      <profileInstance Id="4e7f08e4-103c-48be-9621-17c82d3a4141" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="15c8ebe7-ca7f-46bf-b6a8-adf43250873d">
-      <profileInstance Id="d3fc3d44-e6d7-4a9c-84d3-e7515e7987b6" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="95350a44-e255-4741-ad47-db7db46ec945" name="act project documentation generate" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -52,12 +38,12 @@
           </initialNode>
           <opaqueAction Id="a459a17e-0256-491d-8c06-8793d0dd4165" name="нажимает кнопку Создать пакет документов напротив выбранного проекта из списка" isLeaf="false">
             <elementDefinition Id="bc9daa7d-efa8-4be9-852b-665bba05676e" />
-          </opaqueAction>
-          <opaqueAction Id="a856c3b3-935e-458a-bf3e-ad071d87ee02" name="заполняет поля формы" isLeaf="false">
-            <elementDefinition Id="8e792d5e-e06a-4f86-9fe8-94dd8bc394f7" />
-          </opaqueAction>
-          <opaqueAction Id="d4226a31-12db-49b6-8e5b-2af749979804" name="нажимает кнопку Загрузить" isLeaf="false">
-            <elementDefinition Id="67b3deda-5a82-43a1-9383-f53763a79a3c" />
+            <flowNodeTargets>
+              <controlFlow Id="d6364404-1ad1-4b9e-a7c4-64ca7c1f86a7" isLeaf="false">
+                <opaqueActionMoniker Id="a8952a63-ef40-4e93-96c8-31b395cc5d49" LastKnownName="Отправить запрос БД на получение данных о конфигурации" />
+                <elementDefinition Id="9532b747-dd48-4339-a5b2-94cb7a497e88" />
+              </controlFlow>
+            </flowNodeTargets>
           </opaqueAction>
           <opaqueAction Id="5501d63c-633d-4ad9-9db1-93970ab89fc4" name="заполняет типовые формы документации в соответствии с конфигурацией документации и полученных данных по проекту" isLeaf="false">
             <elementDefinition Id="91748d5c-5001-47da-a075-f05c613218b7" />
@@ -259,5 +245,19 @@
   </packagedElements>
   <package Id="5e15fb89-d716-46f6-aabf-b71069713b9c" name="pdps-model">
     <elementDefinition Id="2b3c349b-fd1c-4ce7-b4c2-6bff4a72f9e1" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b9a65551-84d5-43e0-a862-a2428b336a7d">
+        <profileInstance Id="4e7f08e4-103c-48be-9621-17c82d3a4141" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="15c8ebe7-ca7f-46bf-b6a8-adf43250873d">
+        <profileInstance Id="d3fc3d44-e6d7-4a9c-84d3-e7515e7987b6" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

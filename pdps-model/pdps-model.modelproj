@@ -22,110 +22,117 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="act authorization.activitydiagram">
+    <Content Include="act-authorization.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="act authorization.activitydiagram.layout">
+    <Content Include="act-authorization.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>act authorization.activitydiagram</DependentUpon>
+      <DependentUpon>act-authorization.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="act configuration create.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="act configuration create.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>act configuration create.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="act documentation forms upload.activitydiagram">
+    <Content Include="act-configuration-create.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="act documentation forms upload.activitydiagram.layout">
+    <Content Include="act-configuration-create.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>act documentation forms upload.activitydiagram</DependentUpon>
+      <DependentUpon>act-configuration-create.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="act project create.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="act project create.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>act project create.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="act project documentation generate.activitydiagram">
+    <Content Include="act-documentation-forms-upload.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="act project documentation generate.activitydiagram.layout">
+    <Content Include="act-documentation-forms-upload.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>act project documentation generate.activitydiagram</DependentUpon>
+      <DependentUpon>act-documentation-forms-upload.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="act user create.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="act user create.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>act user create.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="seq authorization.sequencediagram">
+    <Content Include="act-project-create.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="seq authorization.sequencediagram.layout">
+    <Content Include="act-project-create.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>seq authorization.sequencediagram</DependentUpon>
+      <DependentUpon>act-project-create.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="seq configuration create.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="seq configuration create.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>seq configuration create.sequencediagram</DependentUpon>
-    </Content>
-    <Content Include="seq documentation forms upload.sequencediagram">
+    <Content Include="act-project-documentation-generate.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="seq documentation forms upload.sequencediagram.layout">
+    <Content Include="act-project-documentation-generate.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>seq documentation forms upload.sequencediagram</DependentUpon>
+      <DependentUpon>act-project-documentation-generate.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="seq project create.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="seq project create.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>seq project create.sequencediagram</DependentUpon>
-    </Content>
-    <Content Include="seq project documentation generate.sequencediagram">
+    <Content Include="act-user-create.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="seq project documentation generate.sequencediagram.layout">
+    <Content Include="act-user-create.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>seq project documentation generate.sequencediagram</DependentUpon>
+      <DependentUpon>act-user-create.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="seq resource or element create.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="seq resource or element create.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>seq resource or element create.sequencediagram</DependentUpon>
-    </Content>
-    <Content Include="seq user create.sequencediagram">
+    <Content Include="cd-pdsp.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="seq user create.sequencediagram.layout">
+    <Content Include="cd-pdsp.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>seq user create.sequencediagram</DependentUpon>
+      <DependentUpon>cd-pdsp.classdiagram</DependentUpon>
     </Content>
-    <Content Include="uc pdps.usecasediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="uc pdps.usecasediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>uc pdps.usecasediagram</DependentUpon>
-    </Content>
-    <Content Include="act resource or element create.activitydiagram">
+    <Content Include="seq-authorization.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="act resource or element create.activitydiagram.layout">
+    <Content Include="seq-authorization.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>act resource or element create.activitydiagram</DependentUpon>
+      <DependentUpon>seq-authorization.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="seq-configuration-create.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="seq-configuration-create.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>seq-configuration-create.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="seq-documentation-forms-upload.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="seq-documentation-forms-upload.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>seq-documentation-forms-upload.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="seq-project-create.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="seq-project-create.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>seq-project-create.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="seq-project-documentation-generate.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="seq-project-documentation-generate.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>seq-project-documentation-generate.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="seq-resource-or-element-create.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="seq-resource-or-element-create.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>seq-resource-or-element-create.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="seq-user-create.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="seq-user-create.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>seq-user-create.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="uc-pdps.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="uc-pdps.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>uc-pdps.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="act-resource-or-element-create.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="act-resource-or-element-create.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>act-resource-or-element-create.activitydiagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\pdps-model.uml">

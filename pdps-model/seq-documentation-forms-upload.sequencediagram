@@ -1182,7 +1182,7 @@
               <messageOccurrenceSpecificationMoniker Id="a99ac80c-3c33-4f1e-bb81-102ea6ac6489" LastKnownName="MessageOccurrenceSpecification2" />
             </receiveEvent>
           </message>
-          <message Id="8c2501a3-edc1-46df-bf44-03fd3a55041e" name="get" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="8c2501a3-edc1-46df-bf44-03fd3a55041e" name="get" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ get(request : String) : String">
             <elementDefinition Id="68b7762d-184b-409e-95d2-5611aff5cb2a" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="2b29b0a9-e8f7-423f-bf47-f126cf0ceeeb" LastKnownName="MessageOccurrenceSpecification5" />
@@ -1191,7 +1191,7 @@
               <messageOccurrenceSpecificationMoniker Id="6ef41dd9-db81-4b11-9e20-0ee0367bf506" LastKnownName="MessageOccurrenceSpecification6" />
             </receiveEvent>
           </message>
-          <message Id="cbb82df3-e7d1-4167-bfb5-4c2129d0783c" name="getPage" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="cbb82df3-e7d1-4167-bfb5-4c2129d0783c" name="getPage" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ getPage(request : String) : String">
             <elementDefinition Id="3b22341a-092b-43ff-a9d0-2dcaf82bc281" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="cd0f0760-fd04-4aca-8871-4998e9e6d67a" LastKnownName="MessageOccurrenceSpecification229" />
@@ -1209,7 +1209,7 @@
               <messageOccurrenceSpecificationMoniker Id="1d68fa27-5d87-45b9-9c15-4f5bd8b4f2d1" LastKnownName="MessageOccurrenceSpecification234" />
             </receiveEvent>
           </message>
-          <message Id="978936f3-8fdc-491c-b2f8-fe87c99b3ffc" name="&lt;&lt;return pageUIDataFormUpload&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="978936f3-8fdc-491c-b2f8-fe87c99b3ffc" name="&lt;&lt;return pageUIFormUpload&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="500aab79-9929-4872-a1ee-978916103dc2" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="b9082baa-bbd2-4c4a-9e68-afb387eb84c9" LastKnownName="MessageOccurrenceSpecification235" />
@@ -1254,7 +1254,7 @@
               <messageOccurrenceSpecificationMoniker Id="f5bf5158-83fc-49bb-b3d3-fe7bb4c7f190" LastKnownName="MessageOccurrenceSpecification14" />
             </receiveEvent>
           </message>
-          <message Id="385423a5-f7e2-494c-8e85-9ab3db903bb8" name="post" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="385423a5-f7e2-494c-8e85-9ab3db903bb8" name="post" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ post(request : String) : String">
             <elementDefinition Id="b50bba45-6c97-421f-bd77-72482ce6c479" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="620c0381-5301-41d3-982b-c8885c1662d6" LastKnownName="MessageOccurrenceSpecification17" />
@@ -1263,7 +1263,7 @@
               <messageOccurrenceSpecificationMoniker Id="8e9972f2-ee99-4965-9ef8-10fdbf115ca8" LastKnownName="MessageOccurrenceSpecification18" />
             </receiveEvent>
           </message>
-          <message Id="c6ab7f0d-4135-43d2-9866-bf48fb476714" name="sendUploadData" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="c6ab7f0d-4135-43d2-9866-bf48fb476714" name="upload" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ upload(json : String) : Boolean">
             <elementDefinition Id="5c85c79c-d8f5-42dd-83ee-977fb54860ee" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="5188c731-c902-4475-b24b-4e37c8ab7983" LastKnownName="MessageOccurrenceSpecification21" />
@@ -1272,7 +1272,7 @@
               <messageOccurrenceSpecificationMoniker Id="ff8db721-d67c-40e6-861c-1a14e68b3100" LastKnownName="MessageOccurrenceSpecification22" />
             </receiveEvent>
           </message>
-          <message Id="4b796f51-05c5-4600-b022-078e6408e6a6" name="checkUploadData" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="true">
+          <message Id="4b796f51-05c5-4600-b022-078e6408e6a6" name="check" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="true" signatureText="+ check(test : String) : Boolean">
             <elementDefinition Id="2009b6aa-13f7-4736-abed-bd2f33543644" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="9d9a51e3-e038-493e-8308-7390fb91fc57" LastKnownName="MessageOccurrenceSpecification25" />
@@ -1281,7 +1281,7 @@
               <messageOccurrenceSpecificationMoniker Id="7e4c8ead-30ac-4afe-84e8-e6f342a5aafe" LastKnownName="MessageOccurrenceSpecification26" />
             </receiveEvent>
           </message>
-          <message Id="9a5fe48f-32ac-4de2-bc98-11bb23bdd525" name="upload" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="9a5fe48f-32ac-4de2-bc98-11bb23bdd525" name="move" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
             <elementDefinition Id="8eb69c84-39a4-4824-b1cb-c2b5ca117d71" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="810cf847-3abe-4f75-aa6d-74190f431684" LastKnownName="MessageOccurrenceSpecification27" />
@@ -1317,7 +1317,7 @@
               <messageOccurrenceSpecificationMoniker Id="2889af9d-b783-4733-ba2b-08cf8a26bb48" LastKnownName="MessageOccurrenceSpecification34" />
             </receiveEvent>
           </message>
-          <message Id="779ce78b-ace9-43ac-8a21-32aaa9ea24ac" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="779ce78b-ace9-43ac-8a21-32aaa9ea24ac" name="&lt;&lt;return status&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="3f695abd-f123-4399-af1c-10201d783929" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="9178cbac-ebee-41af-95ba-6425fba0647f" LastKnownName="MessageOccurrenceSpecification23" />
@@ -1326,7 +1326,7 @@
               <messageOccurrenceSpecificationMoniker Id="33bc2c8f-66b3-4a34-9882-aa6ec10f9ab0" LastKnownName="MessageOccurrenceSpecification24" />
             </receiveEvent>
           </message>
-          <message Id="7bf698a3-c6a5-44b8-ae91-325ac989a0ae" name="getPage" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="7bf698a3-c6a5-44b8-ae91-325ac989a0ae" name="getPage" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ getPage(request : String) : String">
             <elementDefinition Id="d78ff567-0ae8-44c3-bbe5-2e84ad3d4503" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="d01c55aa-7fb2-46b8-8e4b-47576ad54043" LastKnownName="MessageOccurrenceSpecification35" />
@@ -1344,7 +1344,7 @@
               <messageOccurrenceSpecificationMoniker Id="05a91e4b-bc67-4f9c-b56d-cce799794bfc" LastKnownName="MessageOccurrenceSpecification238" />
             </receiveEvent>
           </message>
-          <message Id="33355330-e352-4524-bc29-1fbd3c43fb42" name="&lt;&lt;return pageUIDataMainProjMngr&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="33355330-e352-4524-bc29-1fbd3c43fb42" name="&lt;&lt;return pageUIMainProjMngr&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="7fee68ef-5820-4905-97ed-ccf96a677cf6" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="76b76921-97ac-40c5-8cde-f05092d00b7b" LastKnownName="MessageOccurrenceSpecification239" />
@@ -1407,7 +1407,7 @@
               <messageOccurrenceSpecificationMoniker Id="62e19597-7513-42e1-b8c5-7b37b67f3d3c" LastKnownName="MessageOccurrenceSpecification14" />
             </receiveEvent>
           </message>
-          <message Id="4ca17410-80c5-45f3-aa51-9de6c66f963b" name="post" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="4ca17410-80c5-45f3-aa51-9de6c66f963b" name="post" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ post(request : String) : String">
             <elementDefinition Id="a14535a5-e413-4263-9461-89cc449524fb" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="0bd6ba89-4088-4eff-9877-97330e41cc5c" LastKnownName="MessageOccurrenceSpecification17" />
@@ -1416,7 +1416,7 @@
               <messageOccurrenceSpecificationMoniker Id="976a9714-b19c-4eeb-a9ac-d8cd7130022d" LastKnownName="MessageOccurrenceSpecification18" />
             </receiveEvent>
           </message>
-          <message Id="5e68c945-70f4-4d81-981e-3885a5485eab" name="sendUploadData" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="5e68c945-70f4-4d81-981e-3885a5485eab" name="upload" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ upload(json : String) : Boolean">
             <elementDefinition Id="cccc6e77-6244-4890-970c-a128c9fb4b1b" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="967983b2-fc05-4848-9fb4-ef540c71d319" LastKnownName="MessageOccurrenceSpecification21" />
@@ -1425,7 +1425,7 @@
               <messageOccurrenceSpecificationMoniker Id="184be2b3-81e2-4d24-b428-31992fb8844d" LastKnownName="MessageOccurrenceSpecification22" />
             </receiveEvent>
           </message>
-          <message Id="58d66067-e28f-4b44-b73b-ee53e9a51813" name="checkUploadData" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="true">
+          <message Id="58d66067-e28f-4b44-b73b-ee53e9a51813" name="check" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="true" signatureText="+ check(test : String) : Boolean">
             <elementDefinition Id="b332b050-30a9-4eb2-bb06-bbd1c7655ab0" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="b3e403a9-1535-4664-8816-84dcd4ddf71a" LastKnownName="MessageOccurrenceSpecification25" />

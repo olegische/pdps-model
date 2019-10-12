@@ -869,6 +869,9 @@
           </lifeline>
           <lifeline Id="4d41867a-b902-4584-acb6-8cf090be89b0" name="authorization : Authorization" isActor="false" lifelineDisplayName="authorization : Authorization">
             <elementDefinition Id="e8746dc2-c4b1-46f8-be50-0b5aa7ceb6b1" />
+            <represents>
+              <propertyMoniker Id="6e6b740b-92a1-41c3-80d7-de3597927ee5" />
+            </represents>
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker Id="8a02f664-eb95-4e7e-a31e-a5b6347dd2c2" LastKnownName="ExecutionOccurrenceSpecification15" />
               <executionOccurrenceSpecificationMoniker Id="e8083195-82bd-457c-8759-3896349fc676" LastKnownName="ExecutionOccurrenceSpecification16" />
@@ -903,7 +906,7 @@
               <messageOccurrenceSpecificationMoniker Id="e3e95a4f-d12b-458f-ba7b-836487fce626" LastKnownName="MessageOccurrenceSpecification14" />
             </receiveEvent>
           </message>
-          <message Id="2f19d3e0-9f7e-4768-831c-9170b12044f4" name="post" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="2f19d3e0-9f7e-4768-831c-9170b12044f4" name="post" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ post(request : String) : String">
             <elementDefinition Id="8a0e0de2-ddc7-4e37-89d4-b5dd75bdf29a" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="12fa9ebd-f9a2-49f1-be9d-e2a75c9b6ca9" LastKnownName="MessageOccurrenceSpecification17" />
@@ -912,7 +915,7 @@
               <messageOccurrenceSpecificationMoniker Id="fcbe28cf-f926-4892-b4a4-76ea47ecf782" LastKnownName="MessageOccurrenceSpecification18" />
             </receiveEvent>
           </message>
-          <message Id="6c83f012-7346-487e-b3b7-018a33df2663" name="sendUserAuth" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="6c83f012-7346-487e-b3b7-018a33df2663" name="authUser" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ authUser(json : String) : Boolean">
             <elementDefinition Id="39056830-a3bb-4cba-a5d2-d9f0ff0a57aa" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="d5b72706-0072-4c7b-be0b-3033525b49e7" LastKnownName="MessageOccurrenceSpecification21" />
@@ -930,7 +933,7 @@
               <messageOccurrenceSpecificationMoniker Id="7aee99fb-c8f2-4801-8e06-833b8dcddbab" LastKnownName="MessageOccurrenceSpecification26" />
             </receiveEvent>
           </message>
-          <message Id="654f341e-f4de-4abd-b2d6-fb4e5e9acfb6" name="&lt;&lt;return userData&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="654f341e-f4de-4abd-b2d6-fb4e5e9acfb6" name="&lt;&lt;return user&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="f3c65076-f92b-4eab-aeac-760b7aa143ff" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="712c38b5-9a74-4eb8-9e18-b92c920805d6" LastKnownName="MessageOccurrenceSpecification27" />
@@ -939,7 +942,7 @@
               <messageOccurrenceSpecificationMoniker Id="960ad346-4228-47b4-b163-7c1c9a641263" LastKnownName="MessageOccurrenceSpecification28" />
             </receiveEvent>
           </message>
-          <message Id="ae9c77f5-f33c-4ad0-bca9-e577ca3017f4" name="checkUserAuth" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true">
+          <message Id="ae9c77f5-f33c-4ad0-bca9-e577ca3017f4" name="check" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="+ check(test : String, template : String) : Boolean">
             <elementDefinition Id="842deca1-3867-4417-b63c-d3b3d6f1320e" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="7fdf5fd7-02b6-4436-ad28-3574d688e7fa" LastKnownName="MessageOccurrenceSpecification29" />
@@ -957,7 +960,7 @@
               <messageOccurrenceSpecificationMoniker Id="4329fc03-047c-469a-b665-378750da81e0" LastKnownName="MessageOccurrenceSpecification24" />
             </receiveEvent>
           </message>
-          <message Id="6b19a97d-3188-436f-9229-25550ab89d68" name="getPage" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ getPage()">
+          <message Id="6b19a97d-3188-436f-9229-25550ab89d68" name="getPage" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ getPage(request : String) : String">
             <elementDefinition Id="bda1e2dc-4f38-4ae1-b747-91b358ad01f6" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="b19e626a-f019-446c-b1d0-fd515f94f446" LastKnownName="MessageOccurrenceSpecification217" />
@@ -975,7 +978,7 @@
               <messageOccurrenceSpecificationMoniker Id="1a8e16e1-cd23-4bb9-8914-e54de458b49b" LastKnownName="MessageOccurrenceSpecification238" />
             </receiveEvent>
           </message>
-          <message Id="6a7c6475-2bef-4723-bbbe-bd851167fbc1" name="&lt;&lt;return pageUIDataMainUserRole&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="6a7c6475-2bef-4723-bbbe-bd851167fbc1" name="&lt;&lt;return pageUIMainUserRole&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="0eb2a681-8295-48c2-a2d2-5a98ab4344f9" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="354400e3-6a20-4d9b-bd10-bdac43bea380" LastKnownName="MessageOccurrenceSpecification239" />
@@ -1038,7 +1041,7 @@
               <messageOccurrenceSpecificationMoniker Id="1a8ac6a1-fb21-49ed-b92a-4898689b02fe" LastKnownName="MessageOccurrenceSpecification14" />
             </receiveEvent>
           </message>
-          <message Id="99342b3f-22d0-4a5d-b7ed-6abc46c031ea" name="post" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="99342b3f-22d0-4a5d-b7ed-6abc46c031ea" name="post" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ post(request : String) : String">
             <elementDefinition Id="2a2f4f24-3de7-40e3-8f05-06dba9fe6a79" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="08ca0997-6358-4e6c-b57a-f850d17796e6" LastKnownName="MessageOccurrenceSpecification17" />
@@ -1047,7 +1050,7 @@
               <messageOccurrenceSpecificationMoniker Id="d154939f-426f-4656-baa1-2847801710cb" LastKnownName="MessageOccurrenceSpecification18" />
             </receiveEvent>
           </message>
-          <message Id="949d519a-b3cf-48ba-a2be-854d02a2b437" name="sendUserAuth" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="949d519a-b3cf-48ba-a2be-854d02a2b437" name="authUser" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ authUser(json : String) : Boolean">
             <elementDefinition Id="e49ffa69-5832-46a8-9a9f-d1ca6c83ff2c" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="7d0c9af5-8ffe-4480-a5c1-c570aafefb16" LastKnownName="MessageOccurrenceSpecification21" />
@@ -1065,7 +1068,7 @@
               <messageOccurrenceSpecificationMoniker Id="90aec240-0be9-4fa0-96d9-1a8a5b45018d" LastKnownName="MessageOccurrenceSpecification26" />
             </receiveEvent>
           </message>
-          <message Id="73d8185d-9fb2-4a1b-bb7f-b5953af3f35e" name="&lt;&lt;return userData&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="73d8185d-9fb2-4a1b-bb7f-b5953af3f35e" name="&lt;&lt;return user&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="a3964983-30f2-4249-a2b5-91a059c387b9" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="89bd12ab-636b-4bbf-84c8-214f23fdaacf" LastKnownName="MessageOccurrenceSpecification27" />
@@ -1074,7 +1077,7 @@
               <messageOccurrenceSpecificationMoniker Id="17ea9056-4829-4d6f-b0af-88a782f0e6a7" LastKnownName="MessageOccurrenceSpecification28" />
             </receiveEvent>
           </message>
-          <message Id="77d8f520-58b8-4ee8-a04e-6ddb11413430" name="checkUserAuth" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true">
+          <message Id="77d8f520-58b8-4ee8-a04e-6ddb11413430" name="check" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="+ check(test : String, template : String) : Boolean">
             <elementDefinition Id="3e25c171-6c9f-431d-afeb-baed0b017255" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="fd652592-73fa-4141-b756-ab0dd5b8a74b" LastKnownName="MessageOccurrenceSpecification29" />
@@ -1146,6 +1149,12 @@
             <elementDefinition Id="3596dc63-2bb3-44c2-a746-aa229b332321" />
             <type_NamedElement>
               <referencedTypeMoniker Id="50c1533d-c247-49da-afe4-c1fef65fd5e6" LastKnownName="PageService" />
+            </type_NamedElement>
+          </property>
+          <property Id="6e6b740b-92a1-41c3-80d7-de3597927ee5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="aefba861-6bf7-41e0-a4fc-809e92740776" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="284344f0-8c9c-45c3-87b5-e12c476d1262" LastKnownName="Authorization" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -1310,6 +1319,11 @@
       <executionEvent Id="59f1ea18-9112-4ee8-a6c4-d8bd334946fa" name="ExecutionEvent">
         <elementDefinition Id="50da023c-7601-4153-b00e-8db288d92f5f" />
       </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="284344f0-8c9c-45c3-87b5-e12c476d1262" name="Authorization" isAbstract="false" isLeaf="false" cachedFullName="pdps-model::Authorization">
+        <elementDefinition Id="70897479-63eb-4b09-81c2-6f82db983ba8" />
+      </referencedType>
     </packageHasNamedElement>
   </packagedElements>
   <package Id="89160cc2-2542-4361-bf86-ff0a2e6e4c5d" name="pdps-model">
